@@ -21,22 +21,22 @@
 			// Map projection
 			var projection = d3.geo.transverseMercator()
 								   .translate([w/2, h/2])
-								   .scale([500]);
+								   .scale([500]); // FIXME
 
-// 			//Define path generator
-// 			var path = d3.geo.path()
-// 							 .projection(projection);
+ 			// Generate path
+ 			var path = d3.geo.path()
+ 							 .projection(projection);
 							 
-// 			//Define quantize scale to sort data values into buckets of color
-// 			var color = d3.scale.quantize()
-// 								.range(["rgb(237,248,233)","rgb(186,228,179)","rgb(116,196,118)","rgb(49,163,84)","rgb(0,109,44)"]);
-// 								//Colors taken from colorbrewer.js, included in the D3 download
+ 			//Define quantize scale to sort data values into buckets of color
+ 			var color = d3.scale.quantize() // FIXNE
+ 								.range(["rgb(237,248,233)","rgb(186,228,179)","rgb(116,196,118)","rgb(49,163,84)","rgb(0,109,44)"]);
+ 								//Colors taken from colorbrewer.js, included in the D3 download
 
-// 			//Create SVG element
-// 			var svg = d3.select("body")
-// 						.append("svg")
-// 						.attr("width", w)
-// 						.attr("height", h);
+ 			//Create SVG element
+ 			var svg = d3.select("body")
+ 						.append("svg")
+ 						.attr("width", w)
+ 						.attr("height", h);
 
 // 			//Load in agriculture data
 // 			d3.csv("us-ag-productivity-2004.csv", function(data) {
