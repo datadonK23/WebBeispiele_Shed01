@@ -3,12 +3,12 @@ WebBeispiele_Shed01
 
 Beispielcode für Webapplications von Shed01 Blog
 
-### Kontakt: datadonk23@gmail.com
-
 ## Repository enthält:
 * Dateien aus den Beispielen des Shed01 Blogs (http://shed01.blogspot.co.at/) 
 für Webanwendungen
 * eventuell Beispieldaten
+
+### Kontakt: datadonk23@gmail.com
 
 ### Lizenz: LGPL v3 (siehe LICENSE Datei)
 Diese Programme und Dateien sind Freie Software: Sie können sie unter den Bedingungen der GNU Lesser General Public License, wie von der Free Software Foundation, Version 3 der Lizenz oder (nach Ihrer Wahl) jeder neueren veröffentlichten Version, weiterverbreiten und/oder modifizieren.
