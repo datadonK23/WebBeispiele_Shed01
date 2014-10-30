@@ -1,0 +1,8 @@
+Referenzen:
+
+Templates:
+Business Casual: http://startbootstrap.com/template-overviews/business-casual/, dl. 11.10.2014 (Apache 2.0)
+
+Bilder:
+Background Image: http://commons.wikimedia.org/wiki/File:Steyrer_Innenstadt_(Stadtplatz_und_Gr%C3%BCnmarkt).jpg, dl 11.10.2014 (Christoph Waghubinger, CC-BY-SA-3.0-AT)
+Bummerlhaus: http://commons.wikimedia.org/wiki/File:Steyr_Bummerlhaus.jpg, dl. 12.10.2014 (dralon, CC-BY-SA-2.0-de)
