@@ -7,9 +7,14 @@ Beispiel-Webapp mit Flask und Bokeh zur Tourismusentwicklung in Österreich.
 Ressourcendateien, Anwendungen und Beispieldaten (falls keine Downloadanweisung in den Projekten enthalten ist) aus den Beispielen des Shed01 Blogs (http://shed01.blogspot.co.at/):
 * LICENCE: Lizenztext
 * NOTICE: Notice Datei
+* ./app - App directory
+* ./instance - Directory for secret configs
 * ./sb-admin: Bootstrap Vorlage
 * ./SketchesLayout: Wireframes für Layout
-* ...
+* config.py - Config of app
+* requirements.txt - Python requirements for app
+* run.py - run to launch the app
+
 
 ### Kontakt: datadonk23@gmail.com
 
