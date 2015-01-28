@@ -3,7 +3,7 @@ __pycache__/
 *.py[cod]
 
 # Directory of secret keys in flask apps
-/instance
+**/instance/
 
 
 
