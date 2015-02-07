@@ -8,6 +8,7 @@ Ressourcendateien, Anwendungen und Beispieldaten (falls keine Downloadanweisung 
 * LICENCE: Lizenztext
 * NOTICE: Notice Datei
 * ./app - App directory
+* ./geo - Geo processing directory
 * ./instance - Directory for secret configs
 * ./startbootstrap-stylish-portfolio: Bootstrap Vorlage (dl. http://startbootstrap.com/template-overviews/stylish-portfolio, 06.02.2015)
 * ./SketchesLayout: Wireframes für Layout
