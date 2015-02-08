@@ -7,6 +7,7 @@ Webapp mit Flask zum [FIXME]
 Ressourcendateien, Anwendungen und Beispieldaten (falls keine Downloadanweisung in den Projekten enthalten ist) aus den Beispielen des Shed01 Blogs (http://shed01.blogspot.co.at/):
 * LICENCE: Lizenztext
 * NOTICE: Notice Datei
+* ./ana_model - Analytical model directory
 * ./app - App directory
 * ./geo - Geo processing directory
 * ./instance - Directory for secret configs
