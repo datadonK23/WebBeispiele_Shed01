@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx creator="StravaGPX" version="1.1" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www.garmin.com/xmlschemas/GpxExtensionsv3.xsd http://www.garmin.com/xmlschemas/TrackPointExtension/v1 http://www.garmin.com/xmlschemas/TrackPointExtensionv1.xsd http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www.garmin.com/xmlschemas/GpxExtensionsv3.xsd http://www.garmin.com/xmlschemas/TrackPointExtension/v1 http://www.garmin.com/xmlschemas/TrackPointExtensionv1.xsd">
+ <metadata>
+  <name>Damberg Auffahrt C</name>
+  <author>
+   <name>Thomas Treml</name>
+   <link href="https://www.strava.com/athletes/4964932"/>
+  </author>
+  <link href="https://www.strava.com/routes/1436465"/>
+ </metadata>
+ <trk>
+  <name>Damberg Auffahrt C</name>
+  <link href="https://www.strava.com/routes/1436465"/>
+  <type>Radfahrt</type>
+  <trkseg>
+   <trkpt lat="48.0345" lon="14.42875"/>
+   <trkpt lat="48.03425000000001" lon="14.42908"/>
+   <trkpt lat="48.033570000000005" lon="14.430190000000001"/>
+   <trkpt lat="48.03282" lon="14.431220000000001"/>
+   <trkpt lat="48.03229" lon="14.43186"/>
+   <trkpt lat="48.032030000000006" lon="14.432010000000002"/>
+   <trkpt lat="48.031670000000005" lon="14.43233"/>
+   <trkpt lat="48.03128" lon="14.432900000000002"/>
+   <trkpt lat="48.031040000000004" lon="14.433190000000002"/>
+   <trkpt lat="48.030800000000006" lon="14.43363"/>
+   <trkpt lat="48.03061" lon="14.434080000000002"/>
+   <trkpt lat="48.030170000000005" lon="14.43495"/>
+   <trkpt lat="48.030120000000004" lon="14.435120000000001"/>
+   <trkpt lat="48.02993000000001" lon="14.43599"/>
+   <trkpt lat="48.02971" lon="14.436350000000001"/>
+   <trkpt lat="48.029430000000005" lon="14.43729"/>
+   <trkpt lat="48.02910000000001" lon="14.438250000000002"/>
+   <trkpt lat="48.02899000000001" lon="14.438680000000002"/>
+   <trkpt lat="48.02897" lon="14.439020000000001"/>
+   <trkpt lat="48.028780000000005" lon="14.44016"/>
+   <trkpt lat="48.028690000000005" lon="14.440500000000002"/>
+   <trkpt lat="48.02843000000001" lon="14.441160000000002"/>
+   <trkpt lat="48.027930000000005" lon="14.442060000000001"/>
+   <trkpt lat="48.027370000000005" lon="14.442910000000001"/>
+   <trkpt lat="48.02709" lon="14.44349"/>
+   <trkpt lat="48.026520000000005" lon="14.444110000000002"/>
+   <trkpt lat="48.02579" lon="14.445300000000001"/>
+   <trkpt lat="48.02559" lon="14.44555"/>
+   <trkpt lat="48.02508" lon="14.446110000000001"/>
+   <trkpt lat="48.02492" lon="14.446220000000002"/>
+   <trkpt lat="48.024530000000006" lon="14.446200000000001"/>
+   <trkpt lat="48.02440000000001" lon="14.44617"/>
+   <trkpt lat="48.02418" lon="14.44607"/>
+   <trkpt lat="48.023990000000005" lon="14.446010000000001"/>
+   <trkpt lat="48.02376" lon="14.44597"/>
+   <trkpt lat="48.023250000000004" lon="14.446110000000001"/>
+   <trkpt lat="48.02252000000001" lon="14.446190000000001"/>
+   <trkpt lat="48.02223" lon="14.44612"/>
+   <trkpt lat="48.02181" lon="14.44588"/>
+   <trkpt lat="48.021530000000006" lon="14.445860000000001"/>
+   <trkpt lat="48.02053" lon="14.446050000000001"/>
+   <trkpt lat="48.02029" lon="14.446080000000002"/>
+   <trkpt lat="48.020100000000006" lon="14.44617"/>
+   <trkpt lat="48.01979" lon="14.44654"/>
+   <trkpt lat="48.01961000000001" lon="14.44687"/>
+   <trkpt lat="48.01917" lon="14.4479"/>
+   <trkpt lat="48.018840000000004" lon="14.448310000000001"/>
+   <trkpt lat="48.01856" lon="14.448540000000001"/>
+   <trkpt lat="48.01832" lon="14.4486"/>
+   <trkpt lat="48.01767" lon="14.448620000000002"/>
+   <trkpt lat="48.01742" lon="14.44861"/>
+  </trkseg>
+  <trkseg>
+   <trkpt lat="48.017140000000005" lon="14.449660000000002"/>
+   <trkpt lat="48.017010000000006" lon="14.44992"/>
+   <trkpt lat="48.01675" lon="14.450310000000002"/>
+   <trkpt lat="48.01641" lon="14.450550000000002"/>
+   <trkpt lat="48.01608" lon="14.45072"/>
+   <trkpt lat="48.015730000000005" lon="14.450970000000002"/>
+   <trkpt lat="48.01502000000001" lon="14.45165"/>
+   <trkpt lat="48.014610000000005" lon="14.45212"/>
+   <trkpt lat="48.01449" lon="14.452370000000002"/>
+  </trkseg>
+ </trk>
+</gpx>
