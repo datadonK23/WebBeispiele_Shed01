@@ -3,83 +3,114 @@
 Graph Model
 
 @author: Thomas Treml (datadonk23@gmail.com)
-Date: 08.02.2015
+Date: 14.02.2015
 """
 
 import networkx as net
 import matplotlib.pyplot as plt
 
-# Einfaches Modell 6 Auffahrten
-simpleG6 = net.DiGraph()
-simpleG5 = net.DiGraph()
+# Directed graph model
+G = net.DiGraph()
 
 # node A
-simpleG6.add_edge("A", "D")
-simpleG6.add_edge("A", "E")
-simpleG6.add_edge("A", "F")
-
-simpleG5.add_edge("A", "D")
-simpleG5.add_edge("A", "E")
+G.add_edge("A", "X", kind="asc", side="w")
+G.node["A"]["side"] = "w"
+#G.add_edge("A", "B", kind="over", side="w")
 
 # node B
-simpleG6.add_edge("B", "D")
-simpleG6.add_edge("B", "E")
-simpleG6.add_edge("B", "F")
-
-simpleG5.add_edge("B", "D")
-simpleG5.add_edge("B", "E")
+G.add_edge("B", "X", kind="asc", side="w")
+G.node["B"]["side"] = "w"
+#G.add_edge("B", "C", kind="over", side="w")
+#G.add_edge("B", "A", kind="over", side="w")
 
 # node C
-simpleG6.add_edge("C", "D")
-simpleG6.add_edge("C", "E")
-simpleG6.add_edge("C", "F")
-
-simpleG5.add_edge("C", "D")
-simpleG5.add_edge("C", "E")
+G.add_edge("C", "X", kind="asc", side="w")
+G.node["C"]["side"] = "w"
+#G.add_edge("C", "D", kind="over", side="w")
+#G.add_edge("C", "B", kind="over", side="w")
 
 # node D
-simpleG6.add_edge("D", "A")
-simpleG6.add_edge("D", "B")
-simpleG6.add_edge("D", "C")
-
-simpleG5.add_edge("D", "A")
-simpleG5.add_edge("D", "B")
-simpleG5.add_edge("D", "C")
+G.add_edge("D", "X", kind="asc", side="w")
+G.node["D"]["side"] = "w"
+#G.add_edge("D", "C", kind="over", side="w")
 
 # node E
-simpleG6.add_edge("E", "A")
-simpleG6.add_edge("E", "B")
-simpleG6.add_edge("E", "C")
-
-simpleG5.add_edge("E", "A")
-simpleG5.add_edge("E", "B")
-simpleG5.add_edge("E", "C")
+G.add_edge("E", "X", kind="asc", side="e")
+G.node["E"]["side"] = "e"
+#G.add_edge("E", "F", kind="over", side="e")
 
 # node F
-simpleG6.add_edge("F", "A")
-simpleG6.add_edge("F", "B")
-simpleG6.add_edge("F", "C")
+G.add_edge("F", "X", kind="asc", side="e")
+G.node["F"]["side"] = "e"
+#G.add_edge("F", "G", kind="over", side="e")
+#G.add_edge("F", "E", kind="over", side="e")
 
+# node G
+G.add_edge("G", "X", kind="asc", side="e")
+G.node["G"]["side"] = "e"
+#G.add_edge("G", "H", kind="over", side="e")
+#G.add_edge("G", "F", kind="over", side="e")
+
+# node H
+G.add_edge("H", "X", kind="asc", side="e")
+G.node["H"]["side"] = "e"
+#G.add_edge("H", "E", kind="over", side="e")
+
+#node X
+G.add_edge("X", "A", kind="dsc", side="w")
+G.add_edge("X", "B", kind="dsc", side="w")
+G.add_edge("X", "C", kind="dsc", side="w")
+G.add_edge("X", "D", kind="dsc", side="w")
+G.add_edge("X", "E", kind="dsc", side="e")
+G.add_edge("X", "F", kind="dsc", side="e")
+G.add_edge("X", "G", kind="dsc", side="e")
+G.add_edge("X", "H", kind="dsc", side="e")
+G.node["X"]["side"] = "c"
 
 # Drawing
 
 plot1 = plt.figure()
 ax1 = plot1.add_subplot(111)
-net.draw(simpleG6, ax=ax1)
+pos = net.random_layout(G)
+net.draw(G, pos=pos)
+net.draw_networkx_labels(G, pos=pos)
 
-plot2 = plt.figure()
-ax2 = plot2.add_subplot(111)
-net.draw(simpleG5, ax=ax2)
-
-# Analyse
-if net.is_eulerian(simpleG6):
-    print "6 Auffahrten: " + str(list(net.eulerian_circuit(simpleG6,
-                                                           source="B")))
-else:
-    print "6: Kein Eulerweg"
-
-if net.is_eulerian(simpleG5):
-    print "5 Auffahrten: " + str(list(net.eulerian_circuit(simpleG5,
-                                                           source="B")))
-else:
-    print "5: Kein Eulerweg"
+# Routing Algorithm
+def find_route(graph=G, start="A"):
+    """Finds best combination (from most to least exhausting) of cyling 
+       ascendends in given weighted graph and the starting node
+    In: graph, start node
+    Out: list of ascendents and descendents in best order
+    """
+    route = []
+    
+    start = start    
+    
+    for i in range(2):
+        asc = graph.out_edges(start, data=True)[0]
+        asc_side = asc[2]["side"]
+            
+        route.append(asc)
+        graph.remove_edge(asc[0], asc[1])
+    
+        for edge in graph.out_edges("X", data=True):
+            if edge[2]["side"] == asc_side:
+                continue
+            else:
+                dsc = edge
+    
+        dsc_side = dsc[2]["side"]
+        route.append(dsc)
+        graph.remove_edge(dsc[0], dsc[1])
+    
+        for node in graph.nodes(data=True):
+            if (dsc_side == node[1].get("side")) and (node[0] != dsc[1]):
+                start = node[0]
+                break
+        #FIXME 2.loop
+        i+=1
+    
+    route.append(start)
+    return route
+    
+route = find_route()
