@@ -56,6 +56,10 @@ G.add_edge("H", "X", kind="asc", side="e")
 G.node["H"]["side"] = "e"
 #G.add_edge("H", "E", kind="over", side="e")
 
+# node I
+#G.add_edge("I", "X", kind="asc", side="e")
+#G.node["I"]["side"] = "e"
+
 #node X
 G.add_edge("X", "A", kind="dsc", side="w")
 G.add_edge("X", "B", kind="dsc", side="w")
@@ -65,6 +69,9 @@ G.add_edge("X", "E", kind="dsc", side="e")
 G.add_edge("X", "F", kind="dsc", side="e")
 G.add_edge("X", "G", kind="dsc", side="e")
 G.add_edge("X", "H", kind="dsc", side="e")
+
+#G.add_edge("X", "I", kind="dsc", side="e")
+
 G.node["X"]["side"] = "c"
 
 # Drawing
@@ -83,14 +90,31 @@ def find_route(graph=G, start="A"):
     Out: list of ascendents and descendents in best order
     """
     route = []
+    nodes_w = []
+    nodes_e = []
+    sym = False if (len(G) % 2 == 0) else True
     
-    start = start    
+    # list of possible nodes
+    for node in graph.nodes(data=True):
+        if node[1].get("side") == "w":
+            nodes_w.append(node[0])
+        elif node[1].get("side") == "e":
+            nodes_e.append(node[0])
     
-    for i in range(2):
+    start = start
+    skip_last = 3 if sym else 4
+    
+    # main logic
+    for i in range(len(graph) - skip_last):
+        # ascents        
         asc = graph.out_edges(start, data=True)[0]
         asc_side = asc[2]["side"]
             
         route.append(asc)
+        if asc[0] in nodes_w:
+            nodes_w.remove(asc[0])
+        elif asc[0] in nodes_e:
+            nodes_e.remove(asc[0])
         graph.remove_edge(asc[0], asc[1])
     
         for edge in graph.out_edges("X", data=True):
@@ -98,19 +122,86 @@ def find_route(graph=G, start="A"):
                 continue
             else:
                 dsc = edge
-    
+        # descents
         dsc_side = dsc[2]["side"]
         route.append(dsc)
         graph.remove_edge(dsc[0], dsc[1])
-    
-        for node in graph.nodes(data=True):
-            if (dsc_side == node[1].get("side")) and (node[0] != dsc[1]):
-                start = node[0]
-                break
-        #FIXME 2.loop
+        
+        # find next start node
+        if dsc_side == "w":
+            for node in nodes_w:
+                if node != asc[0] and node != dsc[1]:
+                    start = node
+        elif dsc_side == "e":
+            for node in nodes_e:
+                if node != asc[0] and node != dsc[1]:
+                    start = node
         i+=1
     
-    route.append(start)
+    # pop last descent for connectivity
+    route.pop()
+    print nodes_w
+    print nodes_e
+    print list(graph.out_edges("X", data=True))
+
+#FIXME    
+    
+    # logic for last ascent and descent
+    # last before ascent (for symetrical graphs) or third last (asymmetrical)
+    for edge in graph.out_edges("X", data=True):
+        if edge[2].get("side") == dsc_side:
+            route.append(edge)
+            graph.remove_edge(edge[0], edge[1])
+            if dsc_side == "w":
+                node = nodes_w[0]
+                nodes_w.pop()
+            else:
+                node = nodes_e[0]
+                nodes_e.pop()            
+            asc = graph.out_edges(node, data=True)[0]
+            asc_side = asc[2].get("side")            
+            route.append(asc)
+            graph.remove_edge(asc[0], asc[1])
+    """
+    if sym:
+        # last descent
+        dsc = graph.out_edges("X", data=True)[0]
+        dsc_side = dsc[2].get("side")
+        route.append(dsc)
+        graph.remove_edge(dsc[0], dsc[1])
+        node = nodes_w[0] if dsc_side == "w" else nodes_e[0]
+        # last ascent        
+        asc = graph.out_edges(node, data=True)[0]
+        asc_side = asc[2].get("side")            
+        route.append(asc)
+        graph.remove_edge(asc[0], asc[1])
+    else:
+        # last 2 descents
+        dsc_last_before = graph.out_edges("X", data=True)[0]    
+        #dsc_last = graph.out_edges("X", data=True)[1]
+        dsc_side = dsc_last_before[2].get("side")
+        route.append(dsc_last_before)
+        graph.remove_edge(dsc_last_before[0], dsc_last_before[1])
+        if dsc_side == "w":
+            node = nodes_w[1]
+            nodes_w.pop()
+        else:
+            node = nodes_e[1]
+            nodes_e.pop()
+        asc = graph.out_edges(node, data=True)[0]
+        asc_side = asc[2].get("side")
+        route.append(asc)
+        graph.remove_edge(asc[0], asc[1])
+        # last descent        
+        dsc = graph.out_edges("X", data=True)[0]
+        route.append(dsc)
+        graph.remove_edge(dsc[0], dsc[1])
+        # last ascvent
+        node = nodes_w[0] if dsc_side == "w" else nodes_e[0]
+        asc = graph.out_edges(node, data=True)[0]
+        route.append(asc)
+        graph.remove_edge(asc[0], asc[1])
+    """  
     return route
     
-route = find_route()
+route = find_route(start="F")
