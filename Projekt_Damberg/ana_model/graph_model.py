@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Graph Model
+Graph Model with Routing Algorithm
 
 @author: Thomas Treml (datadonk23@gmail.com)
 Date: 16.02.2015
@@ -52,14 +52,13 @@ G.add_edge("X", "I", kind="dsc", side="w")
 G.node["X"]["side"] = "c"
 
 # Drawing
-
 plot1 = plt.figure()
 ax1 = plot1.add_subplot(111)
 pos = net.random_layout(G)
 net.draw(G, pos=pos)
 net.draw_networkx_labels(G, pos=pos)
 
-# Routing Algorithm
+# Routing algorithm
 def find_route(graph=G, start="A"):
     """Finds best combination of cyling ascents in Damberg graph
     In: graph, start node
@@ -139,29 +138,51 @@ def find_route(graph=G, start="A"):
         
     # exception for E
     else:
-# FIXME        
-        print "yep"
+        start = nodes_e[0]        
+        route.pop()
+        for edge in graph.out_edges("X", data=True):
+            if edge[2].get("side") == dsc_side:
+                dsc = edge
+        route.append(dsc)
+        graph.remove_edge(dsc[0], dsc[1])
+          
         asc = graph.out_edges(start, data=True)[0]
         asc_side = asc[2].get("side")            
         route.append(asc)
         graph.remove_edge(asc[0], asc[1])
-        nodes_w.pop()
+        
+        nodes_e.pop()
         for edge in graph.out_edges("X", data=True):
             if edge[1] != nodes_w[0]:
                 dsc = edge
                 break
         route.append(dsc)
-        graph.remove_edge(dsc[0], dsc[1])
-        asc = graph.out_edges(nodes_w[0], data=True)[0]
+        
+        asc = graph.out_edges(nodes_w[1], data=True)[0]
         route.append(asc)
         graph.remove_edge(asc[0], asc[1])
-
-    print start    
-    print nodes_w
-    print nodes_e
-    print list(graph.out_edges("X", data=True))    
+        nodes_w.remove(asc[0])
+        
+        for edge in graph.out_edges("X", data=True):
+            if edge[1] != nodes_w[0]:
+                dsc = edge
+                break
+        route.append(dsc)
+        
+        asc = graph.out_edges(nodes_w[0], data=True)[0]
+        route.append(asc)
     
-
+    # ascent to top
+    graph.add_edge("X", "S", kind="asc", side="c")
+    for edge in graph.out_edges("X", data=True): 
+        if edge[2].get("side") == "c":
+            asc = edge
+    route.append(asc)
+           
     return route
     
-route = find_route(start="E")
+route = find_route(start="C")
+
+print "Route:"
+for sector in route:
+    print "from %s to %s" % (str(sector[0]), str(sector[1]))
