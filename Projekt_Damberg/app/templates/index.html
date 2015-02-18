@@ -20,6 +20,9 @@
     <!-- Custom Fonts -->
     <link href="../static/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="../static/css/leaflet.css" />
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -151,13 +154,48 @@
 
     
     <!-- Map -->
+    <!-- Script loading -->
+    <script src="../static/js/leaflet.js"></script>
+    <script type="text/javascript" src="http://maps.stamen.com/js/tile.stamen.js?v1.3.0"></script>
+    
     <section id="map" class="map">
-        <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
-        <br />
-        <small>
-            <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
-        </small>
-        </iframe>
+        <div class="container">
+            <div class="row">                      
+                <div id="map" height="100%" ></div>
+		  
+                <script>
+                    /* OSM */
+                    var map = new L.map('map', {attributionControl: false}).setView([48.015, 14.448], 12);
+                    L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+                    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+                    }).addTo(map);
+                    L.control.attribution({position: 'bottomleft'}).addTo(map);
+
+                    /* Custom Marker */
+                    var dambergIcon = L.icon({
+                        iconUrl: "./static/img/marker/damberg_marker-icon.png",
+                        iconSize:     [40, 60],
+                        iconAnchor:   [20, 60],
+                        popupAnchor:  [0, -60],});
+
+                    var popupHTML = '<b>Damberg</b><br>H&ouml;he: 881m';
+                    var popupContent = L.popup({keepInView:true,closeButton:true}).setContent(popupHTML);
+
+                    var dambergMarker = L.marker([48.003426, 14.4599396], {icon: dambergIcon}).addTo(map).bindPopup(popupContent);
+                    
+                    var polygon = L.polygon([
+                                [47.9961400, 14.4081392], [48.0101886, 14.4189970], [48.0203225, 14.4184949], 
+                                [48.0293111, 14.4260147], [48.0349419, 14.4350542], [48.0397649, 14.4495268],
+                                [48.0360819, 14.4683219], [48.0251497, 14.4744784], [48.0001431, 14.4945388],
+                                [48.0006298, 14.4732866], [47.9940009, 14.4611513], [47.9916805, 14.4479015],
+                                [47.9807403, 14.4427007], [47.9889457, 14.4162012], [47.9961400, 14.4081392]
+                                ], {stroke:false, fillColor:"#fcaf3e", fillOpacity:"0.3"}).addTo(map);
+                </script>
+		
+		      </div>
+                    
+        </div>
+        
     </section>
 
     <!-- Footer -->
