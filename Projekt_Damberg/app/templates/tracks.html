@@ -20,6 +20,9 @@
     <!-- Custom Fonts -->
     <link href="../static/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="../static/css/leaflet.css" />
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -50,7 +53,7 @@
                 <a href="/tracks">Auffahrten</a>
             </li>
             <li>
-                <a href="/statistics">Statistik</a>
+                <a href="/rollofhonor">Ehrentafel</a>
             </li>
             <li>
                 <a href="/routing">Routen</a>
@@ -69,30 +72,159 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Stylish Portfolio is the perfect theme for your next project!</h2>
-                    <p class="lead">This theme features some wonderful photography courtesy of <a target="_blank" href="http://join.deathtothestockphoto.com/">Death to the Stock Photo</a>.</p>
+                    <h2>Erkunde die Auffahrten</h2>
+                    <p class="lead">Lass Dir die Strecken auf der <a href="#map-tracks">Karte</a> anzeigen,
+                        schaue <a href="#statistics">Statistiken</a> zu den Anstiegen an und betrachte die <a href="#fotos-tracks">Fotos</a>.</p>
                 </div>
+            </div>
+            <!-- /.row -->
+            <div class="btn-group btn-group-justified" role="group" aria-label="select-track-w">
+                <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-default"><b>A</b><br>Garsten</button>
+                </div>
+                <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-default"><b>B</b><br>St.Ulrich</button>
+                </div>
+                <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-default"><b>C</b><br>Porscheberg</button>
+                </div>
+                <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-default"><b>D</b><br>Bibelweg</button>
+                </div>
+            </div>
+            <div class="btn-group btn-group-justified" role="group" aria-label="select-track-e">
+                <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-default"><b>E</b><br>Kleinraming Süd</button>
+                </div>
+                <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-default"><b>F</b><br>Kleinraming Nord</button>
+                </div>
+                <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-default"><b>G</b><br>Winterhöhe</button>
+                </div>
+                <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-default"><b>H</b><br>Egger</button>
+                </div>
+                <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-default"><b>I</b><br>Gmain</button>
+                </div>
+            </div>
+            <div class="btn-group btn-group-justified" role="group" aria-label="select-toptrack">
+                <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-default"><b>S</b><br> Schoiber</button>
+                </div>
+            </div>
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <!-- Map -->
+    <!-- Script loading -->
+    <script src="../static/js/leaflet.js"></script>
+    
+    <section id="map-tracks" class="map">
+        <div class="container">
+            <div class="row">                      
+                <div height="100%" ></div>
+		  
+                <script>
+                    /* OSM */
+                    var map = new L.map('map-tracks', {attributionControl: false}).setView([48.025, 14.448], 13);
+                    L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+                    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+                    }).addTo(map);
+                    L.control.attribution({position: 'bottomleft'}).addTo(map);
+
+                    /* Custom Marker */
+                    var dambergIcon = L.icon({
+                        iconUrl: "./static/img/marker/damberg_marker-icon.png",
+                        iconSize:     [40, 60],
+                        iconAnchor:   [20, 60],
+                        popupAnchor:  [0, -60],});
+
+                    var popupHTML = '<b>Damberg</b><br>H&ouml;he: 881m';
+                    var popupContent = L.popup({keepInView:true,closeButton:true}).setContent(popupHTML);
+
+                    var dambergMarker = L.marker([48.003426, 14.4599396], {icon: dambergIcon}).addTo(map).bindPopup(popupContent);
+                    
+                </script>
+		      </div>      
+        </div>    
+    </section>
+    
+    <!-- statistics -->
+    <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
+    <section id="statistics" class="services bg-primary">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <h2>Kennzahlen</h2>
+                    <hr class="small">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-arrows-h fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Länge</strong>
+                                </h4>
+                                <p>4.03 km</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-arrows-v fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Höhenmeter</strong>
+                                </h4>
+                                <p>300 hm</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-exclamation fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Max. Steigung</strong>
+                                </h4>
+                                <p>20.2 &#037;</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-external-link-square fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>&#216; Steigung</strong>
+                                </h4>
+                                <p>9.8 &#037;</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.row (nested) -->
+                </div>
+                <!-- /.col-lg-10 -->
             </div>
             <!-- /.row -->
         </div>
         <!-- /.container -->
     </section>
-
     
-
-    <!-- Callout -->
-    <aside class="callout">
-        <div class="text-vertical-center">
-            <h1>Vertically Centered Text</h1>
-        </div>
-    </aside>
-
-    <!-- Portfolio -->
-    <section id="portfolio" class="portfolio">
+    <!-- Fotos -->
+    <section id="fotos-tracks" class="portfolio">
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h2>Our Work</h2>
+                    <h2>Auffahrt 1</h2>
                     <hr class="small">
                     <div class="row">
                         <div class="col-md-6">
@@ -133,6 +265,20 @@
         </div>
         <!-- /.container -->
     </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div id="statistics-ref" class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h4><strong>Referenzen</strong>
+                    </h4>
+                    <p>Thomas Treml<br>
+                        A-4400 Steyr, Bogenhausstr. 5/1</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <!-- jQuery -->
     <script src="../static/js/jquery.js"></script>

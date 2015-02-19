@@ -16,12 +16,12 @@ def challenge():
 @app.route('/tracks')
 def tracks():
     return render_template('tracks.html')
-  
-@app.route('/statistics')
-def statistics():
-    return render_template('statistics.html')
 
 @app.route('/routing')
 def routing():
     return render_template('routing.html')
 
+@app.route('/rollofhonor')
+def rollofhonor():
+    return render_template('rollofhonor.html')
+ 
