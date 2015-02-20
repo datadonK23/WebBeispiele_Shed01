@@ -76,19 +76,19 @@
             <div class="col-lg-12">
                     <p>Wähle den</p>       
                 <div class="dropdown">
-                    <button class="btn btn-default btn-lg dropdown-toggle" type="button" id="dropdownRoutes" data-toggle="dropdown" aria-expanded="true">
-                    Startpunkt <span class="caret"></span>
+                    <button class="btn btn-default btn-lg dropdown-toggle" type="button" id="routesDropdown" data-toggle="dropdown" aria-expanded="true">
+                    &nbsp; <i class="fa fa-arrow-circle-right fa-lg"></i> &nbsp; &nbsp; Startpunkt &nbsp; &nbsp; &nbsp; <span class="caret"></span>
                     </button>
                     <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownRoutes">
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#map-route"><b>A</b> - Garsten</a></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#map-route"><b>B</b> - St.Ulrich</a></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#map-route"><b>C</b> - Porscheberg</a></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#map-route"><b>D</b> - Bibelweg</a></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#map-route"><b>E</b> - Kleinraming S&uuml;d</a></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#map-route"><b>F</b> - Kleinraming Nord</a></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#map-route"><b>G</b> - Winterh&ouml;he</a></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#map-route"><b>H</b> - Egger</a></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#map-route"><b>I</b> - Gmain</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" class="selectRoute" href="#map-route"><b>A</b> &nbsp; Garsten</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" class="selectRoute" href="#map-route"><b>B</b> &nbsp; St.Ulrich</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" class="selectRoute" href="#map-route"><b>C</b> &nbsp; Porscheberg</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" class="selectRoute" href="#map-route"><b>D</b> &nbsp; Bibelweg</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" class="selectRoute" href="#map-route"><b>E</b> &nbsp; Kleinraming S&uuml;d</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" class="selectRoute" href="#map-route"><b>F</b> &nbsp; Kleinraming Nord</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" class="selectRoute" href="#map-route"><b>G</b> &nbsp; Winterh&ouml;he</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" class="selectRoute" href="#map-route"><b>H</b> &nbsp; Egger</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" class="selectRoute" href="#map-route"><b>I</b> &nbsp; Gmain</a></li>
                     </ul>
                 </div>
             </div>
@@ -135,8 +135,32 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
+                    <h3>Route</h3>
+                    <p>
+                    <i class="fa fa-arrow-circle-right"></i> &nbsp;
+                    C <i class="fa fa-long-arrow-right"></i> X <i class="fa fa-long-arrow-right"></i>
+                    H <i class="fa fa-long-arrow-right"></i> F <i class="fa fa-long-arrow-right"></i>
+                    X <i class="fa fa-long-arrow-right"></i> I <i class="fa fa-long-arrow-right"></i>
+                    D <i class="fa fa-long-arrow-right"></i> X <i class="fa fa-long-arrow-right"></i>
+                    F <i class="fa fa-long-arrow-right"></i> H <i class="fa fa-long-arrow-right"></i>
+                    X <i class="fa fa-long-arrow-right"></i> D <i class="fa fa-long-arrow-right"></i>
+                    I <i class="fa fa-long-arrow-right"></i> X <i class="fa fa-long-arrow-right"></i>
+                    G <i class="fa fa-long-arrow-right"></i> E <i class="fa fa-long-arrow-right"></i>
+                    X <i class="fa fa-long-arrow-right"></i> B <i class="fa fa-long-arrow-right"></i>
+                    A <i class="fa fa-long-arrow-right"></i> X <i class="fa fa-long-arrow-right"></i>
+                    E <i class="fa fa-long-arrow-right"></i> G <i class="fa fa-long-arrow-right"></i>
+                    X <i class="fa fa-long-arrow-right"></i> C <i class="fa fa-long-arrow-right"></i>
+                    B <i class="fa fa-long-arrow-right"></i> X <i class="fa fa-long-arrow-right"></i>
+                    S &nbsp; <i class="fa fa-flag-checkered"></i>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
                     <h3>Lade den GPX-Track herunter:</h3>
-                    <a href="#" class="btn btn-lg btn-light">Download</a>
+                    <a href="#routing-info" class="btn btn-lg btn-light">Download</a>
                 </div>
             </div>
         </div>
@@ -175,6 +199,12 @@
         e.preventDefault();
         $("#sidebar-wrapper").toggleClass("active");
     });
+    
+    // Close dropdown after click
+    $("a.selectRoute").click(function() {
+        $("#routesDropdown").dropdown("toggle");
+    });
+        
 
     // Scrolls to the selected menu item on the page
     $(function() {
