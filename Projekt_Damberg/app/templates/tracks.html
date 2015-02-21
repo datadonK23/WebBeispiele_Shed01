@@ -21,6 +21,10 @@
     <link href="../static/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
     
+    <!-- Lightbox2 Plugin by Lokesh Dhakar, http://www.lokeshdhakar.com/-->
+    <!-- Licensed under the Creative Commons Attribution 2.5 License -->
+    <link rel="stylesheet" href="../static/css/lightbox.css">
+    
     <!-- Leaflet -->
     <link rel="stylesheet" href="../static/css/leaflet.css" />
 
@@ -221,39 +225,31 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h2>Auffahrt 1</h2>
+                    <h2>Fotos</h2>
                     <hr class="small">
                     <div class="row">
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="../static/img/a_01_proc.jpg">
-                                </a>
-                            </div>
+                        <div class="col-md-3">
+                            <a href="../static/img/a_01_proc.jpg" data-lightbox="track-lightbox" data-title="Start Auffahrt A" class="thumbnail">
+                                <img class="img-portfolio img-responsive" src="../static/img/a_01_proc.jpg">
+                            </a>
                         </div>
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="../static/img/a_02_proc.jpg">
-                                </a>
-                            </div>
+                        <div class="col-md-3">
+                            <a href="../static/img/a_02_proc.jpg" data-lightbox="track-lightbox" data-title="Ausblick Damberg" class="thumbnail">
+                                <img class="img-portfolio img-responsive" src="../static/img/a_02_proc.jpg">
+                            </a>
                         </div>
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="../static/img/portfolio-3.jpg">
-                                </a>
-                            </div>
+                        <div class="col-md-3">
+                            <a href="../static/img/d_03_proc.jpg" data-lightbox="track-lightbox" data-title="Start Auffahrt C" class="thumbnail">
+                                <img class="img-portfolio img-responsive" src="../static/img/d_03_proc.jpg">
+                            </a>
                         </div>
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="../static/img/portfolio-4.jpg">
-                                </a>
-                            </div>
+                        <div class="col-md-3">
+					       <a href="../static/img/d_01_proc.jpg" data-lightbox="track-lightbox" data-title="Ausblick auf Steyr" class="thumbnail">
+                                <img class="img-portfolio img-responsive" src="../static/img/d_01_proc.jpg">
+                            </a>    
                         </div>
                     </div>
-                    <!-0- /.row (nested) -->
+                    <!-- /.row (nested) -->
                 </div>
                 <!-- /.col-lg-10 -->
             </div>
@@ -261,7 +257,7 @@
         </div>
         <!-- /.container -->
     </section>
-    
+   
     <!-- Footer -->
     <footer>
         <div id="statistics-ref" class="container">
@@ -281,7 +277,10 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="../static/js/bootstrap.min.js"></script>
-
+    
+    <!-- Lightbox2 Plugin -->
+    <script src="../static/js/lightbox.min.js"></script>
+    
     <!-- Custom Theme JavaScript -->
     <script>
     // Closes the sidebar menu
