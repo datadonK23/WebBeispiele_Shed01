@@ -81,38 +81,38 @@
             <!-- /.row -->
             <div class="btn-group btn-group-justified" role="group" aria-label="select-track-w">
                 <div class="btn-group" role="group">
-                    <button type="button" class="btn btn-default"><b>A</b><br>Garsten</button>
+                    <button id="buttonA" type="button" class="btn btn-default"><b>A</b><br>Garsten</button>
                 </div>
                 <div class="btn-group" role="group">
-                    <button type="button" class="btn btn-default"><b>B</b><br>St.Ulrich</button>
+                    <button id="buttonB" type="button" class="btn btn-default"><b>B</b><br>St.Ulrich</button>
                 </div>
                 <div class="btn-group" role="group">
-                    <button type="button" class="btn btn-default"><b>C</b><br>Porscheberg</button>
+                    <button id="buttonC" type="button" class="btn btn-default"><b>C</b><br>Porscheberg</button>
                 </div>
                 <div class="btn-group" role="group">
-                    <button type="button" class="btn btn-default"><b>D</b><br>Bibelweg</button>
+                    <button id="buttonD" type="button" class="btn btn-default"><b>D</b><br>Bibelweg</button>
                 </div>
             </div>
             <div class="btn-group btn-group-justified" role="group" aria-label="select-track-e">
                 <div class="btn-group" role="group">
-                    <button type="button" class="btn btn-default"><b>E</b><br>Kleinraming S&uuml;d</button>
+                    <button id="buttonE" type="button" class="btn btn-default"><b>E</b><br>Kleinraming S&uuml;d</button>
                 </div>
                 <div class="btn-group" role="group">
-                    <button type="button" class="btn btn-default"><b>F</b><br>Kleinraming Nord</button>
+                    <button id="buttonF" type="button" class="btn btn-default"><b>F</b><br>Kleinraming Nord</button>
                 </div>
                 <div class="btn-group" role="group">
-                    <button type="button" class="btn btn-default"><b>G</b><br>Winterh&ouml;he</button>
+                    <button id="buttonG" type="button" class="btn btn-default"><b>G</b><br>Winterh&ouml;he</button>
                 </div>
                 <div class="btn-group" role="group">
-                    <button type="button" class="btn btn-default"><b>H</b><br>Egger</button>
+                    <button id="buttonH" type="button" class="btn btn-default"><b>H</b><br>Egger</button>
                 </div>
                 <div class="btn-group" role="group">
-                    <button type="button" class="btn btn-default"><b>I</b><br>Gmain</button>
+                    <button id="buttonI" type="button" class="btn btn-default"><b>I</b><br>Gmain</button>
                 </div>
             </div>
             <div class="btn-group btn-group-justified" role="group" aria-label="select-toptrack">
                 <div class="btn-group" role="group">
-                    <button type="button" class="btn btn-default"><b>S</b><br> Schoiber</button>
+                    <button id="buttonS" type="button" class="btn btn-default"><b>S</b><br> Schoiber</button>
                 </div>
             </div>
         </div>
@@ -311,6 +311,43 @@
             }
         });
     });
+        
+    // Sending which track is selected
+    //$(function() {
+    $('#buttonA, #buttonB, #buttonC, #buttonD, #buttonE, #buttonF, #buttonG, #buttonH, #buttonI , #buttonS').click(function() {
+        if (this.id == 'buttonA') {
+            alert('Submit A clicked');
+            }
+            else if (this.id == 'buttonB') {
+            alert('Submit B clicked');
+            }
+            else if (this.id == 'buttonC') {
+            alert('Submit C clicked');
+            }
+            else if (this.id == 'buttonD') {
+            alert('Submit D clicked');
+            }
+            else if (this.id == 'buttonE') {
+            alert('Submit E clicked');
+            }
+            else if (this.id == 'buttonF') {
+            alert('Submit F clicked');
+            }
+            else if (this.id == 'buttonG') {
+            alert('Submit G clicked');
+            }
+            else if (this.id == 'buttonH') {
+            alert('Submit H clicked');
+            }
+            else if (this.id == 'buttonI') {
+            alert('Submit I clicked');
+            }
+            else if (this.id == 'buttonS') {
+            alert('Submit S clicked');
+            }
+        }); 
+    //});
+        
     </script>
 
 </body>
