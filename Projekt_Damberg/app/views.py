@@ -15,11 +15,13 @@ def challenge():
 
 @app.route('/tracks')
 def tracks():
-    return render_template('tracks.html')
+    track_name = None #"Auffahrt A  Garsten"
+    return render_template('tracks.html', track_selected=track_name)
 
 @app.route('/routing')
 def routing():
-    return render_template('routing.html')
+    route_waypoints = None #["C", "X", "H", "F", "X", "I", "D", "X", "F", "H", "X", "D", "I", "X", "G", "E", "X", "B", "A", "X", "E", "G", "X", "C", "B", "X", "S"]
+    return render_template('routing.html', waypoints=route_waypoints)
 
 @app.route('/rollofhonor')
 def rollofhonor():

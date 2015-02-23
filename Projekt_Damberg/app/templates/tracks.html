@@ -159,7 +159,14 @@
         <div class="container">
             <div class="row text-center">
                 <div class="col-lg-10 col-lg-offset-1">
-                    <h2>Kennzahlen</h2>
+                    <h2>
+                        {% if track_selected %}
+                            {{ track_selected }}
+                        {% else %}
+                            W&auml;hle Auffahrt
+                        {% endif %}     
+                    </h2>
+                    <h3>Kennzahlen</h3>
                     <hr class="small">
                     <div class="row">
                         <div class="col-md-3 col-sm-6">
@@ -171,7 +178,14 @@
                                 <h4>
                                     <strong>Länge</strong>
                                 </h4>
-                                <p>4.03 km</p>
+                                <p>
+                                    {% if track_selected %}
+                                        3.20
+                                    {% else %}
+                                        0
+                                    {% endif %}
+                                    km
+                                </p>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6">
@@ -183,7 +197,14 @@
                                 <h4>
                                     <strong>Höhenmeter</strong>
                                 </h4>
-                                <p>300 hm</p>
+                                <p>
+                                    {% if track_selected %}
+                                        169
+                                    {% else %}
+                                        0
+                                    {% endif %}
+                                    m
+                                </p>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6">
@@ -195,7 +216,14 @@
                                 <h4>
                                     <strong>Max. Steigung</strong>
                                 </h4>
-                                <p>20.2 &#037;</p>
+                                <p>
+                                    {% if track_selected %}
+                                        18.6
+                                    {% else %}
+                                        0
+                                    {% endif %}
+                                    &#037;
+                                </p>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6">
@@ -207,7 +235,14 @@
                                 <h4>
                                     <strong>&#216; Steigung</strong>
                                 </h4>
-                                <p>9.8 &#037;</p>
+                                <p>
+                                    {% if track_selected %}
+                                        5.61
+                                    {% else %}
+                                        0
+                                    {% endif %}
+                                    &#037;
+                                </p>
                             </div>
                         </div>
                     </div>
