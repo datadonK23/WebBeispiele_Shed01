@@ -16,7 +16,7 @@
    width="40"
    height="60"
    sodipodi:docname="damberg_marker-icon.svg"
-   inkscape:export-filename="/home/donk23/lw_benutzer/GitHub/cartoPlayground/dsAdMap/img/ds_marker-icon.png"
+   inkscape:export-filename="/home/donk23/Workspace/WDir/GitHub/WebBeispiele_Shed01/Projekt_Damberg/app/static/img/marker/damberg_marker-icon.png"
    inkscape:export-xdpi="90"
    inkscape:export-ydpi="90">
   <metadata
@@ -27,7 +27,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -81,7 +81,7 @@
      id="namedview4"
      showgrid="false"
      inkscape:zoom="4.0701756"
-     inkscape:cx="-24.024021"
+     inkscape:cx="-74.390398"
      inkscape:cy="8.8057227"
      inkscape:window-x="-8"
      inkscape:window-y="46"
@@ -131,7 +131,7 @@
          id="path39"
          d="m 119.457,192.65599 c 0,-5.831 -4.83,-10.558 -10.787,-10.558 -5.958,0 -10.787,4.727 -10.787,10.558 0,1.069 0.164,2.102 0.466,3.073 l -0.004,0 0.012,0.024 c 0.479,1.081 10.314,21.089 10.314,21.089 0,0 9.834,-20.008 10.313,-21.091 l 0.012,-0.022 -0.004,0 c 0.301,-0.971 0.465,-2.003 0.465,-3.073 z"
          inkscape:connector-curvature="0"
-         style="fill:#fcaf3e;fill-opacity:1"
+         style="fill:#e4e41c;fill-opacity:1"
          sodipodi:nodetypes="ssscccccccs" />
       <path
          sodipodi:type="arc"

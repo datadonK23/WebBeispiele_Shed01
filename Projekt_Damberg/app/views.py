@@ -3,6 +3,7 @@ Views
 """
 
 from flask import render_template
+from flask import request
 from app import app
 
 @app.route('/')
@@ -27,9 +28,9 @@ def routing():
 def rollofhonor():
     return render_template('rollofhonor.html')
  
-
-"""@app.route('/trackSelected', methods=['POST'])
-def trackSelected():
-    track = "yep"
-    print track
-    return track"""
+"""
+@app.route('/tracksel/<track>', methods=['POST'])
+def tracksel(track=None):
+    track = request.form["trackSelected"]
+    return track
+ """

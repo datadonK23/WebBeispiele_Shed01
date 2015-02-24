@@ -79,42 +79,43 @@
                 </div>
             </div>
             <!-- /.row -->
-            <div class="btn-group btn-group-justified" role="group" aria-label="select-track-w">
+            <div id="buttonGroup" class="btn-group btn-group-justified" role="group" aria-label="select-track-w">
                 <div class="btn-group" role="group">
-                    <button id="buttonA" type="button" class="btn btn-default"><b>A</b><br>Garsten</button>
+                    <button id="buttonA" type="button" class="btn btn-default" name="trackSelect" value="A"><b>A</b><br>Garsten</button>
                 </div>
                 <div class="btn-group" role="group">
-                    <button id="buttonB" type="button" class="btn btn-default"><b>B</b><br>St.Ulrich</button>
+                    <button id="buttonB" type="button" class="btn btn-default" name="trackSelect" value="B"><b>B</b><br>St.Ulrich</button>
                 </div>
                 <div class="btn-group" role="group">
-                    <button id="buttonC" type="button" class="btn btn-default"><b>C</b><br>Porscheberg</button>
+                    <button id="buttonC" type="button" class="btn btn-default" name="trackSelect" value="C"><b>C</b><br>Porscheberg</button>
                 </div>
                 <div class="btn-group" role="group">
-                    <button id="buttonD" type="button" class="btn btn-default"><b>D</b><br>Bibelweg</button>
+                    <button id="buttonD" type="button" class="btn btn-default" name="trackSelect" value="D"><b>D</b><br>Bibelweg</button>
                 </div>
             </div>
             <div class="btn-group btn-group-justified" role="group" aria-label="select-track-e">
                 <div class="btn-group" role="group">
-                    <button id="buttonE" type="button" class="btn btn-default"><b>E</b><br>Kleinraming S&uuml;d</button>
+                    <button id="buttonE" type="button" class="btn btn-default" name="trackSelect" value="E"><b>E</b><br>Kleinraming S&uuml;d</button>
                 </div>
                 <div class="btn-group" role="group">
-                    <button id="buttonF" type="button" class="btn btn-default"><b>F</b><br>Kleinraming Nord</button>
+                    <button id="buttonF" type="button" class="btn btn-default" name="trackSelect" value="F"><b>F</b><br>Kleinraming Nord</button>
                 </div>
                 <div class="btn-group" role="group">
-                    <button id="buttonG" type="button" class="btn btn-default"><b>G</b><br>Winterh&ouml;he</button>
+                    <button id="buttonG" type="button" class="btn btn-default" name="trackSelect" value="G"><b>G</b><br>Winterh&ouml;he</button>
                 </div>
                 <div class="btn-group" role="group">
-                    <button id="buttonH" type="button" class="btn btn-default"><b>H</b><br>Egger</button>
+                    <button id="buttonH" type="button" class="btn btn-default" name="trackSelect" value="H"><b>H</b><br>Egger</button>
                 </div>
                 <div class="btn-group" role="group">
-                    <button id="buttonI" type="button" class="btn btn-default"><b>I</b><br>Gmain</button>
+                    <button id="buttonI" type="button" class="btn btn-default" name="trackSelect" value="I"><b>I</b><br>Gmain</button>
                 </div>
             </div>
             <div class="btn-group btn-group-justified" role="group" aria-label="select-toptrack">
                 <div class="btn-group" role="group">
-                    <button id="buttonS" type="button" class="btn btn-default"><b>S</b><br> Schoiber</button>
+                    <button id="buttonS" type="button" class="btn btn-default" name="trackSelect" value="S"><b>S</b><br> Schoiber</button>
                 </div>
             </div>
+            <input type="hidden" name="trackSelect" value={{request.form["trackSelect"]}} />
         </div>
         <!-- /.container -->
     </section>
@@ -147,6 +148,37 @@
                     var popupContent = L.popup({keepInView:true,closeButton:true}).setContent(popupHTML);
 
                     var dambergMarker = L.marker([48.003426, 14.4599396], {icon: dambergIcon}).addTo(map).bindPopup(popupContent);
+                    
+                    var trackA = [{
+                        "type": "Feature",
+                        "geometry": {
+                            "type": "LineString",
+                            "coordinates": [
+                                [14.4151629, 48.015429], [14.4155828, 48.0152341], [14.4159379, 48.0149695], [14.4170399, 48.0137624], [14.4180087, 48.0127249], [14.4183886, 48.0123786], [14.4187549, 48.012252], [14.4190626, 48.0121732], [14.4194186, 48.0121777], [14.4210574, 48.0127859], [14.4215724, 48.0130434], [14.4218299, 48.0131292], [14.4225594, 48.0130863], [14.4230315, 48.0131292], [14.4242331, 48.0129147], [14.4258639, 48.0128718], [14.4260356, 48.0128718], [14.4268939, 48.0128718], [14.4281384, 48.0125713], [14.4291255, 48.0124426], [14.4295373, 48.012295], [14.4299343, 48.0121677], [14.4306734, 48.0120725], [14.4312793, 48.0119803], [14.4316146, 48.0119705], [14.4319579, 48.0120134], [14.4327733, 48.0124426], [14.4338977, 48.0127084], [14.4351336, 48.0130005], [14.4363321, 48.0132668], [14.4366786, 48.0133438], [14.4371936, 48.0133438], [14.4378802, 48.013258], [14.4385669, 48.0131292], [14.4396827, 48.0126143], [14.439732, 48.0126056], [14.4399402, 48.0125713], [14.4412276, 48.0127001], [14.4416997, 48.0127859], [14.4422052, 48.0130548], [14.4432851, 48.0136292], [14.4448237, 48.0144654], [14.444989, 48.0145554], [14.4460645, 48.0151406], [14.4470212, 48.0156612], [14.4471499, 48.0158758], [14.4470212, 48.0161333], [14.4470641, 48.0162621], [14.4477593, 48.0167487], [14.4479224, 48.0168629], [14.4483087, 48.0171633], [14.4486116, 48.0174229]
+                            ]
+                        },
+                        "properties": {
+                            "name": "A",
+                            "len": "3023.73949"
+                        }
+                    }]
+                    
+                    var trackStyle = {
+                        "color": "#00ffff",
+                        "weight": 2,
+                        "opacity": 1
+                    };
+                    
+                    var trackGlow = {
+                        "color": "#00ffff",
+                        "weight": 10,
+                        "opacity": 0.2
+                    };
+                    
+                    var glowLayer = L.geoJson(trackA, {style: trackGlow}).addTo(map);
+                    var geoJsonLayer = L.geoJson(trackA, {style: trackStyle}).addTo(map);
+
+
                     
                 </script>
 		      </div>      
@@ -382,6 +414,7 @@
             }
         }); 
     //});
+    
         
     </script>
 
