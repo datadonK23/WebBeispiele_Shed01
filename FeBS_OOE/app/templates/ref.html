@@ -7,28 +7,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="author" content="Thomas Treml (datadonk23@gmail.com)">
+    <meta name="author" content="">
 
-    <title>Festen, Burgen, Schl&ouml;sser in Ober&ouml;sterrecih</title>
+    <title>Bare - Start Bootstrap Template</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="../static/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="../static/css/custom.css" rel="stylesheet">
-    
-    <!-- Leaflet -->
-    <link href="../static/css/leaflet.css" rel="stylesheet" >
-    
+    <style>
+    body {
+        padding-top: 70px;
+        /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    }
+    </style>
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    
-</head>
 
+</head>
+    
 <body>
 
     <!-- Navigation -->
@@ -42,22 +44,22 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Festen, Burgen, Schl&ouml;sser in O&Ouml;</a>
+                <a class="navbar-brand" href="#">Start Bootstrap</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li>
-                        <a href="#map">Karte</a>
+                     <li>
+                        <a href="/#map">Karte</a>
                     </li>
                     <li>
-                        <a href="/ref#about">&Uuml;ber</a>
+                        <a href="#about">&Uuml;ber</a>
                     </li>
                     <li>
-                        <a href="/ref#ref">Referenzen</a>
+                        <a href="#ref">Referenzen</a>
                     </li>
                     <li>
-                        <a href="/ref#imprint">Impressum</a>
+                        <a href="#imprint">Impressum</a>
                     </li>
                 </ul>
             </div>
@@ -65,31 +67,46 @@
         </div>
         <!-- /.container -->
     </nav>
-    
-    
-        <!-- Map -->
-        <div id="map"></div>
 
-        <!-- Script loading -->
-        <script src="../static/js/leaflet.js"></script>
+    <!-- Page Content -->
+    <div class="container">
 
-        <script>
-            /* OSM */
-            var map = new L.map('map', {attributionControl: false}).setView([48.015, 14.448], 12);
-            L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-            attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-            }).addTo(map);
-            L.control.attribution({position: 'bottomleft'}).addTo(map);
+        <div id="about" class="row">
+            <div class="col-lg-12 text-center">
+                <h1>A Bootstrap Starter Template</h1>
+                <p class="lead">Complete with pre-defined file paths that you won't have to change!</p>
+                <ul class="list-unstyled">
+                    <li>Bootstrap v3.3.1</li>
+                    <li>jQuery v1.11.1</li>
+                </ul>
+            </div>
+        </div>
+        <!-- /.row -->
+        <div id="ref" class="row">
+            <div class="col-lg-12 text-center">
+                <h1>A Bootstrap Starter Template</h1>
+                <p class="lead">Complete with pre-defined file paths that you won't have to change!</p>
+                <ul class="list-unstyled">
+                    <li>Bootstrap v3.3.1</li>
+                    <li>jQuery v1.11.1</li>
+                </ul>
+            </div>
+        </div>
+        <!-- /.row -->
+        <div id="imprint" class="row">
+            <div class="col-lg-12 text-center">
+                <h1>A Bootstrap Starter Template</h1>
+                <p class="lead">Complete with pre-defined file paths that you won't have to change!</p>
+                <ul class="list-unstyled">
+                    <li>Bootstrap v3.3.1</li>
+                    <li>jQuery v1.11.1</li>
+                </ul>
+            </div>
+        </div>
+        <!-- /.row -->
 
-            var polygon = L.polygon([
-                        [47.9961400, 14.4081392], [48.0101886, 14.4189970], [48.0203225, 14.4184949], 
-                        [48.0293111, 14.4260147], [48.0349419, 14.4350542], [48.0397649, 14.4495268],
-                        [48.0360819, 14.4683219], [48.0251497, 14.4744784], [48.0001431, 14.4945388],
-                        [48.0006298, 14.4732866], [47.9940009, 14.4611513], [47.9916805, 14.4479015],
-                        [47.9807403, 14.4427007], [47.9889457, 14.4162012], [47.9961400, 14.4081392]
-                        ], {stroke:false, fillColor:"#00ffff", fillOpacity:"0.3"}).addTo(map);
-        </script>
-    
+    </div>
+    <!-- /.container -->
 
     <!-- jQuery Version 1.11.1 -->
     <script src="../static/js/jquery.js"></script>
