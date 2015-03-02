@@ -1,0 +1,8 @@
+Links not parseable:
+ex.php?title=Schloss_Aubach&action=edit&redlink=1
+ex.php?title=Burgruine_Klammhof&action=edit&redlink=1
+Wolfern#Schloss_Losensteinleit.28h.29en
+
+Missing coordinates:
+Burg Kürnberg
+Turmbefestigung Linz
