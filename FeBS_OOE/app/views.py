@@ -5,7 +5,8 @@ Views
 from flask import render_template
 from app import app
 from app import connection
-from models import get_data
+#from models import get_data
+from models import Features
 
 @app.route('/')
 def index():
@@ -18,8 +19,10 @@ def ref():
 # test page
 @app.route('/test')
 def test():
-    document = get_data(connection)
-    name = document["name"].encode()
-    loc = document["loc"]["coordinates"]
-    data = [name, loc]
-    return render_template('ref.html', data=data)
+    features = Features(connection)
+    documents = features.get_unbekannt()
+    namelist = []
+    for document in documents:
+        name = document["name"]
+        namelist.append(name)
+    return render_template('ref.html', data=namelist)
