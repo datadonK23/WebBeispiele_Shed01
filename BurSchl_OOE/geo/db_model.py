@@ -30,9 +30,9 @@ def create_index(collection):
     from pymongo import GEOSPHERE as GEOIX
     collection.create_index([("loc", GEOIX)])
 
-def insert_db(collection):
+def insert_point(collection):
     """
-    Shuffle data from GeoJSON to DB Document and insert into DB 
+    Shuffle point data from GeoJSON to DB Document and insert into DB 
     """
     # load geojson file
     with open("../data/febs_wiki.geojson") as f:
@@ -53,13 +53,37 @@ def insert_db(collection):
         # insert in db collection        
         collection.insert(feature_dict)
 
-def get_castle(db):
+def insert_poly(collection):
+    """
+    Shuffle polygon data from GeoJSON to DB Document and insert into DB 
+    """
+    # load geojson file
+    with open("../data/landesgrenze_WGS84.geojson") as f:
+        data = json.load(f)
+    
+    # geojson to mongo doc
+    for feature in data["features"]:
+        feature_dict = {}
+        feature_dict["name"] = "state_boundary"
+        feature_dict["loc"] = feature["geometry"]
+        
+        # insert in db collection        
+        collection.insert(feature_dict)
+
+def get_testdata(db):
     """ test fu """
-    return db.febs.find_one({"name": "Schloss Wolfsegg"})
+    feat = [db.febs.find_one({"name": "Schloss Wolfsegg"})]
+    feat.append(db.bound.find_one())
+    return feat
 
 db = get_db()
 set_collection(db, "febs")
+set_collection(db, "bound")
 coll = get_collection(db, "febs")
-insert_db(coll)
+insert_point(coll)
+create_index(coll)
+coll = get_collection(db, "bound")
+insert_poly(coll)
 create_index(coll)
 
+print "...done"

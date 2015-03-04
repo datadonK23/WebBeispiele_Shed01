@@ -1,16 +1,17 @@
-FeBS_OOE
-========
+BurSchl_OOE
+===========
 
-Festen Burgen Schloesser in OOE - Darstellungen von Orten, an denen Festen, Burgen oder Schloesser in OOE stehen.
+Darstellung von Burgen und Schloesser in Oberösterreich.
 
 ## Repository enthält:
 Ressourcendateien, Anwendungen und Beispieldaten (falls keine Downloadanweisung in den Projekten enthalten ist) aus den Beispielen des Shed01 Blogs (http://shed01.blogspot.co.at/):
 * LICENCE: Lizenztext
 * NOTICE: Notice Datei
 * ./app - App directory
-* ./data - Data directory
-* ./geo - Geo processing directory
-* ./instance - Directory for secret configs
+* ./data - Data directory - references in "./data/ref.txt"
+* ./geo - Geoprocessing directory
+* ./graphics - Graphic design directory
+* ./instance - Directory for secret configs [not in GitHub]
 * config.py - Config of app
 * requirements.txt - Python requirements for app
 * run.py - run to launch the app

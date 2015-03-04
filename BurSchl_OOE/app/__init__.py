@@ -13,5 +13,7 @@ app.config.from_pyfile("config.py")
 connection = Connection(app.config['MONGODB_HOST'],
                         app.config['MONGODB_PORT'])
 
+mapquest_key = app.config["MAPQUEST_KEY"]
+
 from app import models
 from app import views

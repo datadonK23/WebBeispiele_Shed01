@@ -4,13 +4,6 @@ Models
 
 from app import connection
 
-"""
-def get_data(con = connection):
-    coll = con.BSOOE.febs
-    data = coll.find_one({"name": "Schloss Windhaag"})
-    return data
-"""
-
 class Features:
     """
     Features from DB
@@ -33,5 +26,7 @@ class Features:
         unbekannte = coll.find({"type": "unb"})
         return unbekannte
         
-    def get_boundaries():
-        pass
+    def get_boundaries(self):
+        coll = connection.BSOOE.bound
+        state_boundary = coll.find({"name": "state_boundary"})
+        return state_boundary
