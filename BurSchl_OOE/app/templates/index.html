@@ -21,11 +21,16 @@
     <link href="../static/css/leaflet.css" rel="stylesheet" >
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="../static/css/L.Control.Locate.min.css" rel="stylesheet"/>
+    <link href="../static/css/MarkerCluster.Default.css" rel="stylesheet"/>
     <!--[if lt IE 9]>
         <link rel="stylesheet" href="../static/css/L.Control.Locate.ie.min.css"/>
     <![endif]-->
 
-    <script src="//rawgithub.com/domoritz/leaflet-locatecontrol/gh-pages/dist/L.Control.Locate.min.js" ></script>
+    <!-- Map Scripts -->
+    <script src="../static/js/leaflet.js"></script>
+    <script src="http://open.mapquestapi.com/sdk/leaflet/v1.s/mq-map.js?key={{ MAPQUEST_KEY }}"></script>
+    <script src="../static/js/L.Control.Locate.min.js"></script>
+    <script src="../static/js/leaflet.markercluster.js"></script>
     
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -75,12 +80,7 @@
     
     
         <!-- Map -->
-        <div id="map"></div>
-
-        <!-- Script loading -->
-        <script src="../static/js/leaflet.js"></script>
-        <script src="http://open.mapquestapi.com/sdk/leaflet/v1.s/mq-map.js?key={{ MAPQUEST_KEY }}"></script>
-        <script src="../static/js/L.Control.Locate.min.js" ></script>
+        <div id="map"></div>     
 
         <script>
             /* MapQuest Open */
@@ -91,7 +91,7 @@
             
             /* State Boundary */
             var polygon = L.polygon( {{ stateBoundCoord }}, 
-                                    {smoothFactor: 8,
+                                    {smoothFactor: 5,
                                     stroke: true, weight: 3, color: "#00ffff", opacity: 0.5,
                                     fillColor: "#00ffff", fillOpacity: "0.1"}).addTo(map);
             
@@ -107,6 +107,32 @@
 
             var dambergMarker = L.marker([48.003426, 14.4599396], {icon: dambergIcon}).addTo(map).bindPopup(popupContent);
             */
+            
+            var burgIconTempl = L.Icon.extend({
+                options: {
+                    iconSize: [32, 32]
+                }
+            });
+            
+            var burgIcon = new burgIconTempl({iconUrl: "../static/img/icon_burg.png"});
+            
+            var markers = new L.MarkerClusterGroup({showCoverageOnHover: false});
+            
+            var test = {{ burgen|tojson|safe }}
+            var test2 = test[0][1]
+            
+            {% for burg in burgen %}
+                var feature = {{ burg|safe }}
+                var name = feature[name]
+                console.log(name)
+                /*var title = burg[name]
+                var coord = burg[coord]
+                var marker = new L.Marker(new L.LatLng(coord), {icon: burgIcon, title: title});
+                marker.bindPopup(title);
+                markers.addLayer(marker);*/
+            {% endfor %}
+            
+            map.addLayer(markers);
             
             L.control.locate({drawCircle: false, locateOptions: {maxZoom: 14}}).addTo(map);
             

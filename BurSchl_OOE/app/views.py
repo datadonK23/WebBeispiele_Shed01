@@ -6,8 +6,8 @@ from flask import render_template
 from app import app
 from app import connection
 from app import mapquest_key
-#from models import get_data
 from models import Features
+import json
 
 @app.route('/')
 def index():
@@ -25,8 +25,19 @@ def index():
             latlong = [lat, lon]
             stateBoundCoord.append(latlong)
     # get features (Burgen)
-    #FIXME
-    return render_template('index.html', MAPQUEST_KEY = map_key, 
+    burgen = features.get_burgen()
+    burgenList = []    
+    for document in burgen:
+        feature = {}
+        feature["name"] = document["name"]
+        feature["url"] = document["url"]
+        lon = round(document["loc"]["coordinates"][0], 7)
+        lat = round(document["loc"]["coordinates"][1], 7)
+        feature["coord"] = [lat, lon]
+        burgenList.append(feature)
+    
+    return render_template('index.html', MAPQUEST_KEY = map_key,
+                           burgen = map(json.dumps, burgenList),
                            stateBoundCoord=stateBoundCoord)
 
 @app.route('/ref')
@@ -42,5 +53,16 @@ def test():
     for document in documents:
         name = document["name"]
         namelist.append(name)
+        
+    burgen = features.get_burgen()
+    burgenList = []    
+    for document in burgen:
+        feature = {}
+        feature["name"] = document["name"]
+        feature["url"] = document["url"]
+        lon = round(document["loc"]["coordinates"][0], 7)
+        lat = round(document["loc"]["coordinates"][1], 7)
+        feature["coord"] = [lat, lon]
+        burgenList.append(feature)
     
-    return render_template('ref.html', data=namelist)
+    return render_template('ref.html', data=burgenList)
