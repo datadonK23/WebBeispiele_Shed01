@@ -95,42 +95,27 @@
                                     stroke: true, weight: 3, color: "#00ffff", opacity: 0.5,
                                     fillColor: "#00ffff", fillOpacity: "0.1"}).addTo(map);
             
-            /* Marker Burgen
-            var dambergIcon = L.icon({
-                iconUrl: "./static/img/marker/damberg_marker-icon.png",
-                iconSize:     [40, 60],
-                iconAnchor:   [20, 60],
-                popupAnchor:  [0, -60],});
+         
+            
+            var burgenFeatures = {{ burgenList|tojson|safe }};
+            
 
-            var popupHTML = '<b>Damberg</b><br>H&ouml;he: 881m';
-            var popupContent = L.popup({keepInView:true,closeButton:true}).setContent(popupHTML);
-
-            var dambergMarker = L.marker([48.003426, 14.4599396], {icon: dambergIcon}).addTo(map).bindPopup(popupContent);
-            */
             
-            var burgIconTempl = L.Icon.extend({
-                options: {
-                    iconSize: [32, 32]
-                }
-            });
-            
-            var burgIcon = new burgIconTempl({iconUrl: "../static/img/icon_burg.png"});
-            
+            /* Marker Burgen */
             var markers = new L.MarkerClusterGroup({showCoverageOnHover: false});
             
-            var test = {{ burgen|tojson|safe }}
-            var test2 = test[0][1]
+            var burgIcon = L.icon({
+                iconUrl: "./static/img/burg_marker.png",
+                iconSize:     [40, 40],
+                iconAnchor:   [20, 40],
+                popupAnchor:  [0, -40],});
+
+            var popupHTML = "Test";
+            var popupContent = L.popup({keepInView:true,closeButton:true}).setContent(popupHTML);
+
+            var burgMarker = L.marker([48.003426, 14.4599396], {icon: burgIcon}).addTo(map).bindPopup(popupContent);
             
-            {% for burg in burgen %}
-                var feature = {{ burg|safe }}
-                var name = feature[name]
-                console.log(name)
-                /*var title = burg[name]
-                var coord = burg[coord]
-                var marker = new L.Marker(new L.LatLng(coord), {icon: burgIcon, title: title});
-                marker.bindPopup(title);
-                markers.addLayer(marker);*/
-            {% endfor %}
+            markers.addLayer(burgMarker);
             
             map.addLayer(markers);
             

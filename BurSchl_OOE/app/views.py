@@ -7,7 +7,6 @@ from app import app
 from app import connection
 from app import mapquest_key
 from models import Features
-import json
 
 @app.route('/')
 def index():
@@ -25,19 +24,18 @@ def index():
             latlong = [lat, lon]
             stateBoundCoord.append(latlong)
     # get features (Burgen)
-    burgen = features.get_burgen()
-    burgenList = []    
+    burgen = features.get_burgen()        
+    burgenList = []
     for document in burgen:
         feature = {}
-        feature["name"] = document["name"]
-        feature["url"] = document["url"]
-        lon = round(document["loc"]["coordinates"][0], 7)
+        feature["name"] = document["name"].encode("utf-8")
+        feature["url"] = document["url"].encode("utf-8")
+        lng = round(document["loc"]["coordinates"][0], 7)
         lat = round(document["loc"]["coordinates"][1], 7)
-        feature["coord"] = [lat, lon]
+        feature["coord"] = [lat, lng]
         burgenList.append(feature)
-    
     return render_template('index.html', MAPQUEST_KEY = map_key,
-                           burgen = map(json.dumps, burgenList),
+                           burgenList=burgenList,
                            stateBoundCoord=stateBoundCoord)
 
 @app.route('/ref')
@@ -55,14 +53,13 @@ def test():
         namelist.append(name)
         
     burgen = features.get_burgen()
-    burgenList = []    
+    featureList = []
     for document in burgen:
         feature = {}
-        feature["name"] = document["name"]
-        feature["url"] = document["url"]
+        feature["name"] = document["name"].encode("utf-8")
+        feature["url"] = document["url"].encode("utf-8")
+        featureList.append(feature)
         lon = round(document["loc"]["coordinates"][0], 7)
         lat = round(document["loc"]["coordinates"][1], 7)
         feature["coord"] = [lat, lon]
-        burgenList.append(feature)
-    
-    return render_template('ref.html', data=burgenList)
+    return render_template('ref.html', data=featureList)
