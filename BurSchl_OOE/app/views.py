@@ -34,8 +34,19 @@ def index():
         lat = round(document["loc"]["coordinates"][1], 7)
         feature["coord"] = [lat, lng]
         burgenList.append(feature)
+    # get features (Burgen)
+    schloesser = features.get_schloesser()        
+    schlossList = []
+    for document in schloesser:
+        feature = {}
+        feature["name"] = document["name"].encode("utf-8")
+        feature["url"] = document["url"].encode("utf-8")
+        lng = round(document["loc"]["coordinates"][0], 7)
+        lat = round(document["loc"]["coordinates"][1], 7)
+        feature["coord"] = [lat, lng]
+        schlossList.append(feature)
     return render_template('index.html', MAPQUEST_KEY = map_key,
-                           burgenList=burgenList,
+                           burgenList=burgenList, schlossList=schlossList,
                            stateBoundCoord=stateBoundCoord)
 
 @app.route('/ref')

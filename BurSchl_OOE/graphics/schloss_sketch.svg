@@ -24,9 +24,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.979899"
-     inkscape:cx="96.728371"
-     inkscape:cy="39.9656"
+     inkscape:zoom="5.6"
+     inkscape:cx="59.744812"
+     inkscape:cy="54.251314"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -36,7 +36,9 @@
      inkscape:window-x="-8"
      inkscape:window-y="46"
      inkscape:window-maximized="1"
-     inkscape:snap-grids="true">
+     inkscape:snap-grids="true"
+     showguides="true"
+     inkscape:guide-bbox="true">
     <inkscape:grid
        type="xygrid"
        id="grid2991"
@@ -53,7 +55,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -72,7 +74,7 @@
     </g>
     <path
        style="fill:#000000;fill-opacity:1;stroke:none"
-       d="M 69 0 L 51 18 L 51 48 L 19.5 48 L 19.5 102 L 51 102 L 63 102 L 63 90 C 63 86.686292 65.686292 84 69 84 C 72.313708 84 75 86.686292 75 90 L 75 102 L 87 102 L 118.5 102 L 118.5 48 L 87 48 L 87 18 L 69 0 z M 60 24 L 66 24 L 66 36 L 60 36 L 60 24 z M 72 24 L 78 24 L 78 36 L 72 36 L 72 24 z M 9 30 L 0 42 L 0 48 L 0 102 L 18 102 L 18 48 L 18 42 L 9 30 z M 129 30 L 120 42 L 120 48 L 120 102 L 138 102 L 138 48 L 138 42 L 129 30 z M 27 61 L 39 61 L 39 73 L 27 73 L 27 61 z M 48 61 L 60 61 L 60 73 L 48 73 L 48 61 z M 78 61 L 90 61 L 90 73 L 78 73 L 78 61 z M 99 61 L 111 61 L 111 73 L 99 73 L 99 61 z "
+       d="M 68 0 L 68 19.1875 L 54 36 L 54 60 L 16.5 60 L 16.5 102 L 51 102 L 63 102 L 63 90 C 63 86.686292 65.686292 84 69 84 C 72.313708 84 75 86.686292 75 90 L 75 102 L 87 102 L 121.5 102 L 121.5 60 L 84 60 L 84 36 L 70 19.1875 L 70 12 L 78 12 L 78 18 L 87 18 L 87 24 L 96 24 L 96 12 L 87 12 L 87 6 L 78 6 L 78 0 L 70 0 L 69 0 L 68 0 z M 60 39 L 66 39 L 66 51 L 60 51 L 60 39 z M 72 39 L 78 39 L 78 51 L 72 51 L 72 39 z M 7.5 42 L 0 54 L 0 102 L 15 102 L 15 54 L 7.5 42 z M 130.5 42 L 123 54 L 123 102 L 138 102 L 138 54 L 130.5 42 z M 26.5 67 L 38.5 67 L 38.5 77 L 26.5 77 L 26.5 67 z M 47.5 67 L 59.5 67 L 59.5 77 L 47.5 77 L 47.5 67 z M 78.5 67 L 90.5 67 L 90.5 77 L 78.5 77 L 78.5 67 z M 99.5 67 L 111.5 67 L 111.5 77 L 99.5 77 L 99.5 67 z "
        transform="translate(0,950.3622)"
        id="rect3007" />
   </g>
