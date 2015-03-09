@@ -23,7 +23,7 @@ def index():
             lat = round(coord[1], 7)
             latlong = [lat, lon]
             stateBoundCoord.append(latlong)
-    # get features (Burgen)
+    # get and process features (Burgen)
     burgen = features.get_burgen()        
     burgenList = []
     for document in burgen:
@@ -34,7 +34,7 @@ def index():
         lat = round(document["loc"]["coordinates"][1], 7)
         feature["coord"] = [lat, lng]
         burgenList.append(feature)
-    # get features (Burgen)
+    # get and process features (Schloesser)
     schloesser = features.get_schloesser()        
     schlossList = []
     for document in schloesser:
@@ -45,8 +45,20 @@ def index():
         lat = round(document["loc"]["coordinates"][1], 7)
         feature["coord"] = [lat, lng]
         schlossList.append(feature)
+    # get and process features (Unklassifiziert)
+    unclassifiedFeat = features.get_unbekannt()    
+    unbList = []
+    for document in unclassifiedFeat:
+        feature = {}
+        feature["name"] = document["name"].encode("utf-8")
+        feature["url"] = document["url"].encode("utf-8")
+        lng = round(document["loc"]["coordinates"][0], 7)
+        lat = round(document["loc"]["coordinates"][1], 7)
+        feature["coord"] = [lat, lng]
+        unbList.append(feature)
     return render_template('index.html', MAPQUEST_KEY = map_key,
                            burgenList=burgenList, schlossList=schlossList,
+                           unbList=unbList,
                            stateBoundCoord=stateBoundCoord)
 
 @app.route('/ref')

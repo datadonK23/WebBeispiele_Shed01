@@ -93,11 +93,12 @@
             var polygon = L.polygon( {{ stateBoundCoord }}, 
                                     {smoothFactor: 5,
                                     stroke: true, weight: 3, color: "#00ffff", opacity: 0.5,
-                                    fillColor: "#00ffff", fillOpacity: "0.1"}).addTo(map);
+                                    fillColor: "#00ffff", fillOpacity: "0.0"}).addTo(map);
             
          	/* Import Features */
             var burgenFeatures = {{ burgenList|tojson|safe }};
             var schlossFeatures = {{ schlossList|tojson|safe }};
+            var unbFeatures = {{ unbList|tojson|safe }};
             
             /* Marker Cluster */
             var markers = new L.MarkerClusterGroup({showCoverageOnHover: false, maxClusterRadius: 80});
@@ -105,16 +106,23 @@
             /* Marker Icon Burgen */
             var burgIcon = L.icon({
                 iconUrl: "./static/img/burg_marker.png",
-                iconSize:     [32, 32],
-                iconAnchor:   [16, 32],
-                popupAnchor:  [0, -32],});
+                iconSize:     [48, 48],
+                iconAnchor:   [24, 48],
+                popupAnchor:  [0, -48],});
 
             /* Marker Icon Schloesser*/
             var schlossIcon = L.icon({
                 iconUrl: "./static/img/schloss_marker.png",
-                iconSize:     [32, 32],
-                iconAnchor:   [16, 32],
-                popupAnchor:  [0, -32],});
+                iconSize:     [48, 48],
+                iconAnchor:   [24, 48],
+                popupAnchor:  [0, -48],});
+
+            /* Marker Icon Unklassifiziert*/
+            var unbIcon = L.icon({
+                iconUrl: "./static/img/andere_marker.png",
+                iconSize:     [48, 48],
+                iconAnchor:   [24, 48],
+                popupAnchor:  [0, -48],});
 
             /* Markers Burgen */
             for (i = 0; i < burgenFeatures.length; ++i) {
@@ -136,6 +144,17 @@
                 var schlossMarker = L.marker(schlossFeatures[i]["coord"], {icon: schlossIcon}).bindPopup(popupContent);
                 
                 markers.addLayer(schlossMarker);
+            }
+
+            /* Markers Unklassifiziert */
+            for (i = 0; i < unbFeatures.length; ++i) {
+                var popupHTML = schlossFeatures[i]["name"] + 
+                	"<br> <a href=" + unbFeatures[i]["url"] + " target='_blank'>" +  unbFeatures[i]["url"] + "</a>";
+                var popupContent = L.popup({keepInView:true,closeButton:true}).setContent(popupHTML);
+
+                var unbMarker = L.marker(unbFeatures[i]["coord"], {icon: unbIcon}).bindPopup(popupContent);
+                
+                markers.addLayer(unbMarker);
             }
  
             map.addLayer(markers);
