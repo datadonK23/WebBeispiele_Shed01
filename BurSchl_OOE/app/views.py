@@ -56,9 +56,21 @@ def index():
         lat = round(document["loc"]["coordinates"][1], 7)
         feature["coord"] = [lat, lng]
         unbList.append(feature)
+    # get and process nearest features
+    myCoords = [13.964049, 48.136443]
+    nearestFeat = features.get_nearest(myCoords)
+    nearestList = []
+    for document in nearestFeat:
+        feature = {}
+        feature["name"] = document["name"].encode("utf-8")
+        feature["url"] = document["url"].encode("utf-8")
+        lng = round(document["loc"]["coordinates"][0], 7)
+        lat = round(document["loc"]["coordinates"][1], 7)
+        feature["coord"] = [lat, lng]
+        nearestList.append(feature)
     return render_template('index.html', MAPQUEST_KEY = map_key,
                            burgenList=burgenList, schlossList=schlossList,
-                           unbList=unbList,
+                           unbList=unbList, nearestList=nearestList,
                            stateBoundCoord=stateBoundCoord)
 
 @app.route('/ref')

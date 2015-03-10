@@ -103,6 +103,7 @@
             var burgenFeatures = {{ burgenList|tojson|safe }};
             var schlossFeatures = {{ schlossList|tojson|safe }};
             var unbFeatures = {{ unbList|tojson|safe }};
+            var nearFeatures = {{ nearestList|tojson|safe }};
             
             /* Marker Cluster */
             var markers = new L.MarkerClusterGroup({showCoverageOnHover: false, maxClusterRadius: 80});

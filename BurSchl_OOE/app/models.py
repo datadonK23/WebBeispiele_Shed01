@@ -25,6 +25,15 @@ class Features:
         coll = connection.BSOOE.febs
         unbekannte = coll.find({"type": "unb"})
         return unbekannte
+    
+    def get_nearest(self, myCoords=[13.964049, 48.136443]):
+        coll = connection.BSOOE.febs
+        nearest_list = []
+        myLoc = {"$geometry":{"type":"Point", "coordinates": myCoords}}
+        query = coll.find({"loc": {"$near": myLoc}}).limit(3)
+        for doc in query:
+            nearest_list.append(doc)
+        return nearest_list
         
     def get_boundaries(self):
         coll = connection.BSOOE.bound
