@@ -3,12 +3,13 @@ Views
 """
 
 from flask import render_template
+from flask import request
 from app import app
 from app import connection
 from app import mapquest_key
 from models import Features
 
-@app.route('/')
+@app.route("/")
 def index():
     map_key = mapquest_key
     # connect to model    
@@ -68,33 +69,20 @@ def index():
         lat = round(document["loc"]["coordinates"][1], 7)
         feature["coord"] = [lat, lng]
         nearestList.append(feature)
-    return render_template('index.html', MAPQUEST_KEY = map_key,
+    return render_template("index.html", MAPQUEST_KEY = map_key,
                            burgenList=burgenList, schlossList=schlossList,
                            unbList=unbList, nearestList=nearestList,
                            stateBoundCoord=stateBoundCoord)
 
-@app.route('/ref')
+@app.route("/ref")
 def ref():
-    return render_template('ref.html')
+    return render_template("ref.html")
 
-# test page
-@app.route('/test')
-def test():
-    features = Features(connection)
-    documents = features.get_burgen()
-    namelist = []
-    for document in documents:
-        name = document["name"]
-        namelist.append(name)
-        
-    burgen = features.get_burgen()
-    featureList = []
-    for document in burgen:
-        feature = {}
-        feature["name"] = document["name"].encode("utf-8")
-        feature["url"] = document["url"].encode("utf-8")
-        featureList.append(feature)
-        lon = round(document["loc"]["coordinates"][0], 7)
-        lat = round(document["loc"]["coordinates"][1], 7)
-        feature["coord"] = [lat, lon]
-    return render_template('ref.html', data=featureList)
+# Location Request Test
+@app.route("/loc/near/", methods= ["POST"])
+def near():
+    lat = request.form["lat"]
+    lng = request.form["lng"]
+    coords = [lng, lat]
+    print coords
+    return str(coords)

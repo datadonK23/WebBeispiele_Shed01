@@ -165,8 +165,19 @@
             map.addLayer(markers);
 
             /* Locate User */
-            L.control.locate({drawCircle: false, locateOptions: {maxZoom: 14}}).addTo(map);
+            var locUser = L.control.locate({drawCircle: false, locateOptions: {maxZoom: 14}}).addTo(map);
             
+            /* Send date */
+            map.addOneTimeEventListener("locationfound", function(e) {
+                $.ajax("/loc/near/", {
+                  type: "POST",
+                  data: {
+                    lat: e.latlng.lat,
+                    lng: e.latlng.lng
+                  }
+                });
+            });
+
         </script>
     
 
