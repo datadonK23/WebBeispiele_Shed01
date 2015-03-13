@@ -83,11 +83,23 @@
         <div id="map"></div>     
 
         <script>
+
+            
+            
             /* MapQuest Open */
             map = L.map("map", {
                 layers: MQ.mapLayer(),
                 center: [48.136443, 13.964049],
                 zoom: 8});
+
+            /* Responsive zoom level */
+            var width = document.documentElement.clientWidth;
+            
+            if (width < 768) {
+                map.setZoom(8);
+            }  else {
+                map.setZoom(9);
+            }
             
             /* State Boundary */
             var stateBoundBg = L.polygon( {{ stateBoundCoord }}, 

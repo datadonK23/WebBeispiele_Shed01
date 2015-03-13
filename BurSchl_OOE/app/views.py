@@ -2,15 +2,18 @@
 Views
 """
 
-from flask import render_template
-from flask import request
-from app import app
-from app import connection
-from app import mapquest_key
+from flask import render_template, request, redirect, url_for
+from app import app, connection, mapquest_key
+#from app import connection
+#from app import mapquest_key
 from models import Features
 
+nearestList = []
+
+
 @app.route("/")
-def index():
+@app.route("/<coords>/")
+def index(coords=None): 
     map_key = mapquest_key
     # connect to model    
     features = Features(connection)
@@ -58,17 +61,27 @@ def index():
         feature["coord"] = [lat, lng]
         unbList.append(feature)
     # get and process nearest features
-    myCoords = [13.964049, 48.136443]
-    nearestFeat = features.get_nearest(myCoords)
-    nearestList = []
-    for document in nearestFeat:
-        feature = {}
-        feature["name"] = document["name"].encode("utf-8")
-        feature["url"] = document["url"].encode("utf-8")
-        lng = round(document["loc"]["coordinates"][0], 7)
-        lat = round(document["loc"]["coordinates"][1], 7)
-        feature["coord"] = [lat, lng]
-        nearestList.append(feature)
+    nearestList = ["hallo"]
+    if coords:
+        lng = float(coords[2:12])
+        lat = float(coords[-12:-2])
+        my_coords = [lng, lat]
+        print my_coords
+        nearestFeat = features.get_nearest(my_coords)
+        for document in nearestFeat:
+            feature = {}
+            feature["name"] = document["name"].encode("utf-8")
+            feature["url"] = document["url"].encode("utf-8")
+            lng = round(document["loc"]["coordinates"][0], 7)
+            lat = round(document["loc"]["coordinates"][1], 7)
+            feature["coord"] = [lat, lng]
+            nearestList.append(feature)
+        return render_template("index.html", MAPQUEST_KEY = map_key,
+                           burgenList=burgenList, schlossList=schlossList,
+                           unbList=unbList, nearestList=nearestList,
+                           stateBoundCoord=stateBoundCoord)
+        
+            
     return render_template("index.html", MAPQUEST_KEY = map_key,
                            burgenList=burgenList, schlossList=schlossList,
                            unbList=unbList, nearestList=nearestList,
@@ -81,8 +94,12 @@ def ref():
 # Location Request Test
 @app.route("/loc/near/", methods= ["POST"])
 def near():
+    global coords
     lat = request.form["lat"]
     lng = request.form["lng"]
+    coords = [round(float(lng), 7), round(float(lat), 7)]
+    lng = "{:.7f}".format(coords[0])    
+    lat = "{:.7f}".format(coords[1])
     coords = [lng, lat]
-    print coords
-    return str(coords)
+    #return str(coords)
+    return redirect(url_for("index", coords=str(coords)))
