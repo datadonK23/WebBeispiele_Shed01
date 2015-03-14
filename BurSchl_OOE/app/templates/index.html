@@ -190,11 +190,14 @@
                     var link = "/loc/" + userPos
                     //console.log(link);
                 	$.get(link, function(data) {
-	                  	var nearestFeat = data;
-						var htmlFeat = $(nearestFeat);
-						              
-                  	    var name = document.getElementById("nName");
-                  	    console.log(name.data);
+	                  	var nearestFeat = data;						
+                  	    var nFeat = nearestFeat.split("\n");
+                  	    var name = nFeat[0].slice(16, -8);
+                  	    var url = nFeat[1].slice(14, -8);
+	                  	var coords = nFeat[2].slice(15, -7);
+
+                  	    console.log(coords);
+                  	    var circle = L.circleMarker(coords).addTo(map);
                   	});
                 }, 1000);        
             });
