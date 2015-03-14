@@ -82,16 +82,13 @@
         <!-- Map -->
         <div id="map"></div>     
 
-        <script>
-
-            
-            
+        <script>    
             /* MapQuest Open */
             map = L.map("map", {
                 layers: MQ.mapLayer(),
                 center: [48.136443, 13.964049],
                 zoom: 8});
-
+            
             /* Responsive zoom level */
             var width = document.documentElement.clientWidth;
             
@@ -115,8 +112,7 @@
             var burgenFeatures = {{ burgenList|tojson|safe }};
             var schlossFeatures = {{ schlossList|tojson|safe }};
             var unbFeatures = {{ unbList|tojson|safe }};
-            var nearFeatures = {{ nearestList|tojson|safe }};
-            
+
             /* Marker Cluster */
             var markers = new L.MarkerClusterGroup({showCoverageOnHover: false, maxClusterRadius: 80});
 
@@ -143,7 +139,7 @@
 
             /* Markers Burgen */
             for (i = 0; i < burgenFeatures.length; ++i) {
-                var popupHTML = burgenFeatures[i]["name"] + 
+                var popupHTML = "<b>" + burgenFeatures[i]["name"] + "</b>" + 
                 	"<br> <a href=" + burgenFeatures[i]["url"] + " target='_blank'>" +  burgenFeatures[i]["url"] + "</a>";
                 var popupContent = L.popup({keepInView:true,closeButton:true}).setContent(popupHTML);
 
@@ -154,7 +150,7 @@
 
             /* Markers Schloesser */
             for (i = 0; i < schlossFeatures.length; ++i) {
-                var popupHTML = schlossFeatures[i]["name"] + 
+                var popupHTML = "<b>" + schlossFeatures[i]["name"] + "</b>" + 
                 	"<br> <a href=" + schlossFeatures[i]["url"] + " target='_blank'>" +  schlossFeatures[i]["url"] + "</a>";
                 var popupContent = L.popup({keepInView:true,closeButton:true}).setContent(popupHTML);
 
@@ -165,7 +161,7 @@
 
             /* Markers Unklassifiziert */
             for (i = 0; i < unbFeatures.length; ++i) {
-                var popupHTML = schlossFeatures[i]["name"] + 
+                var popupHTML = "<b>" + schlossFeatures[i]["name"] + "</b>" + 
                 	"<br> <a href=" + unbFeatures[i]["url"] + " target='_blank'>" +  unbFeatures[i]["url"] + "</a>";
                 var popupContent = L.popup({keepInView:true,closeButton:true}).setContent(popupHTML);
 
@@ -177,7 +173,7 @@
             map.addLayer(markers);
 
             /* Locate User */
-            var locUser = L.control.locate({drawCircle: false, locateOptions: {maxZoom: 14}}).addTo(map);
+            var locUserControl = L.control.locate({drawCircle: false, locateOptions: {maxZoom: 14}}).addTo(map);
             
             /* Send date */
             map.addOneTimeEventListener("locationfound", function(e) {
@@ -188,6 +184,19 @@
                     lng: e.latlng.lng
                   }
                 });
+                var userPos = "['" + [(e.latlng.lng).toFixed(7), (e.latlng.lat).toFixed(7)].toString() + "']";
+                console.log(userPos);
+                setTimeout(function () {
+                    var link = "/loc/" + userPos
+                    //console.log(link);
+                	$.get(link, function(data) {
+	                  	var nearestFeat = data;
+						var htmlFeat = $(nearestFeat);
+						              
+                  	    var name = document.getElementById("nName");
+                  	    console.log(name.data);
+                  	});
+                }, 1000);        
             });
 
         </script>

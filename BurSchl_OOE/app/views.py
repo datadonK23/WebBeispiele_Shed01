@@ -4,16 +4,14 @@ Views
 
 from flask import render_template, request, redirect, url_for
 from app import app, connection, mapquest_key
-#from app import connection
-#from app import mapquest_key
 from models import Features
-
-nearestList = []
 
 
 @app.route("/")
-@app.route("/<coords>/")
-def index(coords=None): 
+def index(): 
+    global map_key, features
+    global burgenList, schlossList, unbList, stateBoundCoord
+    
     map_key = mapquest_key
     # connect to model    
     features = Features(connection)
@@ -60,13 +58,23 @@ def index(coords=None):
         lat = round(document["loc"]["coordinates"][1], 7)
         feature["coord"] = [lat, lng]
         unbList.append(feature)
+    return render_template("index.html", MAPQUEST_KEY = map_key,
+                           burgenList=burgenList, schlossList=schlossList,
+                           unbList=unbList, stateBoundCoord=stateBoundCoord)
+                           
+@app.route("/loc/<coords>/")
+@app.route("/loc")
+def located(coords=None):
+    name = ""
+    url = ""
+    coord = []
     # get and process nearest features
-    nearestList = ["hallo"]
     if coords:
         lng = float(coords[2:12])
         lat = float(coords[-12:-2])
         my_coords = [lng, lat]
-        print my_coords
+        #print my_coords
+        nearestList =[]
         nearestFeat = features.get_nearest(my_coords)
         for document in nearestFeat:
             feature = {}
@@ -76,16 +84,11 @@ def index(coords=None):
             lat = round(document["loc"]["coordinates"][1], 7)
             feature["coord"] = [lat, lng]
             nearestList.append(feature)
-        return render_template("index.html", MAPQUEST_KEY = map_key,
-                           burgenList=burgenList, schlossList=schlossList,
-                           unbList=unbList, nearestList=nearestList,
-                           stateBoundCoord=stateBoundCoord)
-        
-            
-    return render_template("index.html", MAPQUEST_KEY = map_key,
-                           burgenList=burgenList, schlossList=schlossList,
-                           unbList=unbList, nearestList=nearestList,
-                           stateBoundCoord=stateBoundCoord)
+        name = nearestList[0]["name"]
+        url = nearestList[0]["url"]
+        coord = nearestList[0]["coord"]
+    return render_template("located.html", n_name=name, n_url=url, n_coord=coord)
+    
 
 @app.route("/ref")
 def ref():
@@ -101,5 +104,5 @@ def near():
     lng = "{:.7f}".format(coords[0])    
     lat = "{:.7f}".format(coords[1])
     coords = [lng, lat]
-    #return str(coords)
-    return redirect(url_for("index", coords=str(coords)))
+    #print str(coords)
+    return redirect(url_for("located", coords=str(coords)))
