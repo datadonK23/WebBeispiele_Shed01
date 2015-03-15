@@ -1,3 +1,5 @@
+/* Custom Settings for Map */
+
 html, body, #map
 {
     width: 100%;
@@ -26,3 +28,29 @@ body
     -moz-box-sizing: border-box; /* Firefox, other Gecko */
     box-sizing: border-box; /* Opera/IE 8+ */
 }
+
+
+
+/* Navbar */
+.navbar {
+  background-color: #766458;
+  border-color: #a69083; 
+}
+
+.navbar .nav > li > a {
+  color: #fcfaf8; 
+}
+
+.navbar .nav > li > a:hover {
+  color: #333333;
+}
+
+.navbar .navbar-header > a {
+  color: #fcfaf8;
+}
+
+.navbar .navbar-header > a:hover {
+  color: #333333;
+}
+
+

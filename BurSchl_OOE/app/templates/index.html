@@ -84,7 +84,7 @@
 
         <script>    
             /* MapQuest Open */
-            map = L.map("map", {
+            var map = L.map("map", {
                 layers: MQ.mapLayer(),
                 center: [48.136443, 13.964049],
                 zoom: 8});
@@ -97,7 +97,7 @@
             }  else {
                 map.setZoom(9);
             }
-            
+           
             /* State Boundary */
             var stateBoundBg = L.polygon( {{ stateBoundCoord }}, 
                                     {smoothFactor: 1.5,
@@ -107,7 +107,7 @@
                     {smoothFactor: 1.5,
                     stroke: true, weight: 7, color: "#c17c8a", opacity: 0.5,
                     fill: false}).addTo(map);
-            
+                       
          	/* Import Features */
             var burgenFeatures = {{ burgenList|tojson|safe }};
             var schlossFeatures = {{ schlossList|tojson|safe }};
