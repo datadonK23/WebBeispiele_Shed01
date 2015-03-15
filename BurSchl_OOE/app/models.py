@@ -30,7 +30,7 @@ class Features:
         coll = connection.BSOOE.febs
         nearest_list = []
         myLoc = {"$geometry":{"type":"Point", "coordinates": myCoords}}
-        query = coll.find({"loc": {"$near": myLoc}}).limit(3)
+        query = coll.find({"loc": {"$near": myLoc}}).limit(1)
         for doc in query:
             nearest_list.append(doc)
         return nearest_list

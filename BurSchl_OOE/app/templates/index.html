@@ -175,7 +175,7 @@
             /* Locate User */
             var locUserControl = L.control.locate({drawCircle: false, locateOptions: {maxZoom: 14}}).addTo(map);
             
-            /* Send date */
+            /* Send User Coordinates, get nearest Feature and render nearest Feature */
             map.addOneTimeEventListener("locationfound", function(e) {
                 $.ajax("/loc/near/", {
                   type: "POST",
@@ -184,24 +184,23 @@
                     lng: e.latlng.lng
                   }
                 });
+                // get nearest Feature
                 var userPos = "['" + [(e.latlng.lng).toFixed(7), (e.latlng.lat).toFixed(7)].toString() + "']";
-                console.log(userPos);
                 setTimeout(function () {
                     var link = "/loc/" + userPos
-                    //console.log(link);
                 	$.get(link, function(data) {
 	                  	var nearestFeat = data;						
                   	    var nFeat = nearestFeat.split("\n");
                   	    var name = nFeat[0].slice(16, -8);
                   	    var url = nFeat[1].slice(14, -8);
-	                  	var coords = nFeat[2].slice(15, -7);
+	                  	var lat = parseFloat(nFeat[2].slice(13, -7));
+	                  	var lng = parseFloat(nFeat[3].slice(13, -7));
 
-                  	    console.log(coords);
-                  	    var circle = L.circleMarker(coords).addTo(map);
+                  	    // FIXME render nearest Feature
+                  	    var circle = L.circleMarker([lat, lng]).addTo(map);
                   	});
-                }, 1000);        
+                }, 500); 
             });
-
         </script>
     
 
