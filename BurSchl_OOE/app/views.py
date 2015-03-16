@@ -6,7 +6,7 @@ from flask import render_template, request, redirect, url_for
 from app import app, connection, mapquest_key
 from models import Features
 
-
+# main page
 @app.route("/")
 def index(): 
     global features 
@@ -65,7 +65,25 @@ def index():
     return render_template("index.html", MAPQUEST_KEY = map_key,
                            burgenList=burgenList, schlossList=schlossList,
                            unbList=unbList, stateBoundCoord=stateBoundCoord)
-                           
+
+
+# Request location
+@app.route("/loc/near/", methods= ["POST"])
+def near():
+    global coords
+    
+    # request coords
+    lat = request.form["lat"]
+    lng = request.form["lng"]
+    coords = [round(float(lng), 7), round(float(lat), 7)]
+    lng = "{:.7f}".format(coords[0])    
+    lat = "{:.7f}".format(coords[1])
+    coords = [lng, lat]
+    
+    return redirect(url_for("located", coords=str(coords)))
+    
+
+# Process location request and render nearest feature data                           
 @app.route("/loc/<coords>/")
 @app.route("/loc")
 def located(coords=None):
@@ -88,23 +106,10 @@ def located(coords=None):
     
     return render_template("located.html", n_name=name, n_url=url, n_lat=lat, 
                            n_lng=lng)
-    
 
+
+# Render information and references page
 @app.route("/ref")
 def ref():
     return render_template("ref.html")
 
-# Location Request Test
-@app.route("/loc/near/", methods= ["POST"])
-def near():
-    global coords
-    
-    # request coords
-    lat = request.form["lat"]
-    lng = request.form["lng"]
-    coords = [round(float(lng), 7), round(float(lat), 7)]
-    lng = "{:.7f}".format(coords[0])    
-    lat = "{:.7f}".format(coords[1])
-    coords = [lng, lat]
-    
-    return redirect(url_for("located", coords=str(coords)))

@@ -25,8 +25,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.75099808"
-     inkscape:cx="544.94453"
-     inkscape:cy="180.67775"
+     inkscape:cx="271.97446"
+     inkscape:cy="340.46511"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -53,91 +53,6 @@
      id="layer1"
      transform="translate(0,-308.2677)">
     <rect
-       style="fill:#efefef;fill-opacity:1;stroke:none"
-       id="rect2985"
-       width="200"
-       height="200"
-       x="10"
-       y="600.36218" />
-    <rect
-       y="600.36218"
-       x="210"
-       height="200"
-       width="200"
-       id="rect3755"
-       style="fill:#75c78e;fill-opacity:1;stroke:none" />
-    <rect
-       style="fill:#4d8396;fill-opacity:1;stroke:none"
-       id="rect3757"
-       width="200"
-       height="200"
-       x="410"
-       y="600.36218" />
-    <rect
-       y="600.36218"
-       x="610"
-       height="200"
-       width="200"
-       id="rect3759"
-       style="fill:#23262b;fill-opacity:1;stroke:none" />
-    <rect
-       y="352.36218"
-       x="10"
-       height="200"
-       width="200"
-       id="rect3763"
-       style="fill:#fcfaf8;fill-opacity:1;stroke:none" />
-    <rect
-       style="fill:#a69083;fill-opacity:1;stroke:none"
-       id="rect3765"
-       width="200"
-       height="200"
-       x="210"
-       y="352.36218" />
-    <rect
-       y="352.36218"
-       x="410"
-       height="200"
-       width="200"
-       id="rect3767"
-       style="fill:#766458;fill-opacity:1;stroke:none" />
-    <rect
-       style="fill:#0a7a7b;fill-opacity:1;stroke:none"
-       id="rect3769"
-       width="200"
-       height="200"
-       x="610"
-       y="352.36218" />
-    <rect
-       y="352.36218"
-       x="810"
-       height="200"
-       width="200"
-       id="rect3771"
-       style="fill:#333333;fill-opacity:1;stroke:none" />
-    <flowRoot
-       xml:space="preserve"
-       id="flowRoot3773"
-       style="font-size:20px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       transform="matrix(1.0000047,0,0,1,-114.16312,39.769)"><flowRegion
-         id="flowRegion3775"><rect
-           id="rect3777"
-           width="270"
-           height="68.571426"
-           x="212.85715"
-           y="278.38019" /></flowRegion><flowPara
-         id="flowPara3779">Scheme 1</flowPara></flowRoot>    <flowRoot
-       transform="matrix(1.0000047,0,0,1,-114.16312,291.769)"
-       style="font-size:20px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       id="flowRoot3781"
-       xml:space="preserve"><flowRegion
-         id="flowRegion3783"><rect
-           y="278.38019"
-           x="212.85715"
-           height="68.571426"
-           width="270"
-           id="rect3785" /></flowRegion><flowPara
-         id="flowPara3787">Scheme 2</flowPara></flowRoot>    <rect
        style="fill:#fbfcff;fill-opacity:1;stroke:none"
        id="rect2999"
        width="200"
@@ -165,18 +80,7 @@
        width="200"
        id="rect3005"
        style="fill:#1fffb8;fill-opacity:1;stroke:none" />
-    <flowRoot
-       transform="matrix(1.0000047,0,0,1,-114.16312,525.769)"
-       style="font-size:20px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       id="flowRoot3009"
-       xml:space="preserve"><flowRegion
-         id="flowRegion3011"><rect
-           y="278.38019"
-           x="212.85715"
-           height="68.571426"
-           width="270"
-           id="rect3013" /></flowRegion><flowPara
-         id="flowPara3015">Scheme 3</flowPara></flowRoot>    <rect
+    <rect
        style="fill:#000b20;fill-opacity:1;stroke:none"
        id="rect3786"
        width="200"

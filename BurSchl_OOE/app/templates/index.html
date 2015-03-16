@@ -6,7 +6,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
+    <meta name="description" lang="de" content="Suche mit dieser Geo-App Schl&ouml;sser und Burgen in Ober&ouml;sterreich auf einer Karte
+											    und finde Informationen &uuml;ber die Bauwerke">
+    <meta name="description" lang="en" content="Find informations about palaces and castles in Upper Austria on a map">
+    <meat name="keywords" lang="de" content="Burg, Schloss, Ruine, Ober&ouml;sterreich, O&Ouml;, Tourismus, Ausflugsziel, Karte, Geo">
+    <meat name="keywords" lang="en" content="Castle,Palace, Upper Austria, Tourism, Map, Geo">
     <meta name="author" content="Thomas Treml (datadonk23@gmail.com)">
 
     <title>Schl&ouml;sser und Burgen in Ober&ouml;sterreich</title>
@@ -23,7 +27,7 @@
         <link rel="stylesheet" href="../static/css/L.Control.Locate.ie.min.css"/>
     <![endif]-->
 
-	 <!-- Custom CSS -->
+	<!-- Custom CSS -->
     <link href="../static/css/custom.css" rel="stylesheet">
 
     <!-- Map Scripts -->
@@ -54,7 +58,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Schl&ouml;sser und Burgen in O&Ouml;</a>
+                <a class="navbar-brand" href="/">Schl&ouml;sser und Burgen in O&Ouml;</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -127,26 +131,33 @@
                 iconUrl: "./static/img/burg_marker.png",
                 iconSize:     [36, 36],
                 iconAnchor:   [18, 36],
-                popupAnchor:  [0, -36],});
+                popupAnchor:  [0, -36]});
 
             /* Marker Icon Schloesser*/
             var schlossIcon = L.icon({
                 iconUrl: "./static/img/schloss_marker.png",
                 iconSize:     [36, 36],
                 iconAnchor:   [18, 36],
-                popupAnchor:  [0, -36],});
+                popupAnchor:  [0, -36]});
 
             /* Marker Icon Unklassifiziert*/
             var unbIcon = L.icon({
                 iconUrl: "./static/img/andere_marker.png",
                 iconSize:     [36, 36],
                 iconAnchor:   [18, 36],
-                popupAnchor:  [0, -36],});
+                popupAnchor:  [0, -36]});
+
+            /* Marker Icon Nearest Feature*/
+            var nearestIcon = L.icon({
+                iconUrl: "./static/img/nearest_marker.png",
+                iconSize:     [36, 36],
+                iconAnchor:   [18, 72],
+                popupAnchor:  [0, -72]});
 
             /* Markers Burgen */
             for (i = 0; i < burgenFeatures.length; ++i) {
                 var popupHTML = "<b>" + burgenFeatures[i]["name"] + "</b>" + 
-                	"<br> <a href=" + burgenFeatures[i]["url"] + " target='_blank'>" +  burgenFeatures[i]["url"] + "</a>";
+                	"<br> <a href=" + burgenFeatures[i]["url"] + " target='_blank'>Mehr dar&uuml;ber auf Wikipedia</a>";
                 var popupContent = L.popup({keepInView:true,closeButton:true}).setContent(popupHTML);
 
                 var burgMarker = L.marker(burgenFeatures[i]["coord"], {icon: burgIcon}).bindPopup(popupContent);
@@ -157,7 +168,7 @@
             /* Markers Schloesser */
             for (i = 0; i < schlossFeatures.length; ++i) {
                 var popupHTML = "<b>" + schlossFeatures[i]["name"] + "</b>" + 
-                	"<br> <a href=" + schlossFeatures[i]["url"] + " target='_blank'>" +  schlossFeatures[i]["url"] + "</a>";
+                	"<br> <a href=" + schlossFeatures[i]["url"] + " target='_blank'>Mehr dar&uuml;ber auf Wikipedia</a>";
                 var popupContent = L.popup({keepInView:true,closeButton:true}).setContent(popupHTML);
 
                 var schlossMarker = L.marker(schlossFeatures[i]["coord"], {icon: schlossIcon}).bindPopup(popupContent);
@@ -168,7 +179,7 @@
             /* Markers Unklassifiziert */
             for (i = 0; i < unbFeatures.length; ++i) {
                 var popupHTML = "<b>" + schlossFeatures[i]["name"] + "</b>" + 
-                	"<br> <a href=" + unbFeatures[i]["url"] + " target='_blank'>" +  unbFeatures[i]["url"] + "</a>";
+                	"<br> <a href=" + unbFeatures[i]["url"] + " target='_blank'>Mehr dar&uuml;ber auf Wikipedia</a>";
                 var popupContent = L.popup({keepInView:true,closeButton:true}).setContent(popupHTML);
 
                 var unbMarker = L.marker(unbFeatures[i]["coord"], {icon: unbIcon}).bindPopup(popupContent);
@@ -187,7 +198,6 @@
 	                fillOpacity: 1,
 	                color: "#fbfcff",
 	                opacity: 0.6
-                    
                     },
                 circleStyle: {
                 	color: "#699dff",
@@ -197,14 +207,17 @@
                     fillOpacity: 0.1
                     },
                 strings: {
-                    title: "Mein Standort",  // title of the locate control
+                    title: "Mein Standort", 
                     popup: "Du befindest dich im Umkreis von {distance}m",
                     outsideMapBoundsMsg: "Du befindest dich ausserhalb der Karte"
                 },
                 locateOptions: {maxZoom: 14}
             }).addTo(map);
+
             
             /* Send User Coordinates, get nearest Feature and render nearest Feature */
+            var nearestFeatLayer = new L.layerGroup();
+            
             map.addOneTimeEventListener("locationfound", function(e) {
                 $.ajax("/loc/near/", {
                   type: "POST",
@@ -221,24 +234,29 @@
 	                  	var nearestFeat = data;						
                   	    var nFeat = nearestFeat.split("\n");
                   	    var name = nFeat[0].slice(16, -8);
-                  	    var url = nFeat[1].slice(14, -8);
+                  	    var url = nFeat[1].slice(15, -8);
 	                  	var lat = parseFloat(nFeat[2].slice(13, -7));
 	                  	var lng = parseFloat(nFeat[3].slice(13, -7));
+	                  	
+                  	    // render nearest Feature
+                  	    var popupHTML = "<b>" + name + "</b> ist am nächsten <br> <a href=" + url + 
+	                  	    " target='_blank'>Mehr dar&uuml;ber auf Wikipedia</a>";
+		                var popupContent = L.popup({keepInView:true,closeButton:true}).setContent(popupHTML);
+                  	    var nearestFeat = L.marker([lat, lng], {icon: nearestIcon}).bindPopup(popupContent);
 
-                  	    // FIXME render nearest Feature
-                  	    var circle = L.circleMarker([lat, lng], {
-                      	    fillColor: "#1fffb8",
-							fillOpacity: 1,
-							opacity: 0
-                      	    }).setRadius(2).addTo(map);
-                  	    var circle = L.circleMarker([lat, lng], {
-                      	    fillColor: "#1fffb8",
-							fillOpacity: 0.3,
-							opacity: 0
-                      	    }).setRadius(36).addTo(map);
+                  	    nearestFeatLayer.addLayer(nearestFeat);
+			            map.addLayer(nearestFeatLayer);
                   	});
-                }, 500); 
+                }, 1000); // wait a second 
+                /* Remove nearest Feature Marker on Zoom out */
+                function onOutZoom() {
+                    if (map.getZoom() <= 12) {
+                        map.removeLayer(nearestFeatLayer);
+                }};
+                map.on('zoomend', onOutZoom);    
             });
+
+            
         </script>
     
 
