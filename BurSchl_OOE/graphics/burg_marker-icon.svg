@@ -15,7 +15,7 @@
    inkscape:version="0.48.4 r9939"
    width="40"
    height="40"
-   sodipodi:docname="burgen_marker-icon.svg"
+   sodipodi:docname="burg_marker-icon.svg"
    inkscape:export-filename="/mnt/opData/WDir/GitHub/WebBeispiele_Shed01/BurSchl_OOE/graphics/burg_marker.png"
    inkscape:export-xdpi="180"
    inkscape:export-ydpi="180">
@@ -27,7 +27,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -81,7 +81,7 @@
      id="namedview4"
      showgrid="true"
      inkscape:zoom="8.140351"
-     inkscape:cx="45.382794"
+     inkscape:cx="20.199605"
      inkscape:cy="17.616637"
      inkscape:window-x="-8"
      inkscape:window-y="46"
@@ -135,7 +135,7 @@
          d="m 117.75379,201.56662 c 0,1.10525 -0.19515,2.01277 -0.58548,2.72256 l -6.458,11.77243 c -0.18925,0.33462 -0.47016,0.59826 -0.84274,0.79091 -0.37257,0.19266 -0.77176,0.28899 -1.19756,0.28899 -0.42581,0 -0.825,-0.0963 -1.19757,-0.28899 -0.37258,-0.19265 -0.64757,-0.45629 -0.82498,-0.79091 l -6.47576,-11.77243 c -0.390331,-0.70979 -0.58549,-1.61731 -0.58549,-2.72256 0,-2.14966 0.8871,-3.98498 2.66128,-5.50597 1.77417,-1.52099 3.91501,-2.28148 6.42252,-2.28148 2.50751,0 4.64834,0.76049 6.42251,2.28148 1.77418,1.52099 2.66127,3.35631 2.66127,5.50597 z"
          id="path4"
          sodipodi:nodetypes="scccscccsssss"
-         style="fill:#8bb300;fill-opacity:1;stroke:none" />
+         style="fill:#699dff;fill-opacity:1;stroke:none" />
       <path
          style="fill:#eeeeec;fill-opacity:1;stroke:none"
          d="m 104.32681,196.85101 0,9.20836 3.33689,0 0,-2.97919 2.05346,0 0,2.97919 3.33689,0 0,-9.20836 -0.51337,0 0,1.08336 -0.51337,0 0,-1.08336 -0.51337,0 0,1.08336 -0.51338,0 0,-1.08336 -0.51335,0 0,3.25004 0,1.08331 -0.51337,0 0,-1.08331 -0.51335,0 0,1.08331 -0.51338,0 0,-1.08331 -0.51336,0 0,1.08331 -0.51338,0 0,-1.08331 -0.51336,0 0,1.08331 -0.51336,0 0,-1.08331 0,-3.25004 -0.51336,0 0,1.08336 -0.51339,0 0,-1.08336 -0.51336,0 0,1.08336 -0.51336,0 0,-1.08336 z"

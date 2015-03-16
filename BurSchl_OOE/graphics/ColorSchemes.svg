@@ -24,17 +24,17 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.18774952"
-     inkscape:cx="543.61297"
-     inkscape:cy="340.46511"
+     inkscape:zoom="0.75099808"
+     inkscape:cx="544.94453"
+     inkscape:cy="180.67775"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="804"
-     inkscape:window-height="480"
-     inkscape:window-x="965"
-     inkscape:window-y="49"
-     inkscape:window-maximized="0" />
+     inkscape:window-width="1858"
+     inkscape:window-height="999"
+     inkscape:window-x="-8"
+     inkscape:window-y="46"
+     inkscape:window-maximized="1" />
   <metadata
      id="metadata7">
     <rdf:RDF>
@@ -43,7 +43,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -58,9 +58,9 @@
        width="200"
        height="200"
        x="10"
-       y="752.36218" />
+       y="600.36218" />
     <rect
-       y="752.36218"
+       y="600.36218"
        x="210"
        height="200"
        width="200"
@@ -72,9 +72,9 @@
        width="200"
        height="200"
        x="410"
-       y="752.36218" />
+       y="600.36218" />
     <rect
-       y="752.36218"
+       y="600.36218"
        x="610"
        height="200"
        width="200"
@@ -119,7 +119,7 @@
        xml:space="preserve"
        id="flowRoot3773"
        style="font-size:20px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       transform="matrix(1.0000047,0,0,1,-114.16312,289.769)"><flowRegion
+       transform="matrix(1.0000047,0,0,1,-114.16312,39.769)"><flowRegion
          id="flowRegion3775"><rect
            id="rect3777"
            width="270"
@@ -127,7 +127,7 @@
            x="212.85715"
            y="278.38019" /></flowRegion><flowPara
          id="flowPara3779">Scheme 1</flowPara></flowRoot>    <flowRoot
-       transform="matrix(1.0000047,0,0,1,-114.16312,431.769)"
+       transform="matrix(1.0000047,0,0,1,-114.16312,291.769)"
        style="font-size:20px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
        id="flowRoot3781"
        xml:space="preserve"><flowRegion
@@ -137,5 +137,51 @@
            height="68.571426"
            width="270"
            id="rect3785" /></flowRegion><flowPara
-         id="flowPara3787">Scheme 2</flowPara></flowRoot>  </g>
+         id="flowPara3787">Scheme 2</flowPara></flowRoot>    <rect
+       style="fill:#fbfcff;fill-opacity:1;stroke:none"
+       id="rect2999"
+       width="200"
+       height="200"
+       x="10"
+       y="838.36218" />
+    <rect
+       y="838.36218"
+       x="210"
+       height="200"
+       width="200"
+       id="rect3001"
+       style="fill:#1f6dff;fill-opacity:1;stroke:none" />
+    <rect
+       style="fill:#001742;fill-opacity:1;stroke:none"
+       id="rect3003"
+       width="200"
+       height="200"
+       x="410"
+       y="838.36218" />
+    <rect
+       y="838.36218"
+       x="610"
+       height="200"
+       width="200"
+       id="rect3005"
+       style="fill:#1fffb8;fill-opacity:1;stroke:none" />
+    <flowRoot
+       transform="matrix(1.0000047,0,0,1,-114.16312,525.769)"
+       style="font-size:20px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       id="flowRoot3009"
+       xml:space="preserve"><flowRegion
+         id="flowRegion3011"><rect
+           y="278.38019"
+           x="212.85715"
+           height="68.571426"
+           width="270"
+           id="rect3013" /></flowRegion><flowPara
+         id="flowPara3015">Scheme 3</flowPara></flowRoot>    <rect
+       style="fill:#000b20;fill-opacity:1;stroke:none"
+       id="rect3786"
+       width="200"
+       height="200"
+       x="810"
+       y="838.36218" />
+  </g>
 </svg>

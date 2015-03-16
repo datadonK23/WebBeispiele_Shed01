@@ -1,3 +1,13 @@
+Color Scheme 3
+
+HEX	RGB
+fbfcff
+699dff
+001742
+1fffb8
+000b20
+
+
 Color Scheme 1
 
 HEX	RGB

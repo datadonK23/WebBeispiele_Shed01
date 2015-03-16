@@ -27,30 +27,77 @@ body
     -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
     -moz-box-sizing: border-box; /* Firefox, other Gecko */
     box-sizing: border-box; /* Opera/IE 8+ */
+    
+    /* Font Color */
+    color: #000b20;
+    
 }
 
 
 
 /* Navbar */
 .navbar {
-  background-color: #766458;
-  border-color: #a69083; 
+  background-color: #001742;
+  border-color: #000b20; 
 }
 
 .navbar .nav > li > a {
-  color: #fcfaf8; 
+  color: #fbfcff; 
 }
 
 .navbar .nav > li > a:hover {
-  color: #333333;
+  color: #1fffb8;
 }
 
 .navbar .navbar-header > a {
-  color: #fcfaf8;
+  color: #fbfcff;
 }
 
 .navbar .navbar-header > a:hover {
-  color: #333333;
+  color: #1fffb8;
 }
 
 
+/* Marker Cluster */
+.marker-cluster-small {
+	background-color: rgba(31, 255, 184, 0.3);
+	}
+.marker-cluster-small div {
+	background-color: rgba(31, 255, 184, 0.6);
+	}
+
+.marker-cluster-medium {
+	background-color: rgba(31, 255, 184, 0.3);
+	}
+.marker-cluster-medium div {
+	background-color: rgba(31, 255, 184, 0.6);
+	}
+
+.marker-cluster-large {
+	background-color: rgba(31, 255, 184, 0.3);
+	}
+.marker-cluster-large div {
+	background-color: rgba(31, 255, 184, 0.6);
+	}
+
+	/* IE 6-8 fallback colors */
+.leaflet-oldie .marker-cluster-small {
+	background-color: rgb(31, 255, 184);
+	}
+.leaflet-oldie .marker-cluster-small div {
+	background-color: rgb(31, 255, 184);
+	}
+
+.leaflet-oldie .marker-cluster-medium {
+	background-color: rgb(31, 255, 184);
+	}
+.leaflet-oldie .marker-cluster-medium div {
+	background-color: rgb(31, 255, 184);
+	}
+
+.leaflet-oldie .marker-cluster-large {
+	background-color: rgb(31, 255, 184);
+	}
+.leaflet-oldie .marker-cluster-large div {
+	background-color: rgb(31, 255, 184);
+}
