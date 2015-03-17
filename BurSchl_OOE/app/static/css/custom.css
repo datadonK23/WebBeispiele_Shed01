@@ -28,11 +28,43 @@ body
     -moz-box-sizing: border-box; /* Firefox, other Gecko */
     box-sizing: border-box; /* Opera/IE 8+ */
     
-    /* Font Color */
+    /* Background and Font Color */
     color: #000b20;
+    background-Color: #fbfcff;
     
 }
 
+
+/* Horizontal Divider */
+hr {
+  color: #001742;
+  background-color: #001742;
+  height: 1px;
+}
+
+/* Link Color */ 
+a {
+  color: #699dff; 
+}
+
+a:hover {
+  color: #1fffb8;
+}
+
+h1 {
+  color: #001742;
+}
+
+/* Button */
+.btn {
+  background-color: #699dff;
+  color: #fbfcff;
+}
+
+.btn:hover {
+  background-color: #1fffb8;
+  color: #000b20;
+}
 
 
 /* Navbar */

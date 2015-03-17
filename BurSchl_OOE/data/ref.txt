@@ -4,6 +4,6 @@ Referenzen:
 Rohdaten: "http://de.wikipedia.org/", dl. 02.03.2015
 Prozessierung: siehe "../geo/scrape_wiki.py"
 
-landesgrenze_WGS84.geojson
-Rohdaten: Lanesgrenzen OOE, DORIS - "Datenquelle: Land Oberösterreich - data.ooe.gv.at": http://data.ooe.gv.at, dl 25.02.2009
+* landesgrenze_WGS84.geojson
+Rohdaten: Landesgrenzen OOE, DORIS - "Datenquelle: Land Oberösterreich - data.ooe.gv.at": http://doris.ooe.gv.at, dl 25.02.2009
 Prozessierung: QGIS

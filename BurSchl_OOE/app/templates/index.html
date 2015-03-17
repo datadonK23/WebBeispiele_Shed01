@@ -99,10 +99,11 @@
             
             /* Responsive zoom level */
             var width = document.documentElement.clientWidth;
+            var height = document.documentElement.clientHeight;
             
-            if (width < 320) {
+            if (width < 320 || height < 320) {
                 map.setZoom(7);
-            } else if (width < 640) {
+            } else if (width < 640 || height < 640) {
                 map.setZoom(8);
             } else {
                 map.setZoom(9);
@@ -208,7 +209,7 @@
                     },
                 strings: {
                     title: "Mein Standort", 
-                    popup: "Du befindest dich im Umkreis von {distance}m",
+                    popup: "Du befindest dich hier <br> (im Umkreis von {distance}m)",
                     outsideMapBoundsMsg: "Du befindest dich ausserhalb der Karte"
                 },
                 locateOptions: {maxZoom: 14}

@@ -1,7 +1,8 @@
-BurSchl_OOE
-===========
+BurSchl_OOE - Burgen und Schloesser in Oberoesterreich
+======================================================
 
-Darstellung von Burgen und Schloesser in Oberösterreich.
+Darstellung von Burgen und Schloesser in Oberösterreich auf Karte. Geoverortung des Benutzers 
+und Empfehlung des naechstgelegenen Bauwerks.
 
 ## Repository enthält:
 Ressourcendateien, Anwendungen und Beispieldaten (falls keine Downloadanweisung in den Projekten enthalten ist) aus den Beispielen des Shed01 Blogs (http://shed01.blogspot.co.at/):
@@ -11,11 +12,15 @@ Ressourcendateien, Anwendungen und Beispieldaten (falls keine Downloadanweisung 
 * ./data - Data directory - references in "./data/ref.txt"
 * ./geo - Geoprocessing directory
 * ./graphics - Graphic design directory
-* ./instance - Directory for secret configs [not in GitHub]
+* ./instance - Directory for secret configs [not on GitHub]
 * config.py - Config of app
 * requirements.txt - Python requirements for app
 * run.py - run to launch the app
 
+## Datenreferenzen:
+* POI Features: "http://de.wikipedia.org/", dl. 02.03.2015
+* Landesgrenzen OOE: DORIS - "Datenquelle: Land Oberösterreich - data.ooe.gv.at": http://doris.ooe.gv.at, dl 25.02.2009
+* Kartendaten: MapQuest, basieren auf OpenStreetMap Daten
 
 ### Kontakt: datadonk23@gmail.com
 
