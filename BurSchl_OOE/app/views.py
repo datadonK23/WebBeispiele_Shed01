@@ -3,6 +3,7 @@ Views
 """
 
 from flask import render_template, request, redirect, url_for
+from math import acos, sin, cos, radians
 from app import app, connection, mapquest_key
 from models import Features
 
@@ -76,7 +77,7 @@ def near():
     lat = request.form["lat"]
     lng = request.form["lng"]
     coords = [round(float(lng), 7), round(float(lat), 7)]
-    lng = "{:.7f}".format(coords[0])    
+    lng = "{:.7f}".format(coords[0])
     lat = "{:.7f}".format(coords[1])
     coords = [lng, lat]
     
@@ -94,18 +95,25 @@ def located(coords=None):
     
     # get and process nearest feature from nearest feature list
     if coords:
-        lng = float(coords[2:12])
-        lat = float(coords[-12:-2])
-        my_coords = [lng, lat]
+        my_lng = float(coords[2:12])
+        my_lat = float(coords[-12:-2])
+        my_coords = [my_lng, my_lat]
         nearestFeat = features.get_nearest(my_coords)
         for document in nearestFeat:
             name = document["name"].encode("utf-8")
             url = document["url"].encode("utf-8")
             lng = round(document["loc"]["coordinates"][0], 7)
             lat = round(document["loc"]["coordinates"][1], 7)
+            
+        # distance loc to feature
+        equat_r = 6378.137 
+        dist = equat_r * acos(sin(radians(my_lat)) * sin(radians(lat)) + 
+            cos(radians(my_lat)) * cos(radians(lat)) * cos(radians(lng) - 
+            radians(my_lng)))
+        dist = "{:.2f}".format(dist)
     
     return render_template("located.html", n_name=name, n_url=url, n_lat=lat, 
-                           n_lng=lng)
+                           n_lng=lng, n_dist=dist)
 
 
 # Render information and references page

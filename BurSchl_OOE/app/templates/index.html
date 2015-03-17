@@ -238,6 +238,16 @@
                   	    var url = nFeat[1].slice(15, -8);
 	                  	var lat = parseFloat(nFeat[2].slice(13, -7));
 	                  	var lng = parseFloat(nFeat[3].slice(13, -7));
+	                  	var dist = parseFloat(nFeat[4].slice(16, -8));
+
+						// change zoom if Feature far away
+						if (dist > 2.5) {
+							map.setZoom(13);
+						} else if (dist > 5) {
+							map.setZoom(12);
+						} else if (dist > 10){
+							map.setZoom(11);
+						};
 	                  	
                   	    // render nearest Feature
                   	    var popupHTML = "<b>" + name + "</b> ist am nächsten <br> <a href=" + url + 
