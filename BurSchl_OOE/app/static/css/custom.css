@@ -66,6 +66,11 @@ h1 {
   color: #000b20;
 }
 
+/* List Indent */
+li {
+  padding-left: 1em;
+  text-indent: -1em;
+}
 
 /* Navbar */
 .navbar {
