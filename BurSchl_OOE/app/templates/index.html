@@ -264,15 +264,23 @@
                   	    var nearestFeat = L.marker([lat, lng], {icon: nearestIcon}).bindPopup(popupContent);
 
                   	    nearestFeatLayer.addLayer(nearestFeat);
-			            map.addLayer(nearestFeatLayer);
+			    map.addLayer(nearestFeatLayer);
                   	});
                 }, 1000); // wait a second 
                 /* Remove nearest Feature Marker on Zoom out */
-                function onOutZoom() {
-                    if (map.getZoom() <= 12) {
+                var zoomedOut = false;
+                function onZoom() {
+                    if (map.getZoom() <= 11) {
                         map.removeLayer(nearestFeatLayer);
-                }};
-                map.on('zoomend', onOutZoom);    
+                        map.removeLayer(nearMarkers);
+                        map.addLayer(markers);
+                        zoomedOut = true;
+		    } else if (zoomedOut && map.getZoom() > 11) {
+			map.addLayer(nearestFeatLayer);
+			map.removeLayer(markers);
+                        map.addLayer(nearMarkers);
+		}};
+                map.on('zoomend', onZoom);    
             });
 
             
