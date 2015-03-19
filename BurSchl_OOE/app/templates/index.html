@@ -119,13 +119,14 @@
                     stroke: true, weight: 7, color: "#000b20", opacity: 0.5,
                     fill: false}).addTo(map);
                        
-         	/* Import Features */
+	    /* Import Features */
             var burgenFeatures = {{ burgenList|tojson|safe }};
             var schlossFeatures = {{ schlossList|tojson|safe }};
             var unbFeatures = {{ unbList|tojson|safe }};
 
             /* Marker Cluster */
             var markers = new L.MarkerClusterGroup({showCoverageOnHover: false, maxClusterRadius: 91});
+            var nearMarkers = new L.MarkerClusterGroup({showCoverageOnHover: false, maxClusterRadius: 20});
 
             /* Marker Icon Burgen */
             var burgIcon = L.icon({
@@ -163,6 +164,7 @@
 
                 var burgMarker = L.marker(burgenFeatures[i]["coord"], {icon: burgIcon}).bindPopup(popupContent);
                 
+                nearMarkers.addLayer(burgMarker);
                 markers.addLayer(burgMarker);
             }
 
@@ -174,6 +176,7 @@
 
                 var schlossMarker = L.marker(schlossFeatures[i]["coord"], {icon: schlossIcon}).bindPopup(popupContent);
                 
+                nearMarkers.addLayer(schlossMarker);
                 markers.addLayer(schlossMarker);
             }
 
@@ -185,6 +188,7 @@
 
                 var unbMarker = L.marker(unbFeatures[i]["coord"], {icon: unbIcon}).bindPopup(popupContent);
                 
+                nearMarkers.addLayer(schlossMarker);
                 markers.addLayer(unbMarker);
             }
  
@@ -233,9 +237,9 @@
                     var link = "/loc/" + userPos
                 	$.get(link, function(data) {
 	                  	var nearestFeat = data;						
-                  	    var nFeat = nearestFeat.split("\n");
-                  	    var name = nFeat[0].slice(16, -8);
-                  	    var url = nFeat[1].slice(15, -8);
+				var nFeat = nearestFeat.split("\n");
+				var name = nFeat[0].slice(16, -8);
+				var url = nFeat[1].slice(15, -8);
 	                  	var lat = parseFloat(nFeat[2].slice(13, -7));
 	                  	var lng = parseFloat(nFeat[3].slice(13, -7));
 	                  	var dist = parseFloat(nFeat[4].slice(16, -8));
@@ -248,6 +252,10 @@
 						} else if (dist > 10){
 							map.setZoom(11);
 						};
+						
+			    // remove Markercluster and render nearMarkerCluster
+			    map.removeLayer(markers);
+			    map.addLayer(nearMarkers);
 	                  	
                   	    // render nearest Feature
                   	    var popupHTML = "<b>" + name + "</b> ist am nächsten <br> <a href=" + url + 
