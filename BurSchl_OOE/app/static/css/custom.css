@@ -94,6 +94,10 @@ li {
   color: #1fffb8;
 }
 
+.navbar-brand{
+  font-family: 'Berkshire Swash', cursive;
+  font-size: 1.5em;
+}
 
 /* Marker Cluster */
 .marker-cluster-small {

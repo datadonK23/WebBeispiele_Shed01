@@ -27,7 +27,8 @@
         <link rel="stylesheet" href="../static/css/L.Control.Locate.ie.min.css"/>
     <![endif]-->
 
-	<!-- Custom CSS -->
+    <!-- Custom CSS and Font-->
+    <link href='http://fonts.googleapis.com/css?family=Berkshire+Swash' rel='stylesheet' type='text/css'>
     <link href="../static/css/custom.css" rel="stylesheet">
 
     <!-- Map Scripts -->
@@ -67,7 +68,7 @@
                         <a href="#map">Karte</a>
                     </li>
                     <li>
-                        <a href="/ref#about">&Uuml;ber</a>
+                        <a href="/ref">&Uuml;ber</a>
                     </li>
                     <li>
                         <a href="/ref#ref">Referenzen</a>
@@ -197,6 +198,7 @@
             /* Locate User */
             var locUserControl = L.control.locate({
                 drawCircle: true,
+                follow: true,
                 position: "topright",
                 markerStyle: {
                     fillColor: "#699dff",
@@ -213,17 +215,20 @@
                     },
                 strings: {
                     title: "Mein Standort", 
-                    popup: "Du befindest dich hier <br> (im Umkreis von {distance}m)",
+                    popup: "Du befindest dich hier<br><small>(im Umkreis von {distance}m)</small>",
                     outsideMapBoundsMsg: "Du befindest dich ausserhalb der Karte"
                 },
-                locateOptions: {maxZoom: 14}
+                locateOptions: {
+                    maxZoom: 14,
+                    enableHighAccuracy: true
+                    }
             }).addTo(map);
-
-            
+  
             /* Send User Coordinates, get nearest Feature and render nearest Feature */
             var nearestFeatLayer = new L.layerGroup();
-            
-            map.addOneTimeEventListener("locationfound", function(e) {
+
+            //var renderNearest = 
+            function renderNearest(e) {
                 $.ajax("/loc/near/", {
                   type: "POST",
                   data: {
@@ -234,28 +239,29 @@
                 // get nearest Feature
                 var userPos = "['" + [(e.latlng.lng).toFixed(7), (e.latlng.lat).toFixed(7)].toString() + "']";
                 setTimeout(function () {
+	                map.removeLayer(nearestFeatLayer)
                     var link = "/loc/" + userPos
                 	$.get(link, function(data) {
 	                  	var nearestFeat = data;						
-				var nFeat = nearestFeat.split("\n");
-				var name = nFeat[0].slice(16, -8);
-				var url = nFeat[1].slice(15, -8);
+						var nFeat = nearestFeat.split("\n");
+						var name = nFeat[0].slice(16, -8);
+						var url = nFeat[1].slice(15, -8);
 	                  	var lat = parseFloat(nFeat[2].slice(13, -7));
 	                  	var lng = parseFloat(nFeat[3].slice(13, -7));
 	                  	var dist = parseFloat(nFeat[4].slice(16, -8));
 
 						// change zoom if Feature far away
-						if (dist > 2.5) {
+						if (dist > 2) {
 							map.setZoom(13);
-						} else if (dist > 5) {
+						} else if (dist > 4) {
 							map.setZoom(12);
-						} else if (dist > 10){
+						} else if (dist > 8){
 							map.setZoom(11);
 						};
 						
-			    // remove Markercluster and render nearMarkerCluster
-			    map.removeLayer(markers);
-			    map.addLayer(nearMarkers);
+					    // remove Markercluster and render nearMarkerCluster
+					    map.removeLayer(markers);
+					    map.addLayer(nearMarkers);
 	                  	
                   	    // render nearest Feature
                   	    var popupHTML = "<b>" + name + "</b> ist am nächsten <br> <a href=" + url + 
@@ -264,8 +270,8 @@
                   	    var nearestFeat = L.marker([lat, lng], {icon: nearestIcon}).bindPopup(popupContent);
 
                   	    nearestFeatLayer.addLayer(nearestFeat);
-			    map.addLayer(nearestFeatLayer);
-                  	});
+					    map.addLayer(nearestFeatLayer);
+	                  	});
                 }, 1000); // wait a second 
                 /* Remove nearest Feature Marker on Zoom out */
                 var zoomedOut = false;
@@ -275,15 +281,23 @@
                         map.removeLayer(nearMarkers);
                         map.addLayer(markers);
                         zoomedOut = true;
-		    } else if (zoomedOut && map.getZoom() > 11) {
-			map.addLayer(nearestFeatLayer);
-			map.removeLayer(markers);
+				    } else if (zoomedOut && map.getZoom() > 11) {
+						map.addLayer(nearestFeatLayer);
+						map.removeLayer(markers);
                         map.addLayer(nearMarkers);
-		}};
+				}};
                 map.on('zoomend', onZoom);    
-            });
+            };
 
+            //map.addOneTimeEventListener("locationfound", renderNearest);
+			map.once("locationfound", renderNearest);
             
+			// update nearest feature every minute
+			function updateNearest() {
+				map.once("locationfound", renderNearest);
+				};
+            setInterval(updateNearest, 60000);
+          
         </script>
     
 
