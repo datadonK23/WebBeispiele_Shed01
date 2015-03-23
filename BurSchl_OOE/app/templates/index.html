@@ -226,8 +226,8 @@
   
             /* Send User Coordinates, get nearest Feature and render nearest Feature */
             var nearestFeatLayer = new L.layerGroup();
-
-            //var renderNearest = 
+            var zoomedOut = false;
+            
             function renderNearest(e) {
                 $.ajax("/loc/near/", {
                   type: "POST",
@@ -251,11 +251,11 @@
 	                  	var dist = parseFloat(nFeat[4].slice(16, -8));
 
 						// change zoom if Feature far away
-						if (dist > 2) {
+						if (dist > 2 && zoomedOut != true) {
 							map.setZoom(13);
-						} else if (dist > 4) {
+						} else if (dist > 4 && zoomedOut != true) {
 							map.setZoom(12);
-						} else if (dist > 8){
+						} else if (dist > 8 && zoomedOut != true){
 							map.setZoom(11);
 						};
 						
@@ -274,7 +274,6 @@
 	                  	});
                 }, 1000); // wait a second 
                 /* Remove nearest Feature Marker on Zoom out */
-                var zoomedOut = false;
                 function onZoom() {
                     if (map.getZoom() <= 11) {
                         map.removeLayer(nearestFeatLayer);
@@ -289,14 +288,13 @@
                 map.on('zoomend', onZoom);    
             };
 
-            //map.addOneTimeEventListener("locationfound", renderNearest);
 			map.once("locationfound", renderNearest);
             
 			// update nearest feature every minute
 			function updateNearest() {
 				map.once("locationfound", renderNearest);
 				};
-            setInterval(updateNearest, 60000);
+            setInterval(updateNearest, 20000);
           
         </script>
     
