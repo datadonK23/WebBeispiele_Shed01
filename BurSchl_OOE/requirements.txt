@@ -1,4 +1,5 @@
-flask
-flask-mongokit
-json
-#FIXME
+Flask
+Flask-Mongokit
+pymongo
+BeautifulSoup
+wikipedia
