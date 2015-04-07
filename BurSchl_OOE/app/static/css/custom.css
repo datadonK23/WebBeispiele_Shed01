@@ -1,0 +1,144 @@
+/* Custom Settings for Map */
+
+html, body, #map
+{
+    width: 100%;
+    height: 100%;
+}
+
+.fill
+{  padding: 0px;
+    min-height: 100%;
+    height: 100%;
+    width: 100%;
+    min-width: 100%;
+}
+
+.fill-height
+{  padding: 0px;
+    min-height: 100%;
+    height: 100%;
+
+}
+
+body
+{
+    padding-top: 40px; /*for navbar*/
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box; /* Firefox, other Gecko */
+    box-sizing: border-box; /* Opera/IE 8+ */
+    
+    /* Background and Font Color */
+    color: #000b20;
+    background-Color: #fbfcff;
+    
+}
+
+
+/* Horizontal Divider */
+hr {
+  color: #001742;
+  background-color: #001742;
+  height: 1px;
+}
+
+/* Link Color */ 
+a {
+  color: #699dff; 
+}
+
+a:hover {
+  color: #1fffb8;
+}
+
+h1 {
+  color: #001742;
+}
+
+/* Button */
+.btn {
+  background-color: #699dff;
+  color: #fbfcff;
+}
+
+.btn:hover {
+  background-color: #1fffb8;
+  color: #000b20;
+}
+
+/* List Indent */
+li {
+  padding-left: 1em;
+  text-indent: -1em;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #001742;
+  border-color: #000b20; 
+}
+
+.navbar .nav > li > a {
+  color: #fbfcff; 
+}
+
+.navbar .nav > li > a:hover {
+  color: #1fffb8;
+}
+
+.navbar .navbar-header > a {
+  color: #fbfcff;
+}
+
+.navbar .navbar-header > a:hover {
+  color: #1fffb8;
+}
+
+.navbar-brand{
+  font-family: 'Berkshire Swash', cursive;
+  font-size: 1.5em;
+}
+
+/* Marker Cluster */
+.marker-cluster-small {
+	background-color: rgba(31, 255, 184, 0.3);
+	}
+.marker-cluster-small div {
+	background-color: rgba(31, 255, 184, 0.6);
+	}
+
+.marker-cluster-medium {
+	background-color: rgba(31, 255, 184, 0.3);
+	}
+.marker-cluster-medium div {
+	background-color: rgba(31, 255, 184, 0.6);
+	}
+
+.marker-cluster-large {
+	background-color: rgba(31, 255, 184, 0.3);
+	}
+.marker-cluster-large div {
+	background-color: rgba(31, 255, 184, 0.6);
+	}
+
+	/* IE 6-8 fallback colors */
+.leaflet-oldie .marker-cluster-small {
+	background-color: rgb(31, 255, 184);
+	}
+.leaflet-oldie .marker-cluster-small div {
+	background-color: rgb(31, 255, 184);
+	}
+
+.leaflet-oldie .marker-cluster-medium {
+	background-color: rgb(31, 255, 184);
+	}
+.leaflet-oldie .marker-cluster-medium div {
+	background-color: rgb(31, 255, 184);
+	}
+
+.leaflet-oldie .marker-cluster-large {
+	background-color: rgb(31, 255, 184);
+	}
+.leaflet-oldie .marker-cluster-large div {
+	background-color: rgb(31, 255, 184);
+}

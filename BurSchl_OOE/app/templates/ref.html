@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" lang="de" content="Suche mit dieser Geo-App Schl&ouml;sser und Burgen in Ober&ouml;sterreich auf einer Karte
+											    und finde Informationen &uuml;ber die Bauwerke">
+    <meta name="description" lang="en" content="Find informations about palaces and castles in Upper Austria on a map">
+    <meat name="keywords" lang="de" content="Burg, Schloss, Ruine, Ober&ouml;sterreich, O&Ouml;, Tourismus, Ausflugsziel, Karte, Geo, Daten, Referenzen">
+    <meat name="keywords" lang="en" content="Castle,Palace, Upper Austria, Tourism, Map, Geo, Data, References, Attribution">
+    <meta name="author" content="Thomas Treml (datadonk23@gmail.com)">
+
+    <title>Schl&ouml;sser und Burgen in Ober&ouml;sterreich<</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS and Font-->
+    <link href='http://fonts.googleapis.com/css?family=Berkshire+Swash' rel='stylesheet' type='text/css'>
+    <link href="../static/css/custom.css" rel="stylesheet">
+    
+    <style>
+    body {
+        padding-top: 70px;
+        /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    }
+    </style>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+</head>
+    
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">Schl&ouml;sser und Burgen in O&Ouml;</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="/#map">Karte</a>
+                    </li>
+                    <li>
+                        <a href="/ref#about">&Uuml;ber</a>
+                    </li>
+                    <li>
+                        <a href="/ref#ref">Referenzen</a>
+                    </li>
+                    <li>
+                        <a href="/ref#imprint">Impressum</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <div id="about" class="row">
+            <div class="col-lg-12 text-center">
+                <h1>Anleitung</h1>
+                <p class="lead">Finde Schl&ouml;sser und Burgen in Ober&ouml;sterreich mit dieser Geo-App</p>
+                <p>Es werden Dir alle auf der deutschsprachigen <a href="http://de.wikipedia.org/" target='_blank'>Wikipedia</a>
+                   Seite eingetragenen Schl&ouml;sser und Burgen in Ober&ouml;sterreich auf einer Karte angezeigt. Mit den 
+                   Symbolen auf den Markern kannst Du unterscheiden, von welcher Art das jeweilige Bauwerk ist. Klicke
+                   auf die Marker um die Namen der Schl&ouml;sser und Burgen zu erfahren. In der Beschreibung zum jeweiligen Bauwerk 
+                   findest Du auch einen Link zur Informationsseite auf Wikipedia.<br><br>
+                   Bist Du Dir nicht sicher, wo gerade Dein Standpunkt ist, kannst Du diesen von der App bestimmen lassen, indem Du 
+                   auf den ><i>Mein&nbsp;Standpunkt</i>< Button dr&uuml;ckst und der App erlaubst, auf deine Standort-Daten zuzugreifen. 
+                   Die Anzeige ist nat&uuml;rlich genauer, wenn Du ein mobiles Endger&auml;t mit Standortbestimmung benutzt. Sobald 
+                   die App deinen Standort ermittelt hat, wird das Bauwerk hervorgehoben, das Dir in Luftlinie am n&auml;chsten ist.
+                </p><br><br>
+            </div>   
+            <div class="col-md-8 text-center">
+                <p class="lead">Erfahre mehr über die Entstehung dieser App und andere Projekte auf meinem Blog</p>
+                <a href="http://shed01.blogspot.co.at/" class="btn btn-large" target="_blank">shed01.blogspot.co.at</a>
+                <br><br>
+            </div>
+            <div class="col-md-4 text-center">
+                <p class="lead">Interesse an Zusammenarbeit</p>
+                <a href="http://datensensorium.co.at/" class="btn btn-large" target="_blank">daten sensorium</a>
+            </div>
+        </div>
+        <!-- /.row -->
+        
+        <div id="ref" class="row">
+	        <hr>
+            <div class="col-md-12 text-center">
+                <h1>Referenzen</h1>
+            </div>
+            <div class="col-md-8 text-left">
+                <p class="lead">Daten</p>
+                <p><b>Karte</b></p>
+                <ul class="list-unstyled">
+                    <li><i>Grundkarte</i>: Data, imagery and map information provided by 
+	                    <a href="http://www.mapquest.com/" target="_blank">MapQuest</a>, 
+	                    <a href="http://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> 
+	                    and contributors, <a href="http://www.opendatacommons.org/licenses/odbl" target="_blank">ODbL</a>
+                    <li><i>Landesgrenze</i>: <a href="http://doris.ooe.gv.at" target="_blank">DORIS</a> - "Datenquelle: Land Oberösterreich - data.ooe.gv.at"</li>
+                 </ul><br>
+                 <p><b>Schl&ouml;sser und Burgen</b></p>
+                 <ul class="list-unstyled">
+	                <li><i>Liste und Koordinaten</i>: <a href="http://de.wikipedia.org/wiki/Liste_von_Burgen_und_Schl%C3%B6ssern_in_%C3%96sterreich#Ober.C3.B6sterreich" target="_blank">Wikipedia</a></li>
+		            <li><i>Prozessierung</i>: Beschreibung in <a href="http://shed01.blogspot.co.at/2015/03/geo-app-schlosser-und-burgen-in-oo.html" target="_blank">Blogpost</a></li>
+				 </ul><br><br>
+				 <p class="lead">Source Code</p>
+                 <ul class="list-unstyled">
+	                <li><b>Code</b>: auf <a href="https://github.com/donK23/WebBeispiele_Shed01/tree/master/BurSchl_OOE" target="_blank">GitHub</a></li>
+		            <li><b>Lizenz</b>: &copy; 2015 Thomas Treml, <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache Licence, Version 2</a></li>
+				 </ul><br>
+            </div>
+            <div class="col-md-4 text-left"> 
+                <p class="lead">Technologien</p>
+                <p><b>Frontend</b></p>
+                <ul class="list-unstyled">
+	                <li><i>Framework</i>: <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a></li>
+		            <li><i>Template</i>: <a href="http://startbootstrap.com/template-overviews/bare/" target="_blank">Bare</a></li>
+		            <li><i>Manipulation</i>: <a href="http://jquery.com/" target="_blank">jQuery</a>, AJAX</li>
+				</ul><br>
+				<p><b>Backend</b></p>
+                <ul class="list-unstyled">
+	                <li><i>Framework</i>: <a href="http://flask.pocoo.org/" target="_blank">Flask</a></li>
+	                <li><i>Datenbank</i>: <a href="http://www.mongodb.org/" target="_blank">MongoDB</a></li>
+	                <li><i>Plattform</i>: <a href="http://www.openshift.com/" target="_blank">OpenShift</a></li>
+	                <li><i>Zus&auml;tzliche Cartridge</i>: <a href="https://github.com/icflorescu/openshift-cartridge-mongodb" target="_blank">MongoDB 2.6 Cartridge</a></li>
+				</ul><br>
+				<p><b>Daten</b></p>
+                <ul class="list-unstyled">
+	                <li><i>Python Stack</i>: <a href="https://store.continuum.io/cshop/anaconda/" target="_blank">Anaconda</a></li>
+		            <li><i>Module</i>:
+			            <a href="http://api.mongodb.org/python/current/" target="_blank">PyMongo</a>, 
+		                <a href="http://www.crummy.com/software/BeautifulSoup/" target="_blank">Beautiful Soup</a>, 
+		                <a href="https://pypi.python.org/pypi/wikipedia/" target="_blank">Wikipedia</a>
+		            </li>
+				</ul><br>
+                <p><b>Geo</b></p>
+                <ul class="list-unstyled">
+	                <li><i>Karte</i>: <a href="http://leafletjs.com/" target="_blank">Leaflet</a></li>
+		            <li><i>Plugins</i>:
+		                <a href="https://github.com/domoritz/leaflet-locatecontrol" target="_blank">Leaflet.Locate</a>, 
+		                <a href="https://github.com/Leaflet/Leaflet.markercluster" target="_blank">Leaflet.markercluster</a>
+		            </li>
+		            <li><i>Prozessierung</i>: <a href="http://www2.qgis.org/" target="_blank">QGIS</a></li>
+				</ul><br>
+				<p><b>Grafik</b></p>
+                <ul class="list-unstyled">
+	                <li><i>Marker Vorlage</i>: <a href="http://fortawesome.github.io/Font-Awesome/" target="_blank">Font Awesome</a></li>
+	                <li><i>Icons</i>: Thomas Treml, <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">CC-BY 4.0 Int.</a></li>
+	                <li><i>Manipulation</i>: <a href="https://inkscape.org/" target="_blank">Inkscape</a></li>
+				</ul>		
+            </div>
+        </div>
+        <!-- /.row -->
+        
+        <div id="imprint" class="row">
+	        <hr>
+	        <div class="col-md-12 text-center">
+                <h1>Impressum</h1>
+                <p>Offenlegung nach &sect; 25 Abs. 5 Mediengesetz
+            </div>
+            <div class="col-md-6 text-center">
+                <p class="lead">Medieninhaber</p>
+                <p><big><b>Thomas Treml</b></big><br></p>
+                <ul class="list-unstyled">
+                    <li>Steyr, Ober&ouml;sterreich</li>
+                    <li><a href="mailto:datadonk23@gmail.com">Mail</a></li>
+                 </ul><br>
+                 <p><big><b>Private Website</b></big>
+                 </p><br><br>
+            </div>
+            <div class="col-md-6 text-center"> 
+                <p class="lead">Unternehmen</p>
+                <p><big><b>daten sensorium - Thomas Treml e.U.</b></big><br></p>
+                <ul class="list-unstyled">
+	                <li>Inhaber: Mag. Thomas Treml</li>
+	                <li>Rechtsform: Einzelunternehmen</li>
+	                <li>Sitz: A-4400 Steyr, Bogenhausstr. 5/1</li>
+	                <li>Mail: <a href="mailto:office@datensensorium.co.at">office@datensencorium.co.at</a></li>
+	                <li>Firmenbuchnummer: FN 419803 h</li>
+	                <li>Firmenbuchgericht: LG Steyr</li>
+	                <li>UID / VAT ID: ATU68909416</li>
+	                <li>Web: <a href="http://datensensorium.co.at/" target="_blank">www.datensenorium.co.at</a></li>
+				</ul>
+            </div>
+        </div>
+        <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery Version 1.11.1 -->
+    <script src="../static/js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../static/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

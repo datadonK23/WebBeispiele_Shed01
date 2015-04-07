@@ -1,0 +1,4796 @@
+{
+  "crs": {
+    "Type": "name", 
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  }, 
+  "type": "FeatureCollection", 
+  "features": [
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.1806, 
+          48.0749
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Achleiten_(Kematen_an_der_Krems)", 
+        "type": "Schloss", 
+        "name": "Schloss Achleiten (Kematen an der Krems)"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.6783, 
+          48.3697
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Aich", 
+        "type": "Schloss", 
+        "name": "Schloss Aich"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.8097, 
+          48.4453
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Aichberg_(Ober%C3%B6sterreich)", 
+        "type": "Schloss", 
+        "name": "Schloss Aichberg (Ober\u00f6sterreich)"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.4118, 
+          48.0451
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Aichet", 
+        "type": "Schloss", 
+        "name": "Schloss Aichet"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.7062, 
+          48.0918
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Aigen_(Atzbach)", 
+        "type": "Schloss", 
+        "name": "Schloss Aigen (Atzbach)"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.0323, 
+          48.1513
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Aigenegg", 
+        "type": "Schloss", 
+        "name": "Schloss Aigenegg"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.6102, 
+          48.0624
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Ainwalding", 
+        "type": "Schloss", 
+        "name": "Schloss Ainwalding"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.7399, 
+          48.1864
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Aistersheim", 
+        "type": "Schloss", 
+        "name": "Schloss Aistersheim"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.9206, 
+          48.0706
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Almegg", 
+        "type": "Schloss", 
+        "name": "Schloss Almegg"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.7781, 
+          48.5056
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Altenhof", 
+        "type": "Schloss", 
+        "name": "Schloss Altenhof"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.2065, 
+          48.2591
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Burgstall_Altheim_(Ober%C3%B6sterreich)", 
+        "type": "Burg", 
+        "name": "Burgstall Altheim (Ober\u00f6sterreich)"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.1567, 
+          47.885
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Burg_Altpernstein", 
+        "type": "Burg", 
+        "name": "Burg Altpernstein"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.7061, 
+          48.2271
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Arbing", 
+        "type": "Schloss", 
+        "name": "Schloss Arbing"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.0199, 
+          48.3621
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Aschach_an_der_Donau", 
+        "type": "Schloss", 
+        "name": "Schloss Aschach an der Donau"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.818, 
+          48.0259
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Au_an_der_Traun", 
+        "type": "Schloss", 
+        "name": "Schloss Au an der Traun"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.2816, 
+          48.3002
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Freisitz_Auerberg", 
+        "type": "unb", 
+        "name": "Freisitz Auerberg"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.3218, 
+          48.3379
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Auhof_(Linz)", 
+        "type": "Schloss", 
+        "name": "Schloss Auhof (Linz)"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.6645, 
+          48.2361
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Auhof_(Perg)", 
+        "type": "Schloss", 
+        "name": "Schloss Auhof (Perg)"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.0359, 
+          48.32
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Auhof_(Pupping)", 
+        "type": "Schloss", 
+        "name": "Schloss Auhof (Pupping)"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.4556, 
+          48.2494
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Aurolzm%C3%BCnster", 
+        "type": "Schloss", 
+        "name": "Schloss Aurolzm\u00fcnster"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.7494, 
+          48.2236
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Au%C3%9Fenstein", 
+        "type": "Schloss", 
+        "name": "Schloss Au\u00dfenstein"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.9955, 
+          48.5752
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Berg_bei_Rohrbach", 
+        "type": "Schloss", 
+        "name": "Schloss Berg bei Rohrbach"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.2289, 
+          48.2827
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Bergham", 
+        "type": "Schloss", 
+        "name": "Schloss Bergham"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.0494, 
+          48.3568
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Bergheim_(Feldkirchen)", 
+        "type": "Schloss", 
+        "name": "Schloss Bergheim (Feldkirchen)"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.2857, 
+          48.2909
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Bergschl%C3%B6ssl", 
+        "type": "unb", 
+        "name": "Bergschl\u00f6ssl"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.9471, 
+          48.0896
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Bernau", 
+        "type": "Schloss", 
+        "name": "Schloss Bernau"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.0083, 
+          48.485
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Burg_Blankenberg_(Neufelden)", 
+        "type": "Burg", 
+        "name": "Burg Blankenberg (Neufelden)"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.4863, 
+          48.3245
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Bodendorf_(Katsdorf)", 
+        "type": "Schloss", 
+        "name": "Schloss Bodendorf (Katsdorf)"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.1018, 
+          48.2754
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Bogenhofen", 
+        "type": "Schloss", 
+        "name": "Schloss Bogenhofen"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.0246, 
+          48.3361
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Brandstatt", 
+        "type": "Schloss", 
+        "name": "Schloss Brandstatt"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.476, 
+          48.327
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Breitenbruck", 
+        "type": "Schloss", 
+        "name": "Schloss Breitenbruck"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.7741, 
+          48.3281
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Bruck_(Bruck-Waasen)", 
+        "type": "Schloss", 
+        "name": "Schloss Bruck (Bruck-Waasen)"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.275, 
+          48.2074
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Brunnthal", 
+        "type": "Schloss", 
+        "name": "Schloss Brunnthal"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.2441, 
+          48.5195
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Brunnwald", 
+        "type": "Schloss", 
+        "name": "Schloss Brunnwald"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.7783, 
+          48.2208
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Burg_Clam", 
+        "type": "Burg", 
+        "name": "Burg Clam"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.8081, 
+          47.9275
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Cumberland", 
+        "type": "Schloss", 
+        "name": "Schloss Cumberland"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.9277, 
+          48.2994
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Dachsberg", 
+        "type": "Schloss", 
+        "name": "Schloss Dachsberg"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.0918, 
+          48.1595
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Dietach", 
+        "type": "Schloss", 
+        "name": "Schloss Dietach"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.1273, 
+          47.9425
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Dorff", 
+        "type": "Schloss", 
+        "name": "Schloss Dorff"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.525, 
+          48.4658
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Burgruine_Dornach", 
+        "type": "Burg", 
+        "name": "Burgruine Dornach"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.8279, 
+          48.1909
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Dornach", 
+        "type": "Schloss", 
+        "name": "Schloss Dornach"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.3282, 
+          48.2468
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Ebelsberg", 
+        "type": "Schloss", 
+        "name": "Schloss Ebelsberg"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.7631, 
+          47.8991
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Ebenzweier", 
+        "type": "Schloss", 
+        "name": "Schloss Ebenzweier"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.2921, 
+          48.3068
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Egeregg", 
+        "type": "Schloss", 
+        "name": "Schloss Egeregg"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.6663, 
+          47.8587
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Egerer_Schl%C3%B6ssl", 
+        "type": "unb", 
+        "name": "Egerer Schl\u00f6ssl"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.9222, 
+          47.9897
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Eggenberg_(Vorchdorf)", 
+        "type": "Schloss", 
+        "name": "Schloss Eggenberg (Vorchdorf)"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.1484, 
+          48.1317
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Eggendorf", 
+        "type": "Schloss", 
+        "name": "Schloss Eggendorf"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.6154, 
+          48.3427
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Burg_Einburg", 
+        "type": "Burg", 
+        "name": "Burg Einburg"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.4315, 
+          48.0416
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Engelhof", 
+        "type": "Schloss", 
+        "name": "Schloss Engelhof"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.4109, 
+          48.0389
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Engelsegg", 
+        "type": "Schloss", 
+        "name": "Schloss Engelsegg"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.6194, 
+          47.6798
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Engleithen", 
+        "type": "Schloss", 
+        "name": "Schloss Engleithen"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.4795, 
+          48.2128
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Ennsburg", 
+        "type": "Burg", 
+        "name": "Ennsburg"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.4809, 
+          48.2156
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Ennsegg", 
+        "type": "Schloss", 
+        "name": "Schloss Ennsegg"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.2589, 
+          48.0176
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Erb", 
+        "type": "Schloss", 
+        "name": "Schloss Erb"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.6894, 
+          48.2848
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Erlach_(Kallham)", 
+        "type": "Schloss", 
+        "name": "Schloss Erlach (Kallham)"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.1178, 
+          48.3822
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Eschelberg", 
+        "type": "Schloss", 
+        "name": "Schloss Eschelberg"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.8925, 
+          48.1792
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Etzelsdorf", 
+        "type": "Schloss", 
+        "name": "Schloss Etzelsdorf"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.7825, 
+          48.4939
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Burgruine_Falkenstein_(an_der_Ranna)", 
+        "type": "Burg", 
+        "name": "Burgruine Falkenstein (an der Ranna)"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.5943, 
+          48.2384
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Feldegg", 
+        "type": "Schloss", 
+        "name": "Schloss Feldegg"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.195, 
+          48.0325
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Feyregg", 
+        "type": "Schloss", 
+        "name": "Schloss Feyregg"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.0985, 
+          48.212
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Forstern", 
+        "type": "Schloss", 
+        "name": "Schloss Forstern"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.1618, 
+          48.288
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Frauenstein_(Ober%C3%B6sterreich)", 
+        "type": "Schloss", 
+        "name": "Schloss Frauenstein (Ober\u00f6sterreich)"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.0967, 
+          48.3517
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Burgruine_Freudenstein", 
+        "type": "Burg", 
+        "name": "Burgruine Freudenstein"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.1234, 
+          48.2365
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Wasserschloss_Freiling", 
+        "type": "Schloss", 
+        "name": "Wasserschloss Freiling"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.4827, 
+          48.0672
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Frein", 
+        "type": "Schloss", 
+        "name": "Schloss Frein"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.5064, 
+          48.5125
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Freistadt", 
+        "type": "Schloss", 
+        "name": "Schloss Freistadt"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.8329, 
+          48.4477
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Freizell", 
+        "type": "Schloss", 
+        "name": "Schloss Freizell"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.2454, 
+          48.0204
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Burg_Friedburg_(Innviertel)", 
+        "type": "Burg", 
+        "name": "Burg Friedburg (Innviertel)"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.4883, 
+          48.5017
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Fuchsenhof", 
+        "type": "unb", 
+        "name": "Fuchsenhof"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.8131, 
+          48.2064
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Wasserschloss_Gallspach", 
+        "type": "Schloss", 
+        "name": "Wasserschloss Gallspach"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.1134, 
+          48.2023
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Geretsdorf", 
+        "type": "Schloss", 
+        "name": "Schloss Geretsdorf"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.9847, 
+          48.4556
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Gneisenau", 
+        "type": "Schloss", 
+        "name": "Schloss Gneisenau"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.9494, 
+          48.5668
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_G%C3%B6tzendorf", 
+        "type": "Schloss", 
+        "name": "Schloss G\u00f6tzendorf"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.2624, 
+          48.2865
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Burg_Graben", 
+        "type": "Burg", 
+        "name": "Burg Graben"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.8531, 
+          48.2264
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Greinburg", 
+        "type": "Burg", 
+        "name": "Schloss Greinburg"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.5591, 
+          48.3458
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Greisingberg", 
+        "type": "Schloss", 
+        "name": "Schloss Greisingberg"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.8009, 
+          47.9197
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Burg_Grub_(Gmunden)", 
+        "type": "Burg", 
+        "name": "Burg Grub (Gmunden)"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.6642, 
+          47.5621
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Grub_(Obertraun)", 
+        "type": "Schloss", 
+        "name": "Schloss Grub (Obertraun)"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.5288, 
+          48.2817
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Gr%C3%BCnau_(Ober%C3%B6sterreich)", 
+        "type": "Schloss", 
+        "name": "Schloss Gr\u00fcnau (Ober\u00f6sterreich)"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.2361, 
+          48.1377
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Gschwendt", 
+        "type": "Schloss", 
+        "name": "Schloss Gschwendt"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.6564, 
+          48.3481
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Habichrigl", 
+        "type": "Schloss", 
+        "name": "Schloss Habichrigl"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.4458, 
+          48.3524
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Hackledt", 
+        "type": "Schloss", 
+        "name": "Schloss Hackledt"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.0997, 
+          48.2751
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Hagenau", 
+        "type": "Schloss", 
+        "name": "Schloss Hagenau"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.515, 
+          48.3667
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Hagenberg", 
+        "type": "Schloss", 
+        "name": "Schloss Hagenberg"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.5117, 
+          48.3822
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Alt-Hagenberg", 
+        "type": "unb", 
+        "name": "Alt-Hagenberg"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.855, 
+          48.4347
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Burgruine_Haichenbach", 
+        "type": "Burg", 
+        "name": "Burgruine Haichenbach"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.9744, 
+          48.2131
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Haiding", 
+        "type": "Schloss", 
+        "name": "Schloss Haiding"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.5704, 
+          48.3585
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Haitzing", 
+        "type": "Schloss", 
+        "name": "Schloss Haitzing"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.2049, 
+          48.0363
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Hall", 
+        "type": "Schloss", 
+        "name": "Schloss Hall"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.4216, 
+          47.937
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Hammeries", 
+        "type": "Schloss", 
+        "name": "Schloss Hammeries"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.1138, 
+          48.2812
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Hartheim", 
+        "type": "Schloss", 
+        "name": "Schloss Hartheim"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.729, 
+          48.4772
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Harrachstal", 
+        "type": "Schloss", 
+        "name": "Schloss Harrachstal"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.5089, 
+          48.3433
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Haus_(Wartberg_ob_der_Aist)", 
+        "type": "Schloss", 
+        "name": "Schloss Haus (Wartberg ob der Aist)"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.1369, 
+          48.5433
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Helfenberg_(Ober%C3%B6sterreich)", 
+        "type": "Schloss", 
+        "name": "Schloss Helfenberg (Ober\u00f6sterreich)"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.6246, 
+          48.2554
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Hinterndobl", 
+        "type": "Schloss", 
+        "name": "Schloss Hinterndobl"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.9225, 
+          48.0038
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Hochhaus", 
+        "type": "Schloss", 
+        "name": "Schloss Hochhaus"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.5314, 
+          48.1328
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Burgstall_Hochkuchl", 
+        "type": "Burg", 
+        "name": "Burgstall Hochkuchl"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.8627, 
+          48.3326
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Hochscharten", 
+        "type": "Schloss", 
+        "name": "Schloss Hochscharten"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.3562, 
+          48.1991
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Hohenbrunn", 
+        "type": "Schloss", 
+        "name": "Schloss Hohenbrunn"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          12.964, 
+          48.0642
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Burgstall_Holz%C3%B6ster", 
+        "type": "Burg", 
+        "name": "Burgstall Holz\u00f6ster"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.3325, 
+          48.1828
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Hueb_(Mettmach)", 
+        "type": "Schloss", 
+        "name": "Schloss Hueb (Mettmach)"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.1551, 
+          48.1337
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Wasserschloss_Hueb", 
+        "type": "Schloss", 
+        "name": "Wasserschloss Hueb"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          12.964, 
+          48.065
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Ibm", 
+        "type": "Schloss", 
+        "name": "Schloss Ibm"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.6933, 
+          48.2136
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Innersee", 
+        "type": "Schloss", 
+        "name": "Schloss Innersee"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.754, 
+          48.27
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Innernstein", 
+        "type": "Schloss", 
+        "name": "Schloss Innernstein"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.914, 
+          48.1285
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Irnharting", 
+        "type": "Schloss", 
+        "name": "Schloss Irnharting"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.6203, 
+          47.715
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Kaiservilla", 
+        "type": "unb", 
+        "name": "Kaiservilla"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.5914, 
+          47.9461
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Kammer", 
+        "type": "Schloss", 
+        "name": "Schloss Kammer"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.463, 
+          48.4776
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Burgstall_Kammermaier", 
+        "type": "Burg", 
+        "name": "Burgstall Kammermaier"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.6946, 
+          48.0772
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Katzenberg_(Atzbach)", 
+        "type": "Schloss", 
+        "name": "Schloss Katzenberg (Atzbach)"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.2993, 
+          48.2968
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Katzenberg_(Kirchdorf)", 
+        "type": "Schloss", 
+        "name": "Schloss Katzenberg (Kirchdorf)"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.3456, 
+          48.1833
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Ansitz_Katzenberg", 
+        "type": "unb", 
+        "name": "Ansitz Katzenberg"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.1547, 
+          47.8236
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Klaus", 
+        "type": "Schloss", 
+        "name": "Schloss Klaus"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.7886, 
+          48.3239
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Burgruine_Klingenberg", 
+        "type": "Burg", 
+        "name": "Burgruine Klingenberg"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.4653, 
+          47.9485
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Kogl_(Ennstal)", 
+        "type": "Schloss", 
+        "name": "Schloss Kogl (Ennstal)"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.4628, 
+          47.9378
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Burg_Kogl", 
+        "type": "Burg", 
+        "name": "Burg Kogl"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.4712, 
+          47.9434
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Kogl_(Attergau)", 
+        "type": "Schloss", 
+        "name": "Schloss Kogl (Attergau)"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.5414, 
+          48.5594
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Ruine_K%C3%B6nigstein_(Ober%C3%B6sterreich)", 
+        "type": "unb", 
+        "name": "Ruine K\u00f6nigstein (Ober\u00f6sterreich)"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.6969, 
+          48.0722
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_K%C3%B6ppach", 
+        "type": "Schloss", 
+        "name": "Schloss K\u00f6ppach"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.5861, 
+          48.5625
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Burg_Krempelstein", 
+        "type": "Burg", 
+        "name": "Burg Krempelstein"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.1456, 
+          48.0544
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Kremsegg", 
+        "type": "Schloss", 
+        "name": "Schloss Kremsegg"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.82, 
+          48.2592
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Burg_Kreuzen", 
+        "type": "Burg", 
+        "name": "Burg Kreuzen"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.4828, 
+          48.4481
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Burgruine_Kronest", 
+        "type": "Burg", 
+        "name": "Burgruine Kronest"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.4189, 
+          48.0417
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Lamberg", 
+        "type": "Schloss", 
+        "name": "Schloss Lamberg"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.8998, 
+          48.2311
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Turm_auf_dem_Langenstein", 
+        "type": "unb", 
+        "name": "Turm auf dem Langenstein"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.5395, 
+          48.4714
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Burg_Lasberg", 
+        "type": "Burg", 
+        "name": "Burg Lasberg"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.4913, 
+          47.8061
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Lassereck", 
+        "type": "Schloss", 
+        "name": "Schloss Lassereck"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.0924, 
+          48.1253
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Leombach", 
+        "type": "Schloss", 
+        "name": "Schloss Leombach"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.2314, 
+          47.9103
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Burgruine_Leonstein_(Ober%C3%B6sterreich)", 
+        "type": "Burg", 
+        "name": "Burgruine Leonstein (Ober\u00f6sterreich)"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.2347, 
+          47.908
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Leonstein_(Ober%C3%B6sterreich)", 
+        "type": "Schloss", 
+        "name": "Schloss Leonstein (Ober\u00f6sterreich)"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.0364, 
+          48.5892
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Lichtenau_(Ober%C3%B6sterreich)", 
+        "type": "Schloss", 
+        "name": "Schloss Lichtenau (Ober\u00f6sterreich)"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.0057, 
+          48.1519
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Wasserschloss_Lichtenegg", 
+        "type": "Schloss", 
+        "name": "Wasserschloss Lichtenegg"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.1756, 
+          48.3794
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Burgruine_Lichtenhag", 
+        "type": "Burg", 
+        "name": "Burgruine Lichtenhag"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.8503, 
+          48.0014
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Lindach_(Laakirchen)", 
+        "type": "Schloss", 
+        "name": "Schloss Lindach (Laakirchen)"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.2825, 
+          48.305
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Linzer_Schloss", 
+        "type": "Schloss", 
+        "name": "Linzer Schloss"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.2856, 
+          48.3039
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Linzer_Landhaus", 
+        "type": "unb", 
+        "name": "Linzer Landhaus"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.5584, 
+          47.9329
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Litzlberg", 
+        "type": "Schloss", 
+        "name": "Schloss Litzlberg"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.2375, 
+          48.4447
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Burgruine_Lobenstein_(M%C3%BChlviertel)", 
+        "type": "Burg", 
+        "name": "Burgruine Lobenstein (M\u00fchlviertel)"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.3224, 
+          48.2877
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Burg_Lonstorf", 
+        "type": "Burg", 
+        "name": "Burg Lonstorf"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.4377, 
+          47.924
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Burg_Losenstein", 
+        "type": "Burg", 
+        "name": "Burg Losenstein"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.41, 
+          48.2698
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Burg_Luftenberg", 
+        "type": "Burg", 
+        "name": "Burg Luftenberg"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.4113, 
+          48.27
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Luftenberg", 
+        "type": "Schloss", 
+        "name": "Schloss Luftenberg"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.1909, 
+          48.2778
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Mamling", 
+        "type": "Schloss", 
+        "name": "Schloss Mamling"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.4399, 
+          48.3421
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Maasbach", 
+        "type": "Schloss", 
+        "name": "Schloss Maasbach"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.5103, 
+          48.2621
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Marbach_(Ried_in_der_Riedmark)", 
+        "type": "Schloss", 
+        "name": "Schloss Marbach (Ried in der Riedmark)"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.5671, 
+          48.1564
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Mayrhof", 
+        "type": "Schloss", 
+        "name": "Schloss Mayrhof"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.6178, 
+          47.7167
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Marmorschl%C3%B6ssl", 
+        "type": "unb", 
+        "name": "Marmorschl\u00f6ssl"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.825, 
+          48.4589
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Burg_Marsbach", 
+        "type": "Burg", 
+        "name": "Burg Marsbach"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.15, 
+          48.1056
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Mattighofen", 
+        "type": "Schloss", 
+        "name": "Schloss Mattighofen"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.0626, 
+          48.2393
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Mistelbach", 
+        "type": "Schloss", 
+        "name": "Schloss Mistelbach"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.6592, 
+          48.2518
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Burgruine_Mitterberg", 
+        "type": "Burg", 
+        "name": "Burgruine Mitterberg"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.4832, 
+          48.4156
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Burgruine_M%C3%B6stling", 
+        "type": "Burg", 
+        "name": "Burgruine M\u00f6stling"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.3505, 
+          47.8565
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Kloster_Mondsee", 
+        "type": "unb", 
+        "name": "Kloster Mondsee"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.0443, 
+          48.6227
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Burgruine_Morau", 
+        "type": "Burg", 
+        "name": "Burgruine Morau"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.0819, 
+          48.3415
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_M%C3%BChldorf", 
+        "type": "Schloss", 
+        "name": "Schloss M\u00fchldorf"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.2037, 
+          48.0253
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_M%C3%BChlgrub", 
+        "type": "Schloss", 
+        "name": "Schloss M\u00fchlgrub"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.0641, 
+          48.3655
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_M%C3%BChllacken", 
+        "type": "Schloss", 
+        "name": "Schloss M\u00fchllacken"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.8048, 
+          47.9217
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_M%C3%BChlwang", 
+        "type": "Schloss", 
+        "name": "Schloss M\u00fchlwang"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.496, 
+          48.2763
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Edelsitz_Murau", 
+        "type": "unb", 
+        "name": "Edelsitz Murau"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.9911, 
+          48.423
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Neuhaus_an_der_Donau", 
+        "type": "Schloss", 
+        "name": "Schloss Neuhaus an der Donau"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.314, 
+          48.2552
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Neuhaus_(Geinberg)", 
+        "type": "Schloss", 
+        "name": "Schloss Neuhaus (Geinberg)"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.0472, 
+          48.1791
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Neukirchen_an_der_Enknach", 
+        "type": "Schloss", 
+        "name": "Schloss Neukirchen an der Enknach"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.1312, 
+          47.9032
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Neupernstein", 
+        "type": "Schloss", 
+        "name": "Schloss Neupernstein"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.8926, 
+          48.055
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Neydharting", 
+        "type": "Schloss", 
+        "name": "Schloss Neydharting"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.8093, 
+          48.459
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Niederwesen", 
+        "type": "Schloss", 
+        "name": "Schloss Niederwesen"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.913, 
+          48.1353
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Edelsitz_Obenaus", 
+        "type": "unb", 
+        "name": "Edelsitz Obenaus"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.496, 
+          48.234
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Obereitzing", 
+        "type": "Schloss", 
+        "name": "Schloss Obereitzing"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.3334, 
+          48.3232
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Burg_Obernberg", 
+        "type": "Burg", 
+        "name": "Burg Obernberg"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.0594, 
+          48.3683
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Burgruine_Oberwallsee", 
+        "type": "Burg", 
+        "name": "Burgruine Oberwallsee"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.819, 
+          47.9544
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Oberweis", 
+        "type": "Schloss", 
+        "name": "Schloss Oberweis"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          12.8641, 
+          48.0418
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Ofenwang", 
+        "type": "Schloss", 
+        "name": "Schloss Ofenwang"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.7923, 
+          47.9115
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Ort", 
+        "type": "Schloss", 
+        "name": "Schloss Ort"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.4345, 
+          48.3193
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Ort_im_Innkreis", 
+        "type": "Schloss", 
+        "name": "Schloss Ort im Innkreis"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.1731, 
+          48.33
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Ottensheim", 
+        "type": "Schloss", 
+        "name": "Schloss Ottensheim"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.0761, 
+          48.1488
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Ottsdorf", 
+        "type": "Schloss", 
+        "name": "Schloss Ottsdorf"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.9852, 
+          48.4321
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Partenstein", 
+        "type": "Schloss", 
+        "name": "Schloss Partenstein"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.8449, 
+          48.234
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Parz", 
+        "type": "Schloss", 
+        "name": "Schloss Parz"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.845, 
+          48.2345
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Wasserschloss_Parz", 
+        "type": "Schloss", 
+        "name": "Wasserschloss Parz"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.9471, 
+          48.0896
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Bernau", 
+        "type": "Schloss", 
+        "name": "Schloss Bernau"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.0831, 
+          48.0074
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Perwang", 
+        "type": "Schloss", 
+        "name": "Schloss Perwang"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.0747, 
+          48.3503
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Pesenbach", 
+        "type": "Schloss", 
+        "name": "Schloss Pesenbach"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.0186, 
+          47.9601
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Pettenbach", 
+        "type": "Schloss", 
+        "name": "Schloss Pettenbach"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.771, 
+          48.3442
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Peuerbach", 
+        "type": "Schloss", 
+        "name": "Schloss Peuerbach"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.1447, 
+          48.0756
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Pfaffst%C3%A4tt", 
+        "type": "Schloss", 
+        "name": "Schloss Pfaffst\u00e4tt"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.2266, 
+          48.1152
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Piberbach", 
+        "type": "Schloss", 
+        "name": "Schloss Piberbach"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.1558, 
+          48.5306
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Burg_Piberstein", 
+        "type": "Burg", 
+        "name": "Burg Piberstein"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.0227, 
+          48.1573
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Polheim_(Wels)", 
+        "type": "Schloss", 
+        "name": "Schloss Polheim (Wels)"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.5642, 
+          48.2725
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Poneggen", 
+        "type": "Schloss", 
+        "name": "Schloss Poneggen"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.5155, 
+          48.2405
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Pragstein", 
+        "type": "Schloss", 
+        "name": "Schloss Pragstein"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.6656, 
+          48.2622
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Pragtal", 
+        "type": "Schloss", 
+        "name": "Schloss Pragtal"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.6667, 
+          48.4147
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Burgruine_Prandegg", 
+        "type": "Burg", 
+        "name": "Burgruine Prandegg"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.0107, 
+          48.1907
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Bildungshaus_Schloss_Puchberg", 
+        "type": "Schloss", 
+        "name": "Bildungshaus Schloss Puchberg"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.2345, 
+          48.3121
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Puchenau", 
+        "type": "Schloss", 
+        "name": "Schloss Puchenau"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.8996, 
+          48.494
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Burg_Puchetwies", 
+        "type": "Burg", 
+        "name": "Burg Puchetwies"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.7152, 
+          47.9999
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Puchheim", 
+        "type": "Schloss", 
+        "name": "Schloss Puchheim"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.0125, 
+          48.5019
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Burg_P%C3%BCrnstein", 
+        "type": "Burg", 
+        "name": "Burg P\u00fcrnstein"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.6492, 
+          48.3517
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Raab", 
+        "type": "Schloss", 
+        "name": "Schloss Raab"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.7719, 
+          48.4808
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Rannariedl", 
+        "type": "Schloss", 
+        "name": "Schloss Rannariedl"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.0194, 
+          48.2314
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Stift_Ranshofen", 
+        "type": "unb", 
+        "name": "Stift Ranshofen"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.3472, 
+          48.4531
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Burgruine_Reichenau", 
+        "type": "Burg", 
+        "name": "Burgruine Reichenau"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.5811, 
+          48.3642
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Burg_Reichenstein_(%C3%96sterreich)", 
+        "type": "Burg", 
+        "name": "Burg Reichenstein (\u00d6sterreich)"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.8211, 
+          48.2381
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Reinleiten", 
+        "type": "Schloss", 
+        "name": "Schloss Reinleiten"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.4933, 
+          48.2108
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Burg_Ried_im_Innkreis", 
+        "type": "Burg", 
+        "name": "Burg Ried im Innkreis"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.6342, 
+          48.3025
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Riedau", 
+        "type": "Schloss", 
+        "name": "Schloss Riedau"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.4039, 
+          48.3681
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Riedegg", 
+        "type": "Schloss", 
+        "name": "Schloss Riedegg"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.4014, 
+          48.1805
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Riegerting", 
+        "type": "Schloss", 
+        "name": "Schloss Riegerting"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.1888, 
+          48.0662
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Burg_Rohr_(Kremstal)", 
+        "type": "Burg", 
+        "name": "Burg Rohr (Kremstal)"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.8091, 
+          47.9074
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Roith_(Gmunden)", 
+        "type": "Schloss", 
+        "name": "Schloss Roith (Gmunden)"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.735, 
+          48.232
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Roith_(Taufkirchen_an_der_Trattnach)", 
+        "type": "Schloss", 
+        "name": "Schloss Roith (Taufkirchen an der Trattnach)"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.3742, 
+          48.0405
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Rosenegg_(Steyr)", 
+        "type": "Schloss", 
+        "name": "Schloss Rosenegg (Steyr)"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.6575, 
+          48.5614
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Rosenhof", 
+        "type": "Schloss", 
+        "name": "Schloss Rosenhof"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.1692, 
+          48.4478
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Burgruine_Rotenfels", 
+        "type": "Burg", 
+        "name": "Burgruine Rotenfels"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.1397, 
+          48.3692
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Burgruine_Rottenegg", 
+        "type": "Burg", 
+        "name": "Burgruine Rottenegg"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.2155, 
+          48.2767
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Rufling", 
+        "type": "Schloss", 
+        "name": "Schloss Rufling"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.7711, 
+          48.3783
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Burgruine_Ruttenstein", 
+        "type": "Burg", 
+        "name": "Burgruine Ruttenstein"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.1996, 
+          48.2209
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Jagdschloss_Sachsenburg", 
+        "type": "Burg", 
+        "name": "Jagdschloss Sachsenburg"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.4382, 
+          48.2954
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Sankt_Martin_im_Innkreis", 
+        "type": "Schloss", 
+        "name": "Schloss Sankt Martin im Innkreis"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.1613, 
+          48.4683
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_St._Veit", 
+        "type": "Schloss", 
+        "name": "Schloss St. Veit"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.9408, 
+          48.2347
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Burgruine_Sarmingstein", 
+        "type": "Burg", 
+        "name": "Burgruine Sarmingstein"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.9442, 
+          48.2476
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Burgruine_S%C3%A4bnich", 
+        "type": "Burg", 
+        "name": "Burgruine S\u00e4bnich"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.9419, 
+          48.2332
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Turmruine_Sarmingstein", 
+        "type": "unb", 
+        "name": "Turmruine Sarmingstein"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.7403, 
+          48.2989
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Burgruine_Saxenegg", 
+        "type": "Burg", 
+        "name": "Burgruine Saxenegg"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.7919, 
+          48.207
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Saxental", 
+        "type": "Schloss", 
+        "name": "Schloss Saxental"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.978, 
+          48.4713
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Burgruine_Schallenberg", 
+        "type": "Burg", 
+        "name": "Burgruine Schallenberg"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.9633, 
+          47.8919
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Burgruine_Scharnstein", 
+        "type": "Burg", 
+        "name": "Burgruine Scharnstein"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.9636, 
+          47.9058
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Scharnstein", 
+        "type": "Schloss", 
+        "name": "Schloss Scharnstein"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.9636, 
+          47.9058
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Scharnstein", 
+        "type": "Schloss", 
+        "name": "Schloss Scharnstein"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.9769, 
+          48.3419
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Burgruine_Schaunberg", 
+        "type": "Burg", 
+        "name": "Burgruine Schaunberg"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.4636, 
+          48.1635
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Schieferegg", 
+        "type": "Schloss", 
+        "name": "Schloss Schieferegg"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.8705, 
+          48.2177
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Schl%C3%BC%C3%9Flberg", 
+        "type": "Schloss", 
+        "name": "Schloss Schl\u00fc\u00dflberg"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.9525, 
+          48.1956
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Schmiding", 
+        "type": "Schloss", 
+        "name": "Schloss Schmiding"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.5832, 
+          48.3544
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Sch%C3%B6rgern", 
+        "type": "Schloss", 
+        "name": "Schloss Sch\u00f6rgern"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.0414, 
+          48.5322
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Burgruine_Sch%C3%B6nberg", 
+        "type": "Burg", 
+        "name": "Burgruine Sch\u00f6nberg"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.6609, 
+          48.0015
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Sch%C3%B6ndorf", 
+        "type": "Schloss", 
+        "name": "Schloss Sch\u00f6ndorf"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.2165, 
+          48.1573
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Ansitz_Schweikertsreuth", 
+        "type": "unb", 
+        "name": "Ansitz Schweikertsreuth"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.5808, 
+          48.2778
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Schwertberg", 
+        "type": "Schloss", 
+        "name": "Schloss Schwertberg"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.0369, 
+          47.9236
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Seisenburg", 
+        "type": "Burg", 
+        "name": "Seisenburg"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.5034, 
+          47.9257
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Selling", 
+        "type": "Schloss", 
+        "name": "Schloss Selling"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.3084, 
+          48.0447
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Sierning", 
+        "type": "Schloss", 
+        "name": "Schloss Sierning"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.5994, 
+          48.3953
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Sigharting", 
+        "type": "Schloss", 
+        "name": "Schloss Sigharting"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.7813, 
+          48.4093
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Sp%C3%A4ttenbrunn", 
+        "type": "Schloss", 
+        "name": "Schloss Sp\u00e4ttenbrunn"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.4703, 
+          48.2444
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Burgruine_Spielberg", 
+        "type": "Burg", 
+        "name": "Burgruine Spielberg"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.1382, 
+          48.1901
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Spitzenberg", 
+        "type": "Schloss", 
+        "name": "Schloss Spitzenberg"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.9436, 
+          48.5478
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Sprinzenstein", 
+        "type": "Schloss", 
+        "name": "Schloss Sprinzenstein"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.6396, 
+          48.1871
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Starhemberg_(Haag_am_Hausruck)", 
+        "type": "Schloss", 
+        "name": "Schloss Starhemberg (Haag am Hausruck)"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.0236, 
+          48.3113
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Starhemberg_(Eferding)", 
+        "type": "Schloss", 
+        "name": "Schloss Starhemberg (Eferding)"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.9367, 
+          48.3815
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Burgruine_Stauf_(Haibach_ob_der_Donau)", 
+        "type": "Burg", 
+        "name": "Burgruine Stauf (Haibach ob der Donau)"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.4327, 
+          47.9848
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Stauff_(Frankenmarkt)", 
+        "type": "Schloss", 
+        "name": "Schloss Stauff (Frankenmarkt)"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.2882, 
+          48.1546
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Stein_(St._Marien)", 
+        "type": "Schloss", 
+        "name": "Schloss Stein (St. Marien)"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.3704, 
+          48.3468
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Burg_Stein_(Reichersberg)", 
+        "type": "Burg", 
+        "name": "Burg Stein (Reichersberg)"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.946, 
+          48.4565
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Burgruine_Steinerberg", 
+        "type": "Burg", 
+        "name": "Burgruine Steinerberg"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.0951, 
+          48.4721
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Burgruine_Steinbach", 
+        "type": "Burg", 
+        "name": "Burgruine Steinbach"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.7867, 
+          48.2142
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Burgstall_Steinbach_(St._Georgen_bei_Grieskirchen)", 
+        "type": "Burg", 
+        "name": "Burgstall Steinbach (St. Georgen bei Grieskirchen)"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.0203, 
+          48.1158
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Steinhaus", 
+        "type": "Schloss", 
+        "name": "Schloss Steinhaus"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.3719, 
+          48.2867
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Steyregg", 
+        "type": "Schloss", 
+        "name": "Schloss Steyregg"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.194, 
+          48.2878
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Sunzing", 
+        "type": "Schloss", 
+        "name": "Schloss Sunzing"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.5964, 
+          48.4208
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Tannbach", 
+        "type": "Schloss", 
+        "name": "Schloss Tannbach"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.9389, 
+          48.5018
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Burgruine_Tannberg", 
+        "type": "Burg", 
+        "name": "Burgruine Tannberg"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.2159, 
+          48.0271
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Teichst%C3%A4tt", 
+        "type": "Schloss", 
+        "name": "Schloss Teichst\u00e4tt"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.9455, 
+          47.9947
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Theuerwang", 
+        "type": "Schloss", 
+        "name": "Schloss Theuerwang"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.4226, 
+          48.1992
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Tillysburg", 
+        "type": "Burg", 
+        "name": "Schloss Tillysburg"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.7991, 
+          48.2448
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Tollet", 
+        "type": "Schloss", 
+        "name": "Schloss Tollet"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.8469, 
+          48.2225
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Burg_Trattenegg", 
+        "type": "Burg", 
+        "name": "Burg Trattenegg"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.2369, 
+          48.2189
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Traun", 
+        "type": "Schloss", 
+        "name": "Schloss Traun"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.0387, 
+          48.151
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Traunegg", 
+        "type": "Schloss", 
+        "name": "Schloss Traunegg"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.775, 
+          47.9085
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Traunsee", 
+        "type": "Schloss", 
+        "name": "Schloss Traunsee"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.4865, 
+          47.8029
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Unterach", 
+        "type": "Schloss", 
+        "name": "Schloss Unterach"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.1158, 
+          48.1547
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Burg_Uttendorf", 
+        "type": "Burg", 
+        "name": "Burg Uttendorf"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.4617, 
+          48.2762
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Utzenaich", 
+        "type": "Schloss", 
+        "name": "Schloss Utzenaich"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.9995, 
+          48.484
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Velden_(Neufelden)", 
+        "type": "Schloss", 
+        "name": "Schloss Velden (Neufelden)"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.6522, 
+          48.5289
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Burg_Vichtenstein", 
+        "type": "Burg", 
+        "name": "Burg Vichtenstein"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.4127, 
+          48.0396
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Vogelsang_(Steyr)", 
+        "type": "Schloss", 
+        "name": "Schloss Vogelsang (Steyr)"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.4229, 
+          47.9358
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Voglsang_(Ennstal)", 
+        "type": "Schloss", 
+        "name": "Schloss Voglsang (Ennstal)"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.6684, 
+          48.0065
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Wagrain_(V%C3%B6cklabruck)", 
+        "type": "Schloss", 
+        "name": "Schloss Wagrain (V\u00f6cklabruck)"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.8582, 
+          48.3181
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Waikhartsberg", 
+        "type": "Schloss", 
+        "name": "Schloss Waikhartsberg"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.491, 
+          47.9849
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Burg_Walchen", 
+        "type": "Burg", 
+        "name": "Burg Walchen"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.4913, 
+          47.9853
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Walchen", 
+        "type": "Schloss", 
+        "name": "Schloss Walchen"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.3889, 
+          48.5394
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Waldenfels", 
+        "type": "Schloss", 
+        "name": "Schloss Waldenfels"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.5088, 
+          48.0166
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Walkering", 
+        "type": "Schloss", 
+        "name": "Schloss Walkering"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          12.8217, 
+          48.15
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Wanghausen", 
+        "type": "Schloss", 
+        "name": "Schloss Wanghausen"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.5777, 
+          48.4965
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Wartberg_(St._Oswald_bei_Freistadt)", 
+        "type": "Schloss", 
+        "name": "Schloss Wartberg (St. Oswald bei Freistadt)"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.6229, 
+          48.0116
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Herrschaft_Wartenburg", 
+        "type": "Burg", 
+        "name": "Herrschaft Wartenburg"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.6229, 
+          48.0116
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Herrschaft_Wartenburg", 
+        "type": "Burg", 
+        "name": "Herrschaft Wartenburg"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.1886, 
+          48.4756
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Burgruine_Waxenberg", 
+        "type": "Burg", 
+        "name": "Burgruine Waxenberg"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.1908, 
+          48.4772
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Waxenberg", 
+        "type": "Schloss", 
+        "name": "Schloss Waxenberg"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.49, 
+          48.1996
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Wegleiten", 
+        "type": "Schloss", 
+        "name": "Schloss Wegleiten"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.8529, 
+          48.3332
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Weidenholz", 
+        "type": "Schloss", 
+        "name": "Schloss Weidenholz"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.5375, 
+          48.4486
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Weinberg_(%C3%96sterreich)", 
+        "type": "Schloss", 
+        "name": "Schloss Weinberg (\u00d6sterreich)"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.2815, 
+          48.3003
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Edelsitz_Weingarting", 
+        "type": "unb", 
+        "name": "Edelsitz Weingarting"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.3461, 
+          48.1519
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Sitz_Weiffendorf", 
+        "type": "unb", 
+        "name": "Sitz Weiffendorf"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.235, 
+          48.1678
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Wei%C3%9Fenberg", 
+        "type": "Schloss", 
+        "name": "Schloss Wei\u00dfenberg"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.1783, 
+          48.0317
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Wei%C3%9Fau", 
+        "type": "Schloss", 
+        "name": "Schloss Wei\u00dfau"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.1484, 
+          48.1317
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Weitersdorf", 
+        "type": "Schloss", 
+        "name": "Schloss Weitersdorf"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.0281, 
+          48.1567
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Burg_Wels", 
+        "type": "Burg", 
+        "name": "Burg Wels"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.8923, 
+          48.2298
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Burg_Werfenstein", 
+        "type": "Burg", 
+        "name": "Burg Werfenstein"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.4544, 
+          48.505
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Burg_Wernstein_(Ober%C3%B6sterreich)", 
+        "type": "Burg", 
+        "name": "Burg Wernstein (Ober\u00f6sterreich)"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.8278, 
+          48.4406
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Burgruine_Wesen", 
+        "type": "Burg", 
+        "name": "Burgruine Wesen"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.8117, 
+          47.9139
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Weyer_(Gmunden)", 
+        "type": "Schloss", 
+        "name": "Schloss Weyer (Gmunden)"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.1942, 
+          48.1124
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Weyer_(Kematen_an_der_Krems)", 
+        "type": "Schloss", 
+        "name": "Schloss Weyer (Kematen an der Krems)"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.5699, 
+          47.8997
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Weyregg", 
+        "type": "Schloss", 
+        "name": "Schloss Weyregg"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.2922, 
+          48.4028
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Burg_Wildberg_(Kirchschlag_bei_Linz)", 
+        "type": "Burg", 
+        "name": "Burg Wildberg (Kirchschlag bei Linz)"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.3151, 
+          48.2046
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Wildenau", 
+        "type": "Schloss", 
+        "name": "Schloss Wildenau"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.29, 
+          47.9141
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Burgruine_Wildeneck", 
+        "type": "Burg", 
+        "name": "Burgruine Wildeneck"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.6044, 
+          47.6966
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Burg_Wildenstein_(Bad_Ischl)", 
+        "type": "Burg", 
+        "name": "Burg Wildenstein (Bad Ischl)"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          12.866, 
+          48.0073
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Wildshut", 
+        "type": "Schloss", 
+        "name": "Schloss Wildshut"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.1759, 
+          48.2023
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Wimhub", 
+        "type": "Schloss", 
+        "name": "Schloss Wimhub"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.8998, 
+          48.0624
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Wimsbach", 
+        "type": "Schloss", 
+        "name": "Schloss Wimsbach"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.5967, 
+          48.2939
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Burgruine_Windegg", 
+        "type": "Burg", 
+        "name": "Burgruine Windegg"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.7929, 
+          48.0248
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Windern", 
+        "type": "Schloss", 
+        "name": "Schloss Windern"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.6833, 
+          48.2833
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Windhaag", 
+        "type": "Schloss", 
+        "name": "Schloss Windhaag"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.6847, 
+          48.2844
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Burgruine_Windhaag", 
+        "type": "Burg", 
+        "name": "Burgruine Windhaag"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.489, 
+          48.313
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Burgstall_Wolfsbach", 
+        "type": "Burg", 
+        "name": "Burgstall Wolfsbach"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.6741, 
+          48.1087
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Wolfsegg", 
+        "type": "Schloss", 
+        "name": "Schloss Wolfsegg"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.8308, 
+          48.1458
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_W%C3%BCrting", 
+        "type": "Schloss", 
+        "name": "Schloss W\u00fcrting"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.0439, 
+          48.6018
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Zarghof", 
+        "type": "Schloss", 
+        "name": "Schloss Zarghof"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.6297, 
+          48.3156
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Zell_an_der_Pram", 
+        "type": "Schloss", 
+        "name": "Schloss Zell an der Pram"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.7006, 
+          48.3419
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Zellhof", 
+        "type": "Schloss", 
+        "name": "Schloss Zellhof"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          14.3499, 
+          48.3712
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Burgruine_Z%C3%B6ch", 
+        "type": "Burg", 
+        "name": "Burgruine Z\u00f6ch"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          13.4758, 
+          48.5027
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "url": "http://de.wikipedia.org/wiki/Schloss_Zwickledt", 
+        "type": "Schloss", 
+        "name": "Schloss Zwickledt"
+      }
+    }
+  ]
+}

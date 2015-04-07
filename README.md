@@ -4,8 +4,7 @@ WebBeispiele_Shed01
 Beispielcode für Webapplications von Shed01 Blog
 
 ## Repository enthält:
-* Dateien aus den Beispielen des Shed01 Blogs (http://shed01.blogspot.co.at/) 
-für Webanwendungen
+* Dateien aus den Beispielen des Shed01 Blogs (http://shed01.blogspot.co.at/) für Webanwendungen
 * eventuell Beispieldaten
 
 ### Kontakt: datadonk23@gmail.com

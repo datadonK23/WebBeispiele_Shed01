@@ -1,0 +1,8 @@
+Color Scheme for App
+
+HEX	RGB		Name
+fbfcff	251,252,255	light blue to white
+699dff	31,109,255	light blue
+001742	0,23,66		royal blue
+1fffb8	31,255,184	light green
+000b20	0,11,32		dark blue to black

@@ -1,0 +1,5 @@
+Flask
+Flask-Mongokit
+pymongo
+BeautifulSoup
+wikipedia

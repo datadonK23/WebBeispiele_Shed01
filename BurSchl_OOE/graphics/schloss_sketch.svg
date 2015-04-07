@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="138"
+   height="102"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="schloss_sketch.svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="5.6"
+     inkscape:cx="59.744812"
+     inkscape:cy="54.251314"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     width="128px"
+     inkscape:window-width="1858"
+     inkscape:window-height="999"
+     inkscape:window-x="-8"
+     inkscape:window-y="46"
+     inkscape:window-maximized="1"
+     inkscape:snap-grids="true"
+     showguides="true"
+     inkscape:guide-bbox="true">
+    <inkscape:grid
+       type="xygrid"
+       id="grid2991"
+       empspacing="5"
+       visible="true"
+       enabled="true"
+       snapvisiblegridlinesonly="true" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-950.3622)">
+    <g
+       id="g3827" />
+    <g
+       id="g3831"
+       transform="translate(72,1.7382813e-5)">
+      <g
+         id="g3839" />
+    </g>
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:none"
+       d="M 68 0 L 68 19.1875 L 54 36 L 54 60 L 16.5 60 L 16.5 102 L 51 102 L 63 102 L 63 90 C 63 86.686292 65.686292 84 69 84 C 72.313708 84 75 86.686292 75 90 L 75 102 L 87 102 L 121.5 102 L 121.5 60 L 84 60 L 84 36 L 70 19.1875 L 70 12 L 78 12 L 78 18 L 87 18 L 87 24 L 96 24 L 96 12 L 87 12 L 87 6 L 78 6 L 78 0 L 70 0 L 69 0 L 68 0 z M 60 39 L 66 39 L 66 51 L 60 51 L 60 39 z M 72 39 L 78 39 L 78 51 L 72 51 L 72 39 z M 7.5 42 L 0 54 L 0 102 L 15 102 L 15 54 L 7.5 42 z M 130.5 42 L 123 54 L 123 102 L 138 102 L 138 54 L 130.5 42 z M 26.5 67 L 38.5 67 L 38.5 77 L 26.5 77 L 26.5 67 z M 47.5 67 L 59.5 67 L 59.5 77 L 47.5 77 L 47.5 67 z M 78.5 67 L 90.5 67 L 90.5 77 L 78.5 77 L 78.5 67 z M 99.5 67 L 111.5 67 L 111.5 77 L 99.5 77 L 99.5 67 z "
+       transform="translate(0,950.3622)"
+       id="rect3007" />
+  </g>
+</svg>

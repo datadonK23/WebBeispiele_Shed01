@@ -1,0 +1,7 @@
+"""
+Configuration
+"""
+
+DEBUG = False
+
+
