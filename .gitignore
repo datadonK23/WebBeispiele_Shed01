@@ -5,5 +5,5 @@ __pycache__/
 # Directory of secret keys in flask apps
 **/instance/
 
-
-
+# Directory file
+.directory
