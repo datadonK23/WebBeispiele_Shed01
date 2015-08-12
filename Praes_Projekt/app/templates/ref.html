@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Referenzen</title>
+
+    <!-- Material Design Lite -->
+    <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.2/material.blue_grey-light_blue.min.css" />
+    <script src="https://storage.googleapis.com/code.getmdl.io/1.0.2/material.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <style>
+        .demo-card-wide.mdl-card {
+        width: 512px;
+        height: 512px;
+        }
+        .demo-card-wide > .mdl-card__title {
+        color: #fff;
+        height: 176px;
+        background: url('./static/img/grunge-bg.jpg') center / cover;
+        }
+        .demo-card-wide > .mdl-card__menu {
+        color: #fff;
+        }
+
+        .demo-card-square.mdl-card {
+        width: 320px;
+        height: 320px;
+        }
+        .demo-card-square > .mdl-card__title {
+        color: #fff;
+        background: url('./static/img/grunge-bg.jpg') center / cover;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+
+        <!-- Navigation -->
+        <header class="mdl-layout__header">
+            <div class="mdl-layout__header-row">
+                <!-- Title -->
+                <span class="mdl-layout-title">Projekt Titel</span>
+                <!-- Add spacer, to align navigation to the right -->
+                <div class="mdl-layout-spacer"></div>
+                <!-- Navigation. We hide it in small screens. -->
+                <nav class="mdl-navigation mdl-layout--large-screen-only">
+                    <a class="mdl-navigation__link" href="/">Home</a>
+                    <a class="mdl-navigation__link" href="">Link2</a>
+                    <a class="mdl-navigation__link" href="">Link3</a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Imprint -->
+        <div class="demo-grid-2 mdl-grid" id="imprint">
+            <div class="mdl-cell mdl-cell--2-col mdl-cell--1-phone"></div>
+            <div class="mdl-cell mdl-cell--8-col mdl-cell--10-phone">
+                <div class="mdl-card mdl-shadow--2dp demo-card-wide">
+                    <div class="mdl-card__title">
+                        <h2 class="mdl-card__title-text">Impressum</h2>
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                        <h2>daten sensorium - Thomas Treml e.U.</h2>
+                        <ul class="list-unstyled">
+                            <li>Inhaber: Mag. Thomas Treml</li>
+                            <li>Rechtsform: Einzelunternehmen</li>
+                            <li>Sitz: A-4400 Steyr, Bogenhausstr. 5/1</li>
+                            <li>Mail: <a href="mailto:office@datensensorium.co.at">office@datensencorium.co.at</a></li>
+                            <li>Firmenbuchnummer: FN 419803 h</li>
+                            <li>Firmenbuchgericht: LG Steyr</li>
+                            <li>UID / VAT ID: ATU68909416</li>
+                            <li>Web: <a href="http://datensensorium.co.at/" target="_blank">www.datensenorium.co.at</a>
+                            </li>
+                        </ul>
+                        <h6>Offenlegung nach &sect; 25 Abs. 5 Mediengesetz</h6>
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"
+                           href="mailto:office@datensensorium.co.at">Kontakt</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mdl-cell mdl-cell--2-col"></div>
+        </div>
+
+        <!-- References & Privacy Policy -->
+        <div class="demo-grid-ruler mdl-grid">
+            <div class="mdl-cell mdl-cell--1-col mdl-cell--1-phone"></div>
+            <div class="mdl-cell mdl-cell--4-col mdl-cell--10-phone" id="reference">
+                <div class="mdl-card mdl-shadow--2dp demo-card-square">
+                    <div class="mdl-card__title">
+                        <h2 class="mdl-card__title-text">Referenzen</h2>
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                        <h2>Blah</h2>
+                        <ul>
+                            <li>1</li>
+                            <li>2</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="mdl-cell mdl-cell--2-col mdl-cell--1-phone"></div>
+            <div class="mdl-cell mdl-cell--4-col mdl-cell--10-phone" id="privacy">
+                <div class="mdl-card mdl-shadow--2dp demo-card-square">
+                    <div class="mdl-card__title">
+                        <h2 class="mdl-card__title-text">Datenschutzrichtlinien</h2>
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                        <p>BlaBlah</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mdl-cell mdl-cell--1-col mdl-cell--1-phone"></div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="mdl-mini-footer">
+            <div class="mdl-mini-footer__left-section">
+                <div class="mdl-logo">Projekt Titel</div>
+                <ul class="mdl-mini-footer__link-list">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/ref#imprint">Impressum</a></li>
+                    <li><a href="/ref#privacy">Datenschutzrichtlinien</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>
