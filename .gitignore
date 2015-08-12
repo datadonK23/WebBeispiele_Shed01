@@ -6,4 +6,10 @@ __pycache__/
 **/instance/
 
 # Directory file
-.directory
+*.directory
+
+# node_modules directory
+**/node_modules/
+
+# IDE directories
+**/nbproject/

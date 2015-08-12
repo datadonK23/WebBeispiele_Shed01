@@ -1,0 +1,38 @@
+/* 
+    Custom CSS for d3 elements
+*/
+
+#sliderDiv  {
+    margin:10px;
+    margin-top:30px;
+    height:15px;
+    width:350px;
+}
+
+svg {
+    overflow:none;
+    padding:10px;
+    float:left;
+    width:350px;
+    height:350px;
+}
+
+text    {
+    fill:orange;
+    text-anchor:left;
+    font-size:12px;
+    font-family:sans-serif,Helvetica,Arial;
+    font-weight:bold;
+}
+
+.iconPlain  {
+    fill:white;   
+}
+
+.iconSelected  {
+    fill:orange;   
+}
+
+rect    {
+    fill:#555555;   
+}

@@ -1,0 +1,4 @@
+Referenzen
+
+BevStruk_SR.pdf: Statistik Austria, http://www.statistik.at/blickgem/pr2/g40201.pdf, dl. 21.05.2015
+bound_SR.svg: OSM Boundaries 2.3, https://osm.wno-edv-service.de/boundaries/, dl. 21.05.2015
