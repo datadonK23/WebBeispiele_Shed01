@@ -1,69 +1,115 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <title>Referenzen</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Thomas Treml (datadonk23@gmail.com)">
 
-    <!-- Material Design Lite -->
-    <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.2/material.blue_grey-light_blue.min.css" />
-    <script src="https://storage.googleapis.com/code.getmdl.io/1.0.2/material.min.js"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Projekt Titel #FIXME : Referenzen</title>
 
-    <style>
-        .demo-card-wide.mdl-card {
-        width: 512px;
-        height: 512px;
-        }
-        .demo-card-wide > .mdl-card__title {
-        color: #fff;
-        height: 176px;
-        background: url('./static/img/grunge-bg.jpg') center / cover;
-        }
-        .demo-card-wide > .mdl-card__menu {
-        color: #fff;
-        }
+    <!-- Bootstrap Core CSS -->
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet">
 
-        .demo-card-square.mdl-card {
-        width: 320px;
-        height: 320px;
-        }
-        .demo-card-square > .mdl-card__title {
-        color: #fff;
-        background: url('./static/img/grunge-bg.jpg') center / cover;
-        }
-    </style>
+    <!-- Custom CSS and Font-->
+    <link href="../static/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../static/css/main.css">
 
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
 
 <body>
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Titel Projekt</a>
+        </div>
 
-        <!-- Navigation -->
-        <header class="mdl-layout__header">
-            <div class="mdl-layout__header-row">
-                <!-- Title -->
-                <span class="mdl-layout-title">Projekt Titel</span>
-                <!-- Add spacer, to align navigation to the right -->
-                <div class="mdl-layout-spacer"></div>
-                <!-- Navigation. We hide it in small screens. -->
-                <nav class="mdl-navigation mdl-layout--large-screen-only">
-                    <a class="mdl-navigation__link" href="/">Home</a>
-                    <a class="mdl-navigation__link" href="">Link2</a>
-                    <a class="mdl-navigation__link" href="">Link3</a>
-                </nav>
-            </div>
-        </header>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="hidden">
+                    <a href="#page-top"></a>
+                </li>
+                <li class="page-scroll">
+                    <a href="/survey">App</a>
+                </li>
+                <li class="page-scroll">
+                    <a href="/ref#information">Referenzen &amp; Rechtliches</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
 
-        <!-- Imprint -->
-        <div class="demo-grid-2 mdl-grid" id="imprint">
-            <div class="mdl-cell mdl-cell--2-col mdl-cell--1-phone"></div>
-            <div class="mdl-cell mdl-cell--8-col mdl-cell--10-phone">
-                <div class="mdl-card mdl-shadow--2dp demo-card-wide">
-                    <div class="mdl-card__title">
-                        <h2 class="mdl-card__title-text">Impressum</h2>
+<!-- Header -->
+<header>
+    <div class="container" id="information">
+        <div class="text-center">
+            <h2>Referenzen &amp; Rechtliches</h2>
+            <br>
+        </div>
+    </div>
+</header>
+
+<!-- Info Section -->
+<section id="info">
+    <div class="container">
+        <div class="row ">
+            <div class="col-md-5 col-md-offset-0" id="reference">
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Referenzen</h3>
                     </div>
-                    <div class="mdl-card__supporting-text">
-                        <h2>daten sensorium - Thomas Treml e.U.</h2>
+                    <div class="panel-body">
+                        <table class="table table-striped table-hover ">
+                            <thead>
+                            <tr>
+                                <th>Bereich</th>
+                                <th>Quelle</th>
+                                <th>Download</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>Daten</td>
+                                <td>Projekt Gutenberg</td>
+                                <td><a href="https://www.gutenberg.org/ebooks/subject/76" target="_blank">
+                                    https://www.gutenberg.org/ebooks/subject/76</a></td>
+                            </tr>
+                            <tr>
+                                <td>Frontend</td>
+                                <td>Bootstrap</td>
+                                <td><a href="http://getbootstrap.com/" target="_blank">
+                                    http://getbootstrap.com</a></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-md-offset-0" id="imprint">
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Impressum</h3>
+                    </div>
+                    <div class="panel-body">
+                        <h4>daten sensorium - Thomas Treml e.U.</h4>
                         <ul class="list-unstyled">
                             <li>Inhaber: Mag. Thomas Treml</li>
                             <li>Rechtsform: Einzelunternehmen</li>
@@ -72,84 +118,101 @@
                             <li>Firmenbuchnummer: FN 419803 h</li>
                             <li>Firmenbuchgericht: LG Steyr</li>
                             <li>UID / VAT ID: ATU68909416</li>
-                            <li>Web: <a href="http://datensensorium.co.at/" target="_blank">www.datensenorium.co.at</a>
+                            <li>Web:
+                                <a href="http://datensensorium.co.at/" target="_blank">www.datensenorium.co.at</a>
                             </li>
                         </ul>
-                        <h6>Offenlegung nach &sect; 25 Abs. 5 Mediengesetz</h6>
                     </div>
-                    <div class="mdl-card__actions mdl-card--border">
-                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"
-                           href="mailto:office@datensensorium.co.at">Kontakt</a>
+                    <div class="panel-footer">
+                        Offenlegung nach &sect; 25 Abs. 5 Mediengesetz
                     </div>
                 </div>
             </div>
-            <div class="mdl-cell mdl-cell--2-col"></div>
-        </div>
-
-
-        <div class="footer-col col-md-4">
-                    <h3>Kontakt</h3>
-                    <ul class="list-inline">
-                        <li>
-                            <a href="mailto:office@datensensorium.co.at" class="btn-social btn-outline">
-                                <i class="fa fa-fw fa-envelope"></i></a>
-                        </li>
-                        <li>
-                            <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
-                        </li>
-                        <li>
-                            <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
-                        </li>
-                        <li>
-                            <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
-                        </li>
-                    </ul>
-                </div>
-
-
-        <!-- References & Privacy Policy -->
-        <div class="demo-grid-ruler mdl-grid">
-            <div class="mdl-cell mdl-cell--1-col mdl-cell--1-phone"></div>
-            <div class="mdl-cell mdl-cell--4-col mdl-cell--10-phone" id="reference">
-                <div class="mdl-card mdl-shadow--2dp demo-card-square">
-                    <div class="mdl-card__title">
-                        <h2 class="mdl-card__title-text">Referenzen</h2>
+            <div class="col-md-3 col-md-offset-0" id="contact">
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Kontakt</h3>
                     </div>
-                    <div class="mdl-card__supporting-text">
-                        <h2>Blah</h2>
-                        <ul>
-                            <li>1</li>
-                            <li>2</li>
+                    <div class="panel-body text-center">
+                        <ul class="list-inline">
+                            <li>
+                                <a href="mailto:office@datensensorium.co.at" class="btn-social btn-outline">
+                                    <i class="fa fa-fw fa-envelope"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </div>
-            <div class="mdl-cell mdl-cell--2-col mdl-cell--1-phone"></div>
-            <div class="mdl-cell mdl-cell--4-col mdl-cell--10-phone" id="privacy">
-                <div class="mdl-card mdl-shadow--2dp demo-card-square">
-                    <div class="mdl-card__title">
-                        <h2 class="mdl-card__title-text">Datenschutzrichtlinien</h2>
+            <div class="col-md-10 col-md-offset-1" id="privacy">
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Datenschutzrichtlinien</h3>
                     </div>
-                    <div class="mdl-card__supporting-text">
-                        <p>BlaBlah</p>
+                    <div class="panel-body"> <!-- #FIXME -->
+                        <p><small>Unser Unternehmen daten sensorium - Thomas Treml e.U., nachstehend Webseitenbetreiber genannt, geht mit
+                            Ihren pers&ouml;nlichen Daten sehr verantwortungsvoll um und die nachstehende Datenschutzerkl&auml;rung soll
+                            Ihnen einen &Uuml;berblick geben, was mit den Daten passiert und welche Schutz wir anbieten.</small></p>
+                        <h5>Datenschutzerkl&auml;rung daten sensorium - Thomas Treml e.U.</h5>
+                        <h6>Gegenstand der Datenschutzerkl&auml;rung</h6>
+                        <p><small>Diese Erkl&auml;rung bezieht sich auf die Daten, die durch den Besuch unserer Webseite bekannt werden und
+                            informiert dar&uuml;ber, wie mit den Daten umgegangen wird. Ein Datenaustausch mit anderen Firmen erfolgt nicht,
+                            wodurch die Datenschutzerkl&auml;rung auf Ihren Besuch unserer Webseite beschr&auml;nkt bleibt.</small></p>
+                        <h6>Persönliche Daten und ihre Anwendung</h6>
+                        <p><small>Um bei uns Dienstleistungen in Anspruch nehmen zu k&ouml;nnen, brauchen Sie ein Kundenkonto. Dieses
+                            Kundenkonto beinhaltet pers&ouml;nliche Daten wie den Namen, die Anschrift oder die E-Mail-Adresse. Die Daten
+                            werden in unserer Datenbank zwecks sp&auml;terer Verarbeitung beim Einloggen gespeichert.</small></p>
+                        <p><small>Zudem werden automatisch Daten in unseren Logfiles gespeichert, die wir von Ihrem Browser w&auml;hrend des
+                            Besuches erhalten (Browser ist zum Beispiel der Chrome, Firefox, Safari etc.). Das bedeutet, dass die IP-Adresse
+                            bekannt ist und es wird ein Cookie auf Ihrem Computer angelegt. Dieses Cookie garantiert, dass die Abwicklung
+                            der Bestellung oder die Durchf&uuml;hrung der Dienstleistung ordnungsgem&auml;&szlig; abgewickelt werden kann
+                            und vor allem ist es dadurch m&ouml;glich, Ihre Interessen zu speichern, sodass wir Ihnen beim n&auml;chsten
+                            Besuch jene Produkte und Dienstleistungen anbieten k&ouml;nnen, die Sie besonders interessieren, ohne dass Sie
+                            das Interesse wiederholen m&uuml;ssen.</small></p>
+                        <h6>Weitergabe der Daten</h6>
+                        <p><small>Die Daten, die wir von Ihnen erhalten haben, werden nicht an Dritte weitergegeben.</small></p>
+                        <h6>Cookies</h6>
+                        <p><small>Immer wieder kommt es zu Unsicherheiten wegen der Cookies, die auf dem Computer des Besuchers gespeichert
+                            werden. Doch diese kleinen Dateien sind reine Informationsspeicher. Es werden keine Viren produziert, der
+                            Computer wird nicht angegriffen und Sie werden nicht ausgeforscht.</small></p>
+                        <p><small>Ziel des Cookies ist einzig, Ihre pers&ouml;nlichen Aktivit&auml;ten und Interessen zu speichern, sodass
+                            wir bei Ihrem n&auml;chsten Besuch damit arbeiten k&ouml;nnen. Der Vorteil für Sie besteht auch darin, dass Sie
+                            beim Besuch unserer Webseite sofort jene Angebote sehen k&ouml;nnen, die Ihren Interessen entsprechen. Das ist
+                            m&ouml;glich, weil im Cookie gespeichert ist, welche Produkte und Dienstleistungen Sie sich zuletzt angeschaut
+                            haben und entsprechende Alternativen oder Ergänzungen herausgesucht werden, sobald Sie die Seite
+                            aufrufen.</small></p>
+                        <h6>L&ouml;schung der Daten</h6>
+                        <p><small>Sie k&ouml;nnen eine L&ouml;schung Ihres Kundenkontos jederzeit selbst durchf&uuml;hren oder eine
+                            L&ouml;schung durch den Webseitenbetreiber beantragen. Diese wird innerhalb der gesetzlichen Frist von 8 Wochen
+                            nach Erhalt Ihres Antrages erfolgen.</small></p>
+                        <h6>Datenschutz</h6>
+                        <p><small>Wie bereits erw&auml;hnt, werden die Daten nicht weitergegeben. Um die Datensicherheit zu
+                            gew&auml;hrleisten, ist Ihr Kundenkonto passwortgesch&uuml;tzt, wodurch fremde Personen keinen Zugriff auf das
+                            Konto und die Daten haben.</small></p>
+                        <h6>&Auml;nderungen dieser Datenschutzerkl&auml;rung</h6>
+                        <p><small>Der Webseitenbetreiber beh&auml;lt sich vor, diese Datenschutzerkl&auml;rung zu &auml;ndern. Sollte dies
+                            der Fall sein, werden Sie per E-Mail informiert und Sie erhalten entsprechende Informationen auch im Rahmen
+                            Ihres Kundenkontos.</small></p>
                     </div>
                 </div>
             </div>
-            <div class="mdl-cell mdl-cell--1-col mdl-cell--1-phone"></div>
         </div>
-
-        <!-- Footer -->
-        <footer class="mdl-mini-footer">
-            <div class="mdl-mini-footer__left-section">
-                <div class="mdl-logo">Projekt Titel</div>
-                <ul class="mdl-mini-footer__link-list">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/ref#imprint">Impressum</a></li>
-                    <li><a href="/ref#privacy">Datenschutzrichtlinien</a></li>
-                </ul>
-            </div>
-        </footer>
     </div>
+</section>
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="../static/js/jquery-1.11.3.min.js"></script>
+<!-- Bootstrap. Include all compiled plugins (below), or include individual files as needed -->
+<script src="../static/js/bootstrap.min.js"></script>
 
 </body>
 </html>

@@ -13,6 +13,9 @@ def index():
 def survey():
     return render_template("survey.html")
 
+@app.route("/ref")
+def ref():
+    return render_template("ref.html")
 
 #FIXME
 @app.route("/recommend")
@@ -24,10 +27,7 @@ def recommend():
 def result():
     return render_template("index.html")
 
-#FIXME
-@app.route("/ref")
-def ref():
-    return render_template("ref.html")
+
 
 
 
